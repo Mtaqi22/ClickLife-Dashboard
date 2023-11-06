@@ -409,9 +409,18 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt { opacity: 1; }
 /*---------------------------------------------------------------------
                               Content Page
 -----------------------------------------------------------------------*/
-.content-page { overflow: hidden; margin-left: 260px; padding: 105px 15px 0; min-height: 100vh; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
+.content-page { overflow: hidden; margin-left: 260px; padding: 105px 15px 0; min-height: 100vh; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; background-color: rgb(177 149 149 / 50%); }
 .iq-user-dropdown { width: 350px; }
 body.sidebar-main .content-page { margin-left: 80px; }
+.chart-container {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+
+.filters {
+  text-align: center;
+}
 
 /* --------------- */
 .iq-card.iq-border-box { border-bottom: 4px solid; }
@@ -717,6 +726,7 @@ FAQ
 /*---------------------------------------------------------------------
 Table
 -----------------------------------------------------------------------*/
+
 table tr th img { width: 35px; height: 35px; border-radius: 90px; }
 .progress-animate { animation: progress-bar-stripes 1s linear infinite; }
 img.summary-image-top { width: 35px; }
@@ -1055,7 +1065,8 @@ Privacy Policy Page
 User List Page
 -----------------------------------------------------------------------*/
 .list-user-action a { font-size: 16px; height: 25px; width: 25px; text-align: center; line-height: 25px; margin: 0 3px; display: inline-block; border-radius: 5px; }
-#user-list-table.table td { vertical-align: middle; }
+#user-list-table.table td { vertical-align: middle;  }
+
 .user-list-files a { padding: 10px 15px; margin: 0 0 0 10px; border-radius: 5px; line-height: normal; }
 .table-responsive #exampleInputSearch { width: auto; }
 
@@ -1086,11 +1097,62 @@ body.two-sidebar.sidebar-main .iq-sidebar { width: 0px; }
 
 
 .two-sidebar .iq-timeline li .timeline-dots,.iq-page-menu-horizontal .iq-timeline li .timeline-dots { height: 10px; width: 10px; left: -44px; }
-
+.gap{
+  margin-top:15%;
+}
+.gap1{
+  margin: 5%
+}
 .ver{
   display: flex;
-  
 }
+.adcolor{
+  color: white;
+  font-size: 5px;
+    height: 40px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 1px;
+    margin-top:2px;
+}
+.txtsize{
+  font-size: 15px;
+  margin:0;
+}
+.adcolor1{
+background: #1e7145;
+}
+.adcolor2{
+  background: #FFA500;
+  }
+  .adcolor3{
+    background: #ff0000;
+    }
+    .adcolor4{
+      background: #808080;
+      }
+      .adcolor5{
+        background: #0000FF;
+        }
+        .coll{
+           font-family: 'Manrope', sans-serif; 
+            font-weight: 500; 
+            margin: 0px; 
+            line-height: 1.5; 
+            color: white; }
+  .gapp{
+    margin: 2px;
+  }
+  .something{
+    
+    width:80% !important;
+  }
+        
+
 
 /*-----------------------------------------------------------------
                           Horizontal  Menu Page

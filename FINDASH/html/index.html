@@ -2,6 +2,7 @@
 <html lang="en">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
+
 <head>
    <!-- Required meta tags -->
    <meta charset="utf-8">
@@ -25,6 +26,7 @@
    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/flatpickr.min.css">
+   
 
 </head>
 
@@ -42,7 +44,7 @@
          <div class="iq-navbar-logo d-flex justify-content-between">
             <a href="index.html" class="header-logo">
                <img src="images/logo.png" class="img-fluid rounded" alt="">
-               
+
             </a>
             <div class="iq-menu-bt align-self-center">
                <div class="wrapper-menu">
@@ -222,7 +224,7 @@
                   <div class="iq-navbar-logo d-flex justify-content-between ml-3">
                      <a href="index.html" class="header-logo">
                         <img src="images/logo.png" class="img-fluid rounded" alt="">
-                       
+
                      </a>
                   </div>
                </div>
@@ -495,7 +497,7 @@
                </div>
                <audio id="click-sound" src="./Audio/click.wav"></audio>
                <script>
-                  function playsound(){
+                  function playsound() {
                      var audio = document.getElementById('click-sound');
                      audio.play();
                   }
@@ -587,7 +589,7 @@
                </div>
 
 
-               <div class="col-lg-3">
+               <div class="col-lg-4">
                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
@@ -629,14 +631,14 @@
                   </div>
                </div>
 
-               <div class="col-lg-5">
+               <div class="col-lg-4">
                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
                            <h4 class="card-title">Fleet Status</h4>
                         </div>
                      </div>
-                     <div class="iq-card-body" >
+                     <div class="iq-card-body">
                         <div class="ver">
                            <div class="col-lg-2">
                               <div class="icon adcolor1 adcolor  rounded mr-3">
@@ -658,8 +660,8 @@
 
                            </div>
 
-                           <div class="col-sm-10">
-                              <canvas id="myChart" style="width:100%;max-width:900px; max-height: 500px;"></canvas>
+                           <div class="col-sm-10 col-lg-10">
+                              <canvas id="myChart" style="margin-top:30px;width:100%;max-width:900px; max-height: 500px;"></canvas>
 
                               <script>
 
@@ -685,6 +687,7 @@
                                  });
                               </script>
                            </div>
+                           
                         </div>
                      </div>
                   </div>
@@ -707,7 +710,7 @@
                               <div class="chart-container">
                                  <canvas id="pieChart"></canvas>
                               </div>
-                             
+
 
                               <script>
                                  document.addEventListener('DOMContentLoaded', function () {
@@ -754,64 +757,36 @@
                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                           <h4 class="card-title">Fleet Idle</h4>
+                           <h4 class="card-title">Total Installations</h4>
                         </div>
 
                      </div>
                      <div class="iq-card-body">
-                        <div class="mt-12 pr-12">
-                           <div class="gap1 d-flex align-items-center justify-content-between">
-                              <div class="d-flex align-items-center">
-                                 <span class="bg-primary p-1 rounded mr-2"></span>
-                                 <div class="icon iq-icon-box rounded iq-bg-success mr-3">
+                        <canvas id="myChart2" style="width:100%;max-width:600px;height: 300px;"></canvas>
 
-                                    <i class="fa fa-asterisk" aria-hidden="true"></i>
-
-                                 </div>
-
-                                 <p class="mb-0">Total Fleet Usage</p>
-
-                              </div>
-                              <h6><b>2000 hrs</b></h6>
-
-                           </div>
-                           <div class="gap1 d-flex align-items-center justify-content-between">
-                              <div class="d-flex align-items-center">
-                                 <span class="bg-danger p-1 rounded mr-2"></span>
-                                 <div class="icon iq-icon-box rounded iq-bg-primary mr-3">
-                                    <i class="ri-drop-fill"></i>
-                                 </div>
-                                 <p class="mb-0">Aprrox Fuel Waste</p>
-                              </div>
-                              <h6><b>29 ltr</b></h6>
-                           </div>
-                           <div class="gap1 d-flex align-items-center justify-content-between">
-                              <div class="d-flex align-items-center">
-                                 <span class="bg-primary p-1 rounded mr-2"></span>
-                                 <div class="icon iq-icon-box rounded iq-bg-success mr-3">
-
-                                    <i class="ri-underline"></i>
-
-                                 </div>
-
-                                 <p class="mb-0">Total Fleet Refill</p>
-
-                              </div>
-                              <h6><b>2000 ltr</b></h6>
-
-                           </div>
-                           <div class="gap1 d-flex align-items-center justify-content-between">
-                              <div class="d-flex align-items-center">
-                                 <span class="bg-danger p-1 rounded mr-2"></span>
-                                 <div class="icon iq-icon-box rounded iq-bg-primary mr-3">
-                                    <i class="ion-soup-can"></i>
-                                 </div>
-                                 <p class="mb-0">Aprrox Fuel Drain</p>
-                              </div>
-                              <h6><b>29 ltr</b></h6>
-                           </div>
-
-                        </div>
+                        <script>
+                        const xValues = ["22/02/23", "22/02/23", "22/02/23", "22/02/23", "22/02/23"];
+                        const zValues = [55, 49, 44, 24, 20];
+                        const barColors1 = ["red", "green","blue","orange","brown"];
+                        
+                        new Chart("myChart2", {
+                          type: "bar",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                              backgroundColor: barColors1,
+                              data: zValues
+                            }]
+                          },
+                          options: {
+                            legend: {display: false},
+                            title: {
+                              display: true,
+                             
+                            }
+                          }
+                        });
+                        </script>
                      </div>
                   </div>
                </div>
@@ -820,7 +795,7 @@
                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                           <h4 class="card-title">Job Information</h4>
+                           <h4 class="card-title">Mileage</h4>
                         </div>
                      </div>
                      <div class="iq-card-body">
@@ -834,7 +809,7 @@
                            </div>
                            <div class="iq-details col-sm-9 p-0">
                               <div class="d-flex align-items-center justify-content-between">
-                                 <span class="title text-dark">Completed</span>
+                                 <span class="title text-dark">BMW</span>
 
                               </div>
                               <div class="iq-progress-bar-linear d-inline-block w-100">
@@ -844,18 +819,18 @@
                               </div>
                               <div class="d-flex align-items-center justify-content-between">
 
-                                 <div class="percentage float-right">20<span>%</span></div>
+                                 <div class="percentage float-right">4029<span>mi</span></div>
                               </div>
                            </div>
                         </div>
                         <hr class="mt-4 mb-4">
                         <div class="d-flex align-items-center">
                            <div class="icon iq-icon-box rounded iq-bg-primary mr-3">
-                              <i class="ri-hospital-line"></i>
+                              <i class="fa fa-car fa-lg"></i>
                            </div>
                            <div class="iq-details col-sm-9 p-0">
                               <div class="d-flex align-items-center justify-content-between">
-                                 <span class="title text-dark">Running</span>
+                                 <span class="title text-dark">Audi</span>
 
                               </div>
                               <div class="iq-progress-bar-linear d-inline-block w-100">
@@ -865,18 +840,18 @@
                               </div>
                               <div class="d-flex align-items-center justify-content-between">
 
-                                 <div class="percentage">30<span>%</span></div>
+                                 <div class="percentage">2631<span>mi</span></div>
                               </div>
                            </div>
                         </div>
                         <hr class="mt-4 mb-4">
                         <div class="d-flex align-items-center">
                            <div class="icon iq-icon-box rounded iq-bg-info mr-3">
-                              <i class="ri-bank-line"></i>
+                              <i class="fa fa-car fa-lg"></i>
                            </div>
                            <div class="iq-details col-sm-9 p-0">
                               <div class="d-flex align-items-center justify-content-between">
-                                 <span class="title text-dark">Not Started</span>
+                                 <span class="title text-dark">Truck</span>
 
                               </div>
                               <div class="iq-progress-bar-linear d-inline-block w-100">
@@ -886,7 +861,7 @@
                               </div>
                               <div class="d-flex align-items-center justify-content-between">
 
-                                 <div class="percentage">60<span>%</span></div>
+                                 <div class="percentage">647<span>mi</span></div>
                               </div>
                            </div>
                         </div>
@@ -898,65 +873,53 @@
                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                           <h4 class="card-title">Reminders</h4>
+                           <h4 class="card-title">Speeding</h4>
                         </div>
                      </div>
                      <div class="iq-card-body">
-                        <h5>Maintenance Reminder</h5>
-                        <div class="gap1 d-flex align-items-center justify-content-between">
-                           <div class="d-flex align-items-center">
-                              <span class="bg-primary p-1 rounded mr-2"></span>
-                              <div class="icon iq-icon-box rounded iq-bg-success mr-3">
-                                 <i class="ri-calculator-line"></i>
-
-                              </div>
-
-                              <p class="mb-0">Due</p>
-
-                           </div>
-
-                           <h6><b>2000 ltr</b></h6>
-
+                        <h5>Excavator</h5>
+                        <br>
+                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="width: 75%"></div>
                         </div>
-                        <div class="gap1 d-flex align-items-center justify-content-between">
-                           <div class="d-flex align-items-center">
-                              <span class="bg-danger p-1 rounded mr-2"></span>
-                              <div class="icon iq-icon-box rounded iq-bg-primary mr-3">
-                                 <i class="ri-tablet-line"></i>
-                              </div>
-                              <p class="mb-0">OverDate</p>
-                           </div>
-                           <h6><b>29 ltr</b></h6>
+                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-info" style="width: 50%"></div>
                         </div>
-
-
-                        <h5>Renewal Reminder</h5>
-                        <div class="gap1 d-flex align-items-center justify-content-between">
-                           <div class="d-flex align-items-center">
-                              <span class="bg-primary p-1 rounded mr-2"></span>
-                              <div class="icon iq-icon-box rounded iq-bg-success mr-3">
-
-                                 <i class="ri-calculator-line"></i>
-                              </div>
-
-                              <p class="mb-0">Due</p>
-
-                           </div>
-
-                           <h6><b>2000 ltr</b></h6>
-
+                        <br>
+                        <h5>Van</h5>
+                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="width: 75%"></div>
                         </div>
-                        <div class="gap1 d-flex align-items-center justify-content-between">
-                           <div class="d-flex align-items-center">
-                              <span class="bg-danger p-1 rounded mr-2"></span>
-                              <div class="icon iq-icon-box rounded iq-bg-primary mr-3">
-                                 <i class="ri-tablet-line"></i>
-                              </div>
-                              <p class="mb-0">OverDate</p>
-                           </div>
-                           <h6><b>29 ltr</b></h6>
+                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-info" style="width: 50%"></div>
                         </div>
+                        <br>
+                        <h5>Truck</h5>
+                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="width: 75%"></div>
+                        </div>
+                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-info" style="width: 50%"></div>
+                        </div>
+                        <br>
+                        <h5>Car</h5>
+                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-warning" style="width: 75%"></div>
+                        </div>
+                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                           aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar bg-info" style="width: 50%"></div>
+                        </div>
+                        <br>
                      </div>
+
                   </div>
                </div>
 
@@ -1037,7 +1000,10 @@
    <script src="js/chart-custom.js"></script>
    <!-- Custom JavaScript -->
    <script src="js/custom.js"></script>
-
+   <script src="assets/vendor/libs/chartjs/chartjs.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+   <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+   
 </body>
 
 </html>
