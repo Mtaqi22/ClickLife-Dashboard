@@ -1806,12 +1806,15 @@ pre code {
 .table th {
 	padding: .75rem;
 	vertical-align: top;
-	border-top: 1px solid #dee2e6
+	border-top: 1px solid #dee2e6;
+	
+    
 }
 
 .table thead th {
 	vertical-align: bottom;
-	border-bottom: 2px solid #dee2e6
+	border-bottom: 2px solid #dee2e6;
+	
 }
 
 .table tbody+tbody {
@@ -1820,7 +1823,8 @@ pre code {
 
 .table-sm td,
 .table-sm th {
-	padding: .3rem
+	padding: .3rem;
+	
 }
 
 .table-bordered {
@@ -1829,7 +1833,8 @@ pre code {
 
 .table-bordered td,
 .table-bordered th {
-	border: 1px solid #dee2e6
+	border: 1px solid #dee2e6;
+	
 }
 
 .table-bordered thead td,
@@ -10551,7 +10556,8 @@ a.text-dark:hover {
 		border: 1px solid #000
 	}
 	.table {
-		border-collapse: collapse!important
+		border-collapse: collapse!important;
+		width:500%;
 	}
 	.table td,
 	.table th {
