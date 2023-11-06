@@ -518,12 +518,12 @@
                                              <label for="dob">Request Form</label><br>
                                              <div class="custom-control custom-radio custom-control-inline">
                                                 <input type="radio" id="customRadio8" name="customRadio2" class="custom-control-input" checked="">
-                                                <label class="custom-control-label" for="customRadio6"> With Request
+                                                <label class="custom-control-label" for="customRadio8"> With Request
                                                 </label>
                                              </div>
                                              <div class="custom-control custom-radio custom-control-inline">
                                                 <input type="radio" id="customRadio9" name="customRadio2" class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadio7"> Without Request</label>
+                                                <label class="custom-control-label" for="customRadio9"> Without Request</label>
                                              </div>
                                              <!-- <input  class="form-control" id="dob" value=""> -->
                                           </div>
@@ -673,25 +673,105 @@
 
                                  <div class="iq-card-body">
                                     <form>
-                                       <div class="form-group">
-                                          <label for="cpass">Icon on map</label>
-                                          <!-- <a href="javascripe:void();" class="float-right">Forgot Password</a> -->
-                                          <input type="Password" class="form-control" id="cpass" value="">
+                                       <div class="form-group col-sm-4">
+                                             <label>Icon on map</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Default</option>
+                                                <option>Icon</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                             </select>
                                        </div>
-                                       <div class="form-group">
-                                          <label for="npass">New Password:</label>
-                                          <input type="Password" class="form-control" id="npass" value="">
+                                       <div class="form-group col-sm-4">
+                                             <label>Stopped Icon Colorp</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Black</option>
+                                                <option>Yellow</option>
+                                                <option>Red</option>
+                                                <option>Green</option>
+                                                <option>Blue</option>
+                                                <option>Orange</option>
+                                             </select>
                                        </div>
-                                       <div class="form-group">
+                                       <div class="form-group col-sm-4">
+                                             <label>Engine Idle Icon Color</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option></option>
+                                                <option selected="">Black</option>
+                                                <option>Yellow</option>
+                                                <option>Red</option>
+                                                <option>Green</option>
+                                                <option>Blue</option>
+                                                <option>Orange</option>
+                                             </select>
+                                       </div>
+                                       <div class="form-group col-sm-4">
+                                          <label for="nrtime">NR Time</label>
+                                          <input type="time" class="form-control" id="nrtime" value="22:00" placeholder="NR Time">
+                                       </div>
+
+                                       <!-- <div class="form-group">
                                           <label for="vpass">Verify Password:</label>
                                           <input type="Password" class="form-control" id="vpass" value="">
                                        </div>
                                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                       <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                                       <button type="reset" class="btn iq-bg-danger">Cancel</button> -->
+
+                                       <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Tail</h6>
+                                          </div>
+                                       </div>
+                                       <br>
+                                       <div class="form-group col-sm-4">
+                                            <label for="t_color" class="form-label">Tail Color</label>
+                                            <input id="tailcolor" name="t_color" class="jscolor {valueElement:'tailcolor', styleElement:'tailcolor', hash:true, mode:'HSV'} form-control"  value="4AC77F" required>
+                                        </div>
+
+                                        <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Customer Communication Gateways</h6>
+                                          </div>
+                                       </div> 
+                                       <br>
+                                       <div class="form-group col-sm-6">
+                                          <label class="d-block">Choose Gateway Type</label>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio10" name="customRadio3" class="custom-control-input" checked="">
+                                             <label class="custom-control-label" for="customRadio10"> SMS HTTP Gateway </label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio11" name="customRadio3" class="custom-control-input">
+                                             <label class="custom-control-label" for="customRadio11"> Android SMS Gateway </label>
+                                          </div>
+                                       </div> 
+                                       <div class="form-group col-sm-4">
+                                          <label>SMS HTTP Gateway</label>
+                                          <select class="form-control" id="exampleFormControlSelect4">
+                                             <option selected=""></option>
+                                             <option></option>
+                                             <option>SMS country</option>
+                                             <option></option>
+                                          </select>
+                                       </div>
+                                       <div class="form-group col-sm-4">
+                                          <label>Email Server</label>
+                                          <select class="form-control" id="exampleFormControlSelect4">
+                                             <option selected="">Default</option>
+                                             <option>Mail Gun</option>
+                                             <option>Mail Gun</option>
+                                             <option>Send Grid</option>
+                                          </select>
+                                       </div>
+
+
+
                                     </form>
                                  </div>
                               </div>
                            </div>
+               
                            <div class="tab-pane fade" id="emailandsms" role="tabpanel">
                               <div class="iq-card">
                                  <div class="iq-card-header d-flex justify-content-between">
