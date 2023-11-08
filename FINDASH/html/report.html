@@ -51,11 +51,11 @@
                      </li>
                    
                      
-                     <li>
-                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>User</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                        <ul id="userinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                     <li class="active">
+                        <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-user-tie iq-arrow-left"></i><span>User</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="userinfo" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle" style="">
                            <li><a href="profile.html"><i class="las la-id-card-alt"></i>User Profile</a></li>
-                           <li><a href="profile-edit.html"><i class="las la-edit"></i>User Edit</a></li>
+                           <li class="active"><a href="profile-edit.html"><i class="las la-edit"></i>User Edit</a></li>
                            <li><a href="add-user.html"><i class="las la-plus-circle"></i>User Add</a></li>
                            <li><a href="user-list.html"><i class="las la-th-list"></i>User List</a></li>
                         </ul>
@@ -86,11 +86,11 @@
                            <li><a href="ui-tooltips.html"><i class="las la-magnet"></i>Tooltips</a></li>
                         </ul>
                      </li>
-                     <li class="active">
-                        <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="true"><i class="lab la-wpforms iq-arrow-left"></i><span>Forms</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                        <ul id="forms" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
+                     <li>
+                        <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-wpforms iq-arrow-left"></i><span>Forms</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="forms" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                            <li><a href="form-layout.html"><i class="las la-book"></i>Form Elements</a></li>
-                           <li class="active"><a href="form-validation.html"><i class="las la-edit"></i>Form Validation</a></li>
+                           <li><a href="form-validation.html"><i class="las la-edit"></i>Form Validation</a></li>
                            <li><a href="form-switch.html"><i class="las la-toggle-off"></i>Form Switch</a></li>
                            <li><a href="form-chechbox.html"><i class="las la-check-square"></i>Form Checkbox</a></li>
                            <li><a href="form-radio.html"><i class="ri-radio-button-line"></i>Form Radio</a></li>
@@ -423,257 +423,342 @@
          <div id="content-page" class="content-page">
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-sm-12 col-lg-6">
+                  <div class="col-lg-12">
                      <div class="iq-card">
-                        <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                              <h4 class="card-title"> Default Validation</h4>
+                        <div class="iq-card-body p-0">
+                           <div class="iq-edit-list">
+                              <ul class="iq-edit-profile d-flex nav nav-pills">
+                                 <li class="col-md-6 p-0">
+                                    <a class="nav-link active" data-toggle="pill" href="#vehicle-information">
+                                    Report Parameters
+                                    </a>
+                                 </li>
+                                 <li class="col-md-6 p-0">
+                                    <a class="nav-link" data-toggle="pill" href="#chang-pwd">
+                                    Scheduled Reports
+                                    </a>
+                                 </li>
+                               
+                              </ul>
                            </div>
-                        </div>
-                        <div class="iq-card-body">
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
-                           <form>
-                              <div class="form-row">
-                                  
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationDefault02">Last name</label>
-                                    <input type="text" class="form-control" id="validationDefault02" required>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationDefaultUsername">Username</label>
-                                    <div class="input-group">
-                                       <div class="input-group-prepend">
-                                          <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                                       </div>
-                                       <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationDefault03">City</label>
-                                    <input type="text" class="form-control" id="validationDefault03" required>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationDefault04">State</label>
-                                    <select class="form-control" id="validationDefault04" required>
-                                       <option selected disabled value="">Choose...</option>
-                                       <option>...</option>
-                                    </select>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationDefault05">Zip</label>
-                                    <input type="text" class="form-control" id="validationDefault05" required>
-                                 </div>
-                              </div>
-                              <div class="form-group">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                                    <label class="form-check-label" for="invalidCheck2">
-                                    Agree to terms and conditions
-                                    </label>
-                                 </div>
-                              </div>
-                              <div class="form-group">
-                                 <button class="btn btn-primary" type="submit">Submit form</button>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                     <div class="iq-card">
-                        <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                              <h4 class="card-title"> Supported elements</h4>
-                           </div>
-                        </div>
-                        <div class="iq-card-body">
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
-                           <form class="was-validated">
-                              <div class="mb-3">
-                                 <label for="validationTextarea">Textarea</label>
-                                 <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-                                 <div class="invalid-feedback">
-                                    Please enter a message in the textarea.
-                                 </div>
-                              </div>
-                              <div class="custom-control custom-checkbox mb-3">
-                                 <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-                                 <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
-                                 <div class="invalid-feedback">Example invalid feedback text</div>
-                              </div>
-                              <div class="custom-control custom-radio">
-                                 <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-                                 <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
-                              </div>
-                              <div class="custom-control custom-radio mb-3">
-                                 <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-                                 <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
-                                 <div class="invalid-feedback">More example invalid feedback text</div>
-                              </div>
-                              <div class="form-group">
-                                 <select class="custom-select" required>
-                                    <option value="">Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                 </select>
-                                 <div class="invalid-feedback">Example invalid custom select feedback</div>
-                              </div>
-                              <div class="custom-file">
-                                 <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                                 <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                                 <div class="invalid-feedback">Example invalid custom file feedback</div>
-                              </div>
-                           </form>
                         </div>
                      </div>
                   </div>
-                  <div class="col-sm-12 col-lg-6">
-                     <div class="iq-card">
-                        <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                              <h4 class="card-title">Custom Validation</h4>
+                  <div class="col-lg-12">
+                     <div class="iq-edit-list-data">
+                        <div class="tab-content">
+                           <div class="tab-pane fade active show" id="report-parameters" role="tabpanel">
+                              <div class="iq-card">
+                                 <div class="iq-card-body">
+                                    <form>
+                                       <div class=" row align-items-center">
+                                          <div class="form-group col-sm-6">
+                                             <label for="fname">Report Name</Label>
+                                             <input type="text" class="form-control" id="fname" placeholder="Report Name">
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Report Type</label>
+                                             <select class="form-control" id="exampleFormControlSelect1">
+                                                <option selected="">Choose one of the following...</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Client Account</label>
+                                             <select class="form-control" id="exampleFormControlSelect1">
+                                                <option selected="">Choose Client</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Vehicles</label>
+                                             <select class="form-control" id="exampleFormControlSelect1">
+                                                <option selected="">Choose Vehicles</option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                                <option></option>
+                                             </select>
+                                          </div>
+                                         
+                                          <div class="form-group col-sm-6">
+                                             <label class="d-block">Report Period</label>
+                                             <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadio6" name="customRadio1" class="custom-control-input" checked="">
+                                                <label class="custom-control-label" for="customRadio6"> Today </label>
+                                             </div>
+                                             <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadio7" name="customRadio1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio7"> Yesterday </label>
+                                             </div>
+                                             <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadio8" name="customRadio1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio8"> Custom </label>
+                                             </div>
+                                          </div>
+                                          <br>
+                                      
+                                          <div class="iq-header-title col-lg-12">
+                                             <h4 class="card-title">Schedule</h4>
+                                          </div>
+                                    
+                                         
+                                          
+                                          <div class="form-group col-sm-6">
+                                             <label>Frequency</label>
+                                                <div class="col-md-4">
+                                                   <div class="custom-control custom-checkbox">
+                                                   <input type="checkbox" class="custom-control-input" id="email01">
+                                                   <label class="custom-control-label" for="email01"> Daily </label>
+                                                   </div>
+                                                   <div class="custom-control custom-checkbox">
+                                                   <input type="checkbox" class="custom-control-input" id="email02">
+                                                   <label class="custom-control-label" for="email02"> Weekly </label>
+                                                   </div>
+                                                   <br>
+                                                </div>
+                                          <div class="form-group col-sm-6">
+                                             <label for="fname">Email</label>                                           
+                                             <input type="email" class="form-control" id="fname" placeholder="for multiple email use">
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Email Language</label>
+                                             <select class="form-control" id="exampleFormControlSelect1">
+                                                <option selected="">Select Option</option>
+                                                <option>English</option>
+                                                <option>Urdu</option>
+                                                <option>Arabic</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </form>
+                                </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="iq-card-body">
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
-                           <form class="needs-validation" novalidate>
-                              <div class="form-row">
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationCustom01">First name</label>
-                                    <input type="text" class="form-control" id="validationCustom01"  required>
-                                    <div class="valid-feedback">
-                                       Looks good!
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationCustom02">Last name</label>
-                                    <input type="text" class="form-control" id="validationCustom02"  required>
-                                    <div class="valid-feedback">
-                                       Looks good!
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationCustomUsername">Username</label>
-                                    <div class="input-group">
-                                       <div class="input-group-prepend">
-                                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+
+                  
+                           <div class="tab-pane fade" id="chang-pwd" role="tabpanel">
+                              <div class="iq-card">
+                                 <div class="iq-card-body">
+                                    <div class="table-responsive">
+                                       <div class="row justify-content-between">
+                                          <div class="col-sm-12 col-md-6">
+                                             <div id="user_list_datatable_info" class="dataTables_filter">
+                                                <form class="mr-3 position-relative">
+                                                   <div class="form-group mb-0">
+                                                      <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table">
+                                                   </div>
+                                                </form>
+                                             </div>
+                                          </div>
+                                          <div class="col-sm-12 col-md-6">
+                                             <div class="user-list-files d-flex float-right">
+                                                <a class="iq-bg-primary" href="javascript:void();" >
+                                                   Print
+                                                 </a>
+                                                <a class="iq-bg-primary" href="javascript:void();">
+                                                   Excel
+                                                 </a>
+                                                 <a class="iq-bg-primary" href="javascript:void();">
+                                                   Pdf
+                                                 </a>
+                                               </div>
+                                          </div>
                                        </div>
-                                       <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                                       <div class="invalid-feedback">
-                                          Please choose a username.
+                                       <table id="user-list-table" class="table table-striped table-bordered mt-4" role="grid" aria-describedby="user-list-page-info">
+                                         <thead>
+                                             <tr>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>Vehicle Number</th>
+                                                
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Vehicles Report- Test </td>
+                                             <td>Trip</td>
+                                             <td>765323545122</td>
+                                          </tr>
+                                          <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Riyadh Car 623916 Weekly Report </td>
+                                             <td>Trip</td>
+                                             <td>623916 Riyadh Hasan</td>
+                                          </tr>
+                                          <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Overspeed </td>
+                                             <td>OverSpeed</td>
+                                             <td>45151 Nissan Urvan H R,45313 Nissa</td>
+                                          </tr>
+                                          <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Office car report </td>
+                                             <td>mileageReport</td>
+                                             <td>333202 Sonata gray</td>
+                                          </tr>
+                                          <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Vehicles Report- Test </td>
+                                             <td>Trip</td>
+                                             <td>765323545122</td>
+                                          </tr>
+                                          <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Vehicles Report- Test </td>
+                                             <td>Trip</td>
+                                             <td>765323545122</td>
+                                          </tr>
+                                          <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Vehicles Report- Test </td>
+                                             <td>Trip</td>
+                                             <td>765323545122</td>
+                                          </tr>
+                                          <tbody>
+                                             <tr style="text-align: left;">
+                                             <td>Vehicles Report- Test </td>
+                                             <td>Trip</td>
+                                             <td>765323545122</td>
+                                          </tr>
+
+
+                                             
+                                         </tbody>
+                                       </table>
+                                    </div>
+                                    <div class="row justify-content-between mt-3">
+                                       <div id="user-list-page-info" class="col-md-6">
+                                          <span>Showing 1 to 5 of 5 entries</span>
                                        </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationCustom03">City</label>
-                                    <input type="text" class="form-control" id="validationCustom03" required>
-                                    <div class="invalid-feedback">
-                                       Please provide a valid city.
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationCustom04">State</label>
-                                    <select class="form-control" id="validationCustom04" required>
-                                       <option selected disabled value="">Choose...</option>
-                                       <option>...</option>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                       Please select a valid state.
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationCustom05">Zip</label>
-                                    <input type="text" class="form-control" id="validationCustom05" required>
-                                    <div class="invalid-feedback">
-                                       Please provide a valid zip.
+                                       <div class="col-md-6">
+                                          <nav aria-label="Page navigation example">
+                                             <ul class="pagination justify-content-end mb-0">
+                                                <li class="page-item disabled">
+                                                   <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                   <a class="page-link" href="#">Next</a>
+                                                </li>
+                                             </ul>
+                                          </nav>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
-                              <div class="form-group">
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                    Agree to terms and conditions
-                                    </label>
-                                    <div class="invalid-feedback">
-                                       You must agree before submitting.
-                                    </div>
-                                 </div>
-                              </div>
-                              <button class="btn btn-primary" type="submit">Submit form</button>
-                           </form>
-                        </div>
-                     </div>
-                     <div class="iq-card">
-                        <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                              <h4 class="card-title">Tooltips</h4>
                            </div>
-                        </div>
-                        <div class="iq-card-body">
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, ex ac venenatis mollis, diam nibh finibus leo</p>
-                           <form class="needs-validation" novalidate>
-                              <div class="form-row">
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationTooltip01">First name</label>
-                                    <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
-                                    <div class="valid-tooltip">
-                                       Looks good!
+
+
+                         
+
+               
+                           <div class="tab-pane fade" id="emailandsms" role="tabpanel">
+                              <div class="iq-card">
+                                 <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                       <h4 class="card-title">Calculation</h4>
                                     </div>
                                  </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationTooltip02">Last name</label>
-                                    <input type="text" class="form-control" id="validationTooltip02" value="Tech" required>
-                                    <div class="valid-tooltip">
-                                       Looks good!
+                                    <div class="iq-card-body">
+                                       <form class="needs-validation" novalidate>
+                                          <div class="form-row">
+                                             <div class="col-md-6 mb-3">
+                                                <label for="validationCustom01">Source</label>
+                                                <select class="form-control" id="exampleFormControlSelect4">
+                                                   <option selected="">Rates</option>
+                                                   <option>Fuel Leval</option>
+                                                   <option>Fuel Consumption</option>
+                                                </select>
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="validationCustom02">Measurement </label>
+                                                <select class="form-control" id="exampleFormControlSelect4">
+                                                   <option selected="">Liter/100km</option>
+                                                   <option>Miles per gallon</option>
+                                                   
+                                                </select>
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="fuelcostperliter">Cost per liter</label>
+                                                <input type="text" class="form-control" id="fuelcostperliter" placeholder="Cost per liter">
+                                             </div>
+                                          </div>
+                                             <div class="iq-card-header d-flex justify-content-between">
+                                                <div class="iq-header-title">
+                                                   <h4 class="card-title">Rate</h4>
+                                                </div>
+                                             </div>
+                                             <br>
+                                          <div class="form-row">
+                                             <div class="col-md-6 mb-3">
+                                                <label for="fuelsummerrate">Summer rate (ltrs)</label>
+                                                <input type="number" class="form-control" id="fuelsummerrater" value="">
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="fuelwinterrate">Winter rate (ltrs)</label>
+                                                <input type="number" class="form-control" id="fuelwinterrater" value="">
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="winterduration">Winters Duration</label>
+                                                <input type="date" class="form-control" id="winterduration" value="">
+                                             </div>
+                                          </div>  
+                                          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                          <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                                       </form>
+                                    </div>
+                                 
+                              </div>
+                           </div>
+
+
+<!-- 
+                           <div class="tab-pane fade" id="manage-contact" role="tabpanel">
+                              <div class="iq-card">
+                                 <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                       <h4 class="card-title">Manage Contact</h4>
                                     </div>
                                  </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationTooltipUsername">Username</label>
-                                    <div class="input-group">
-                                       <div class="input-group-prepend">
-                                          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                 <div class="iq-card-body">
+                                    <form>
+                                       <div class="form-group">
+                                          <label for="cno">Contact Number:</label>
+                                          <input type="text" class="form-control" id="cno" value="001 2536 123 458">
                                        </div>
-                                       <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                                       <div class="invalid-tooltip">
-                                          Please choose a unique and valid username.
+                                       <div class="form-group">
+                                          <label for="email">Email:</label>
+                                          <input type="text" class="form-control" id="email" value="Barryjone@demo.com">
                                        </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationTooltip03">City</label>
-                                    <input type="text" class="form-control" id="validationTooltip03" required>
-                                    <div class="invalid-tooltip">
-                                       Please provide a valid city.
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationTooltip04">State</label>
-                                    <select class="form-control" id="validationTooltip04" required>
-                                       <option selected disabled value="">Choose...</option>
-                                       <option>...</option>
-                                    </select>
-                                    <div class="invalid-tooltip">
-                                       Please select a valid state.
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 mb-3">
-                                    <label for="validationTooltip05">Zip</label>
-                                    <input type="text" class="form-control" id="validationTooltip05" required>
-                                    <div class="invalid-tooltip">
-                                       Please provide a valid zip.
-                                    </div>
+                                       <div class="form-group">
+                                          <label for="url">Url:</label>
+                                          <input type="text" class="form-control" id="url" value="https://getbootstrap.com">
+                                       </div>
+                                       <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                       <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                                    </form>
                                  </div>
                               </div>
-                              <button class="btn btn-primary" type="submit">Submit form</button>
-                           </form>
+                           </div> -->
                         </div>
                      </div>
-                  </div>
+                  </div> 
                </div>
             </div>
          </div>
-      </div>
-      <!-- Wrapper END -->
+      </div> 
+            Wrapper END
        <!-- Footer -->
       <footer class="iq-footer">
          <div class="container-fluid">
