@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-
 
 <head>
    <!-- Required meta tags -->
@@ -18,19 +16,9 @@
    <link rel="stylesheet" href="css/style.css">
    <!-- Responsive CSS -->
    <link rel="stylesheet" href="css/responsive.css">
-   <!-- Full calendar -->
-   <link href='fullcalendar/core/main.css' rel='stylesheet' />
-   <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-   <link href='fullcalendar/timegrid/main.css' rel='stylesheet' />
-   <link href='fullcalendar/list/main.css' rel='stylesheet' />
-   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/flatpickr.min.css">
-   
-
 </head>
 
-<body>
+<body class="sidebar-main-active right-column-fixed">
    <!-- loader Start -->
    <div id="loading">
       <div id="loading-center">
@@ -44,7 +32,7 @@
          <div class="iq-navbar-logo d-flex justify-content-between">
             <a href="index.html" class="header-logo">
                <img src="images/logo.png" class="img-fluid rounded" alt="">
-
+               <span>FinDash</span>
             </a>
             <div class="iq-menu-bt align-self-center">
                <div class="wrapper-menu">
@@ -56,30 +44,28 @@
          <div id="sidebar-scrollbar">
             <nav class="iq-sidebar-menu">
                <ul id="iq-sidebar-toggle" class="iq-menu">
-                  <li class="active">
-                     <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span
+                  <li>
+                     <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                            class="ripple rippleEffect"></span><i
                            class="las la-home iq-arrow-left"></i><span>Dashboard</span><i
                            class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                     <ul id="dashboard" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-                        <li class="active"><a href="index.html"><i class="las la-laptop-code"></i>Account Dashboard</a>
-                        </li>
+                     <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        <li><a href="index.html"><i class="las la-laptop-code"></i>Account Dashboard</a></li>
 
                      </ul>
                   </li>
 
 
-                  <li>
-                     <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                  <li class="active">
+                     <a href="#userinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span
                            class="ripple rippleEffect"></span><i
                            class="las la-user-tie iq-arrow-left"></i><span>User</span><i
                            class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                     <ul id="userinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                     <ul id="userinfo" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle" style="">
                         <li><a href="profile.html"><i class="las la-id-card-alt"></i>User Profile</a></li>
-                        <li><a href="profile-edit.html"><i class="las la-edit"></i>User Edit</a></li>
+                        <li class="active"><a href="profile-edit.html"><i class="las la-edit"></i>User Edit</a></li>
                         <li><a href="add-user.html"><i class="las la-plus-circle"></i>User Add</a></li>
                         <li><a href="user-list.html"><i class="las la-th-list"></i>User List</a></li>
-                        <li><a href="report.html"><i class="las la-th-list"></i>Report</a></li>
                      </ul>
                   </li>
 
@@ -225,7 +211,7 @@
                   <div class="iq-navbar-logo d-flex justify-content-between ml-3">
                      <a href="index.html" class="header-logo">
                         <img src="images/logo.png" class="img-fluid rounded" alt="">
-
+                        <span>FinDash</span>
                      </a>
                   </div>
                </div>
@@ -479,456 +465,265 @@
       <div id="content-page" class="content-page">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-sm-6 col-md-4 col-lg-2 clickable-div" onclick="playsound()">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height"
-                     style="background: rgb(200, 107, 123); color: white;">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
-                           <i class="ri-focus-2-line"></i>
-                        </div>
-                        <p><b>Over<br>Speed</b></p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <p class="coll"><b>378</b></p>
-                           <h7>Alerts</h7>
+               <div class="col-lg-12">
+                  <div class="iq-card">
+                     <div class="iq-card-body p-0">
+                        <div class="iq-edit-list">
+                           <ul class="iq-edit-profile d-flex nav nav-pills">
+                              <li class="col-md-6 p-0">
+                                 <a class="nav-link active" data-toggle="pill" href="#report-parameters">
+                                    Report Parameters
+                                 </a>
+                              </li>
+                              <li class="col-md-6 p-0">
+                                 <a class="nav-link" data-toggle="pill" href="#schedule-report">
+                                    Scheduled Reports
+                                 </a>
+                              </li>
 
-                           <p class="coll"><b> +14% </b></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <audio id="click-sound" src="./Audio/click.wav"></audio>
-               <script>
-                  function playsound() {
-                     var audio = document.getElementById('click-sound');
-                     audio.play();
-                  }
-               </script>
-               <div class="col-sm-6 col-md-4 col-lg-2 clickable-div" onclick="playsound()">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height"
-                     style="background: rgb(70, 116, 215); color: white;">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-danger">
-                           <i class="ri-pantone-line"></i>
-                        </div>
-                        <p><b>AC <br>Misuse</b></p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <p class="coll"><b>190</b></p>
-                           <h7>Alerts</h7>
-
-                           <p class="coll"><b> -6% </b></p>
+                           </ul>
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-2 clickable-div" onclick="playsound()">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height"
-                     style="background: rgb(28, 60, 130); color: white;">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-success">
-                           <i class="ri-database-2-line"></i>
-                        </div>
-                        <p><b>Stay in<br>Zone</b></p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <p class="coll"><b>45</b></p>
-                           <h7>Alerts</h7>
+               <div class="col-lg-12">
+                  <div class="iq-edit-list-data">
+                     <div class="tab-content">
+                        <div class="tab-pane fade active show" id="report-parameters" role="tabpanel">
+                           <div class="iq-card">
+                              <div class="iq-card-body">
+                                 <form>
+                                    <div class=" row align-items-center">
+                                       <div class="form-group col-sm-6">
+                                          <label for="fname">Report Name</Label>
+                                          <input type="text" class="form-control" id="fname" placeholder="Report Name">
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label>Report Type</label>
+                                          <select class="form-control" id="exampleFormControlSelect1">
+                                             <option selected="">Choose one of the following...</option>
+                                             <option></option>
+                                             <option></option>
+                                             <option></option>
+                                             <option></option>
+                                          </select>
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label>Client Account</label>
+                                          <select class="form-control" id="exampleFormControlSelect1">
+                                             <option selected="">Choose Client</option>
+                                             <option></option>
+                                             <option></option>
+                                             <option></option>
+                                             <option></option>
+                                          </select>
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label>Vehicles</label>
+                                          <select class="form-control" id="exampleFormControlSelect1">
+                                             <option selected="">Choose Vehicles</option>
+                                             <option></option>
+                                             <option></option>
+                                             <option></option>
+                                             <option></option>
+                                          </select>
+                                       </div>
 
-                           <p class="coll"><b> +0.36% </b></p>
+                                       <div class="form-group col-sm-6">
+                                          <label class="d-block">Report Period</label>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio6" name="customRadio1"
+                                                class="custom-control-input" checked="">
+                                             <label class="custom-control-label" for="customRadio6"> Today </label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio7" name="customRadio1"
+                                                class="custom-control-input">
+                                             <label class="custom-control-label" for="customRadio7"> Yesterday </label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio8" name="customRadio1"
+                                                class="custom-control-input">
+                                             <label class="custom-control-label" for="customRadio8"> Custom </label>
+                                          </div>
+                                       </div>
+                                       <br>
+
+                                       <div class="iq-header-title col-lg-12">
+                                          <h4 class="card-title">Schedule</h4>
+                                       </div>
+
+
+
+                                       <div class="form-group col-sm-6">
+                                          <label>Frequency</label>
+                                          <div class="col-md-4">
+                                             <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="email01">
+                                                <label class="custom-control-label" for="email01"> Daily </label>
+                                             </div>
+                                             <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="email02">
+                                                <label class="custom-control-label" for="email02"> Weekly </label>
+                                             </div>
+                                             <br>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label for="fname">Email</label>
+                                             <input type="email" class="form-control" id="fname"
+                                                placeholder="for multiple email use">
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Email Language</label>
+                                             <select class="form-control" id="exampleFormControlSelect1">
+                                                <option selected="">Select Option</option>
+                                                <option>English</option>
+                                                <option>Urdu</option>
+                                                <option>Arabic</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                 </form>
+                              </div>
+                           </div>
                         </div>
                      </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-2 clickable-div" onclick="playsound()">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height"
-                     style="background: rgb(63, 127, 28); color: white;">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-warning">
-                           <i class="ri-pie-chart-2-line"></i>
-                        </div>
-                        <p><b>Temprature<br>°C</b></p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <p class="coll"><b>60</b></p>
-                           <h7>Alerts</h7>
-
-                           <p class="coll"><b> +0.45% </b></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-2 clickable-div" onclick="playsound()">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height"
-                     style="background: rgb(3, 124, 118); color: white;">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-primary">
-                           <i class="ri-focus-2-line"></i>
-                        </div>
-                        <p><b>Free<br>Overstay</b></p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <p class="coll"><b>378</b></p>
-                           <h7>Alerts</h7>
-
-                           <p class="coll"><b> +14% </b></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-2 clickable-div" onclick="playsound()">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height"
-                     style="background: rgb(211, 116, 7); color: white;">
-                     <div class="iq-card-body iq-box-relative">
-                        <div class="iq-box-absolute icon iq-icon-box rounded-circle iq-bg-danger">
-                           <i class="ri-pantone-line"></i>
-                        </div>
-                        <p><b>Stay Away<br> From Zone</b></p>
-                        <div class="d-flex align-items-center justify-content-between">
-                           <p class="coll"><b>190</b></p>
-                           <h7>Alerts</h7>
-
-                           <p class="coll"><b> -6% </b></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
 
 
-               <div class="col-lg-4">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Fleet Usage </h4>
-                        </div>
-
-                     </div>
-                     <div class="iq-card-body row m-0 align-items-center pb-0">
-                        <div class="col-md-12">
-
-                           <div id="home-loss-chart"></div>
-                        </div>
-
-                        <div class=" gap col-md-12">
-
-                           <div class="mt-12 pr-12">
-                              <div class="d-flex align-items-center justify-content-between">
-                                 <div class="d-flex align-items-center">
-                                    <span class="bg-primary p-1 rounded mr-2"></span>
-
-
-                                    <p class="mb-0">Total Fleet Usage</p>
-
+                     <div class="tab-pane fade" id="schedule-report" role="tabpanel">
+                        <div class="iq-card">
+                           <div class="iq-card-body">
+                              <div class="table-responsive">
+                                 <div class="row justify-content-between">
+                                    <div class="col-sm-12 col-md-6">
+                                       <div id="user_list_datatable_info" class="dataTables_filter">
+                                          <form class="mr-3 position-relative">
+                                             <div class="form-group mb-0">
+                                                <input type="search" class="form-control" id="exampleInputSearch"
+                                                   placeholder="Search" aria-controls="user-list-table">
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                       <div class="user-list-files d-flex float-right">
+                                          <a class="iq-bg-primary" href="javascript:void();">
+                                             Print
+                                          </a>
+                                          <a class="iq-bg-primary" href="javascript:void();">
+                                             Excel
+                                          </a>
+                                          <a class="iq-bg-primary" href="javascript:void();">
+                                             Pdf
+                                          </a>
+                                       </div>
+                                    </div>
                                  </div>
-                                 <h6><b>258000 km</b></h6>
+                                 <table id="user-list-table" class="table table-striped table-bordered mt-4" role="grid"
+                                    aria-describedby="user-list-page-info">
+                                    <thead>
+                                       <tr>
+                                          <th>Name</th>
+                                          <th>Type</th>
+                                          <th>Vehicle Number</th>
 
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr style="text-align: left;">
+                                          <td>Vehicles Report- Test </td>
+                                          <td>Trip</td>
+                                          <td>765323545122</td>
+
+                                       </tr>
+                                       <tr style="text-align: left;">
+                                          <td>Riyadh Car 623916 Weekly Report </td>
+                                          <td>Trip</td>
+                                          <td>623916 Riyadh Hasan</td>
+
+                                       </tr>
+                                       <tr style="text-align: left;">
+                                          <td>Overspeed </td>
+                                          <td>OverSpeed</td>
+                                          <td>45151 Nissan Urvan H R,45313 Nissa</td>
+                                       </tr>
+                                       <tr style="text-align: left;">
+                                          <td>Office car report </td>
+                                          <td>mileageReport</td>
+                                          <td>333202 Sonata gray</td>
+                                       </tr>
+                                       <tr style="text-align: left;">
+                                          <td>Vehicles Report- Test </td>
+                                          <td>Trip</td>
+                                          <td>765323545122</td>
+                                       </tr>
+                                       <tr style="text-align: left;">
+                                          <td>Vehicles Report- Test </td>
+                                          <td>Trip</td>
+                                          <td>765323545122</td>
+                                       </tr>
+
+                                       <tr style="text-align: left;">
+                                          <td>Vehicles Report- Test </td>
+                                          <td>Trip</td>
+                                          <td>765323545122</td>
+                                       </tr>
+
+                                       <tr style="text-align: left;">
+                                          <td>Vehicles Report- Test </td>
+                                          <td>Trip</td>
+                                          <td>765323545122</td>
+                                       </tr>
+
+                                       <tr style="text-align: left;">
+                                          <td>Vehicles Report- Test </td>
+                                          <td>Trip</td>
+                                          <td>765323545122</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
                               </div>
-                              <div class="d-flex align-items-center justify-content-between">
-                                 <div class="d-flex align-items-center">
-                                    <span class="bg-danger p-1 rounded mr-2"></span>
-                                    <p class="mb-0">Avg. Distance / Vehicle</p>
+                              <div class="row justify-content-between mt-3">
+                                 <div id="user-list-page-info" class="col-md-6">
+                                    <span>Showing 1 to 5 of 5 entries</span>
                                  </div>
-                                 <h6><b>29 km</b></h6>
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-4">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Fleet Status</h4>
-                        </div>
-                     </div>
-                     <div class="iq-card-body">
-                        <div class="ver">
-                           <div class="col-lg-2">
-                              <div class="icon adcolor1 adcolor  rounded mr-3">
-                                 <h7 class="txtsize">51 Running</h7>
-                              </div>
-                              <div class="icon adcolor2 adcolor  rounded mr-3">
-                                 <h7 class="txtsize">49 Idle</h7>
-                              </div>
-                              <div class="icon adcolor3 adcolor  rounded mr-3">
-                                 <h7 class="txtsize">44 Stopped</h7>
-                              </div>
-                              <div class="icon adcolor4 adcolor  rounded mr-3">
-                                 <h7 class="txtsize">24 InActive</h7>
-                              </div>
-                              <div class="icon adcolor5 adcolor  rounded mr-3">
-                                 <h7 class="txtsize">15 No Data</h7>
-                              </div>
-
-
-                           </div>
-
-                           <div class="col-sm-10 col-lg-10">
-                              <canvas id="myChart" style="margin-top:30px;width:100%;max-width:900px; max-height: 500px;"></canvas>
-
-                              <script>
-
-                                 const yValues = [55, 49, 44, 24, 15];
-                                 const barColors = [
-                                    "#1e7145",
-                                    "#FFA500",
-                                    "#ff0000",
-                                    "#808080",
-                                    "#0000FF"
-                                 ];
-
-                                 new Chart("myChart", {
-                                    type: "doughnut",
-                                    data: {
-
-                                       datasets: [{
-                                          backgroundColor: barColors,
-                                          data: yValues
-                                       }]
-                                    },
-
-                                 });
-                              </script>
-                           </div>
-                           
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-
-
-               <div class="col-lg-4">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Technician</h4>
-                        </div>
-                     </div>
-                     <div class="iq-card-body">
-                        <div class="ver">
-
-
-                           <div class="col-sm-12">
-                              <div class="chart-container">
-                                 <canvas id="pieChart"></canvas>
-                              </div>
-
-
-                              <script>
-                                 document.addEventListener('DOMContentLoaded', function () {
-                                    const ctx = document.getElementById('pieChart').getContext('2d');
-
-                                    const data = {
-                                       labels: ['Fahad', 'Ali', 'Hassan'],
-                                       datasets: [{
-                                          data: [30, 40, 30],
-                                          backgroundColor: ['red', 'blue', 'green'],
-                                       }]
-                                    };
-
-                                    const chart = new Chart(ctx, {
-                                       type: 'pie',
-                                       data: data,
-                                    });
-
-                                    const filterSelect = document.getElementById('filterSelect');
-                                    filterSelect.addEventListener('change', function () {
-                                       const selectedCategory = filterSelect.value;
-                                       const selectedIndex = data.labels.indexOf(selectedCategory);
-                                       if (selectedIndex >= 0) {
-                                          chart.data.datasets[0].data = data.labels.map((label, index) => {
-                                             if (index === selectedIndex) {
-                                                return data.datasets[0].data[index];
-                                             } else {
-                                                return 0;
-                                             }
-                                          });
-                                          chart.update();
-                                       }
-                                    });
-                                 });
-                              </script>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-
-               <div class="col-lg-4">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Total Installations</h4>
-                        </div>
-
-                     </div>
-                     <div class="iq-card-body">
-                        <canvas id="myChart2" style="width:100%;max-width:600px;height: 300px;"></canvas>
-
-                        <script>
-                        const xValues = ["22/02/23", "22/02/23", "22/02/23", "22/02/23", "22/02/23"];
-                        const zValues = [55, 49, 44, 24, 20];
-                        const barColors1 = ["red", "green","blue","orange","brown"];
-                        
-                        new Chart("myChart2", {
-                          type: "bar",
-                          data: {
-                            labels: xValues,
-                            datasets: [{
-                              backgroundColor: barColors1,
-                              data: zValues
-                            }]
-                          },
-                          options: {
-                            legend: {display: false},
-                            title: {
-                              display: true,
-                             
-                            }
-                          }
-                        });
-                        </script>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-4">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Mileage</h4>
-                        </div>
-                     </div>
-                     <div class="iq-card-body">
-
-
-
-
-                        <div class="d-flex align-items-center">
-                           <div class="icon iq-icon-box rounded iq-bg-success mr-3">
-                              <i class="fa fa-car fa-lg"></i>
-                           </div>
-                           <div class="iq-details col-sm-9 p-0">
-                              <div class="d-flex align-items-center justify-content-between">
-                                 <span class="title text-dark">BMW</span>
-
-                              </div>
-                              <div class="iq-progress-bar-linear d-inline-block w-100">
-                                 <div class="iq-progress-bar">
-                                    <span class="bg-success" data-percent="20"></span>
+                                 <div class="col-md-6">
+                                    <nav aria-label="Page navigation example">
+                                       <ul class="pagination justify-content-end mb-0">
+                                          <li class="page-item disabled">
+                                             <a class="page-link" href="#" tabindex="-1"
+                                                aria-disabled="true">Previous</a>
+                                          </li>
+                                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item">
+                                             <a class="page-link" href="#">Next</a>
+                                          </li>
+                                       </ul>
+                                    </nav>
                                  </div>
                               </div>
-                              <div class="d-flex align-items-center justify-content-between">
-
-                                 <div class="percentage float-right">4029<span>mi</span></div>
-                              </div>
-                           </div>
-                        </div>
-                        <hr class="mt-4 mb-4">
-                        <div class="d-flex align-items-center">
-                           <div class="icon iq-icon-box rounded iq-bg-primary mr-3">
-                              <i class="fa fa-car fa-lg"></i>
-                           </div>
-                           <div class="iq-details col-sm-9 p-0">
-                              <div class="d-flex align-items-center justify-content-between">
-                                 <span class="title text-dark">Audi</span>
-
-                              </div>
-                              <div class="iq-progress-bar-linear d-inline-block w-100">
-                                 <div class="iq-progress-bar">
-                                    <span class="bg-primary" data-percent="30"></span>
-                                 </div>
-                              </div>
-                              <div class="d-flex align-items-center justify-content-between">
-
-                                 <div class="percentage">2631<span>mi</span></div>
-                              </div>
-                           </div>
-                        </div>
-                        <hr class="mt-4 mb-4">
-                        <div class="d-flex align-items-center">
-                           <div class="icon iq-icon-box rounded iq-bg-info mr-3">
-                              <i class="fa fa-car fa-lg"></i>
-                           </div>
-                           <div class="iq-details col-sm-9 p-0">
-                              <div class="d-flex align-items-center justify-content-between">
-                                 <span class="title text-dark">Truck</span>
-
-                              </div>
-                              <div class="iq-progress-bar-linear d-inline-block w-100">
-                                 <div class="iq-progress-bar">
-                                    <span class="bg-info" data-percent="60"></span>
-                                 </div>
-                              </div>
-                              <div class="d-flex align-items-center justify-content-between">
-
-                                 <div class="percentage">647<span>mi</span></div>
-                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-
-               <div class="col-lg-4">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Speeding</h4>
-                        </div>
-                     </div>
-                     <div class="iq-card-body">
-                        <h5>Excavator</h5>
-                        <br>
-                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-warning" style="width: 75%"></div>
-                        </div>
-                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-info" style="width: 50%"></div>
-                        </div>
-                        <br>
-                        <h5>Van</h5>
-                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-warning" style="width: 75%"></div>
-                        </div>
-                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-info" style="width: 50%"></div>
-                        </div>
-                        <br>
-                        <h5>Truck</h5>
-                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-warning" style="width: 75%"></div>
-                        </div>
-                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-info" style="width: 50%"></div>
-                        </div>
-                        <br>
-                        <h5>Car</h5>
-                        <div class="gapp progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-warning" style="width: 75%"></div>
-                        </div>
-                        <div class="gapp progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
-                           aria-valuemin="0" aria-valuemax="100">
-                           <div class="progress-bar bg-info" style="width: 50%"></div>
-                        </div>
-                        <br>
-                     </div>
-
-                  </div>
-               </div>
-
             </div>
+
+
+
+
+
+
+
+            
+                       
          </div>
       </div>
    </div>
-   <!-- Wrapper END -->
+   
+   Wrapper END
    <!-- Footer -->
    <footer class="iq-footer">
       <div class="container-fluid">
@@ -987,24 +782,12 @@
    <script src="js/maps.js"></script>
    <!-- am worldLow JavaScript -->
    <script src="js/worldLow.js"></script>
-   <!-- Raphael-min JavaScript -->
-   <script src="js/raphael-min.js"></script>
-   <!-- Morris JavaScript -->
-   <script src="js/morris.js"></script>
-   <!-- Morris min JavaScript -->
-   <script src="js/morris.min.js"></script>
-   <!-- Flatpicker Js -->
-   <script src="js/flatpickr.js"></script>
    <!-- Style Customizer -->
    <script src="js/style-customizer.js"></script>
    <!-- Chart Custom JavaScript -->
    <script src="js/chart-custom.js"></script>
    <!-- Custom JavaScript -->
    <script src="js/custom.js"></script>
-   <script src="assets/vendor/libs/chartjs/chartjs.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-   <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-   
 </body>
 
 </html>
