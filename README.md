@@ -1,2 +1,2 @@
 # ClickLife-Dashboard
-Click to website https://ClickLife-Dashboard.github.io/tree/
+Click to website https://mtaqi22.github.io/ClickLife-Dashboard/
