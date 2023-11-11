@@ -470,16 +470,22 @@
                      <div class="iq-card-body p-0">
                         <div class="iq-edit-list">
                            <ul class="iq-edit-profile d-flex nav nav-pills">
-                              <li class="col-md-6 p-0">
-                                 <a class="nav-link active" data-toggle="pill" href="#report-parameters">
-                                    Report Parameters
+                              <li class="col-md-4 p-0">
+                                 <a class="nav-link active" data-toggle="pill" href="#main">
+                                    Main
                                  </a>
                               </li>
-                              <li class="col-md-6 p-0">
-                                 <a class="nav-link" data-toggle="pill" href="#schedule-report">
-                                    Scheduled Reports
+                              <li class="col-md-4 p-0">
+                                 <a class="nav-link" data-toggle="pill" href="#generated-report">
+                                    Generated Reports
                                  </a>
                               </li>
+                              <li class="col-md-4 p-0">
+                                 <a class="nav-link" data-toggle="pill" href="#schedule-reports-logs">
+                                    Scheduled Reports logs
+                                 </a>
+                              </li>
+
 
                            </ul>
                         </div>
@@ -489,23 +495,69 @@
                <div class="col-lg-12">
                   <div class="iq-edit-list-data">
                      <div class="tab-content">
-                        <div class="tab-pane fade active show" id="report-parameters" role="tabpanel">
+                        <div class="tab-pane fade active show" id="main" role="tabpanel">
                            <div class="iq-card">
                               <div class="iq-card-body">
                                  <form>
                                     <div class=" row align-items-center">
-                                       <div class="form-group col-sm-6">
-                                          <label for="fname">Report Name</Label>
+                                       <div class="form-group col-sm-12">
+                                          <label for="fname">Title</Label>
                                           <input type="text" class="form-control" id="fname" placeholder="Report Name">
                                        </div>
+                                    </div>
+                                    <div class=" row align-items-center">
                                        <div class="form-group col-sm-6">
-                                          <label>Report Type</label>
-                                          <select class="form-control" id="exampleFormControlSelect1">
-                                             <option selected="">Choose one of the following...</option>
-                                             <option></option>
-                                             <option></option>
-                                             <option></option>
-                                             <option></option>
+                                          <label for="fname">Type</Label>
+                                          <select class="form-control" id="main">
+                                             <option selected="">General information</option>
+                                             <option>Drives and stops</option>
+                                             <option>Drives and stops simplified report</option>
+                                             <option>Drive time</option>
+                                             <option>Stops</option>
+                                             <option>Travel sheet</option>
+                                             <option>Overspeed</option>
+                                             <option>Speed compare GPS/ECM report</option>
+                                             <option>Speed Report</option>
+                                             <option>Geofence Report</option>
+                                             <option>Events Report</option>
+                                             <option>Fuel Level</option>
+                                             <option>Fuel Fillings</option>
+                                             <option>Fuel Thefts</option>
+                                             <option>Temprature</option>
+                                             <option>RAG</option>
+                                             <option>Object history</option>
+                                             <option>Odometer Report</option>
+                                             <option>Engine hours Daily</option>
+                                             <option>Engine hours Daily Graph</option>
+                                             <option>Work hours Daily</option>
+                                             <option>ignition ON/OFF</option>
+                                             <option>Sent commands</option>
+                                             <option>Object Installation</option>
+                                             <option>Offline Object Installation</option>
+                                             <option>Loading/ Unloading</option>
+                                             <option>Geofence stop count</option>
+                                             <option>Routes</option>
+                                             <option>Routes with summary</option>
+                                             <option>Birla custom</option>
+                                             <option>Automon custom</option>
+                                             <option>POI- Stop duration</option>
+                                             <option>POI- Idle duration</option>
+                                             <option>Cart cleaning daily</option>
+                                             <option>Trip Report</option>
+                                             <option>Event Count Report</option>
+                                             <option>Geofence Shift Change</option>
+                                             <option>Temprature New</option>
+                                             <option>Speed Report M</option>
+                                          </select>
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label>Format</label>
+                                          <select class="form-control" id="main">
+                                             <option selected="">HTML</option>
+                                             <option>JSON</option>
+                                             <option>XLS</option>
+                                             <option>PDF</option>
+                                             <option>PDF(Landscape)</option>
                                           </select>
                                        </div>
                                        <div class="form-group col-sm-6">
@@ -549,6 +601,9 @@
 
                                        </div>
                                        <br>
+                                    
+                                    <div class="row align-items-center">
+
 
                                        <div class="iq-header-title col-lg-12">
                                           <h4 class="card-title">Schedule</h4>
@@ -562,174 +617,134 @@
                                           <div class="form-check form-check-inline">
                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="">
                                              <label class="form-check-label" for="inlineCheckbox1"> Daily</label>
-                                           </div>
-                                           <div class="form-check form-check-inline">
+                                          </div>
+                                          <div class="form-check form-check-inline">
                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="">
                                              <label class="form-check-label" for="inlineCheckbox2"> Weekly</label>
-                                           </div>
-                                           <div class="form-check form-check-inline">
+                                          </div>
+                                          <div class="form-check form-check-inline">
                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="">
                                              <label class="form-check-label" for="inlineCheckbox3"> This Month</label>
-                                           </div>
-                                           <div class="form-check form-check-inline">
+                                          </div>
+                                          <div class="form-check form-check-inline">
                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="">
                                              <label class="form-check-label" for="inlineCheckbox3"> Last Month</label>
-                                           </div>
-
-                                          <div class="form-group col-sm-6">
-                                             <label for="fname">Email</label>
-                                             <input type="email" class="form-control" id="fname"
-                                                placeholder="for multiple email use">
                                           </div>
+                                       </div> 
+                                    </div>
+
+
+                                       <div class="row align-items-center">
                                           <div class="form-group col-sm-6">
-                                             <label>Email Language</label>
-                                             <select class="form-control" id="exampleFormControlSelect1">
-                                                <option selected="">Select Option</option>
-                                                <option>English</option>
-                                                <option>Urdu</option>
-                                                <option>Arabic</option>
+                                             <label>Geofences</label>
+                                             <select class="form-control" id="main">
+                                                <option selected="">Nothing Selected</option>
+                                                <option></option>
+                                                <option></option>
                                              </select>
                                           </div>
+
+                                             <div class="form-group col-sm-6">
+                                                <label for="fname">Speed limit</label>
+                                                <input type="email" class="form-control" id="fname" placeholder="60">
+                                             </div>
+                                             <div class="form-group col-sm-6">
+                                                <label for="fname">Email</label>
+                                                <input type="email" class="form-control" id="fname"
+                                                   placeholder="for multiple email use">
+                                             </div>
+                                             <div class="form-group col-sm-6">
+                                                <label>Email Language</label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                   <option selected="">Select Option</option>
+                                                   <option>English</option>
+                                                   <option>Urdu</option>
+                                                   <option>Arabic</option>
+                                                </select>
+                                             </div>
                                        </div>
+                                    <button type="submit" class="btn btn-primary mr-2">Schedule</button>
+                                    <button type="reset" class="btn btn-secondary mr-2 ">Generate</button>
+                                    <button type="reset" class="btn iq-bg-danger mr-2">Cancle</button>
+                                    
                                  </form>
                               </div>
                            </div>
                         </div>
-                     </div>
 
 
-                     <div class="tab-pane fade" id="schedule-report" role="tabpanel">
+                        <div class="tab-pane fade" id="generated-report" role="tabpanel">
+                           <div class="iq-card">
+                              <div class="iq-card-body">
+                                 <div class="table-responsive">
+                                    
+                                    <table id="user-list-table" class="table table-striped table-bordered mt-4" role="grid"
+                                       aria-describedby="user-list-page-info">
+                                       <thead>
+                                          <tr>
+                                             <th>Title</th>
+                                             <th>Type</th>
+                                             <th>format</th>
+                                             <th>Devices</th>
+                                             <th>Geofences</th>
+                                             <th>Schedule</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <button type="reset" class="btn btn-secondary mr-2 ">Generate</button>
+                                 <button type="submit" class="btn btn-primary mr-2">Save</button>
+                                 <button type="submit" class="btn btn-info mr-2">New</button>
+                                 <button type="reset" class="btn iq-bg-danger mr-2">Cancle</button>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                     
+
+    
+                     <div class="tab-pane fade" id="schedule-reports-logs" role="tabpanel">
                         <div class="iq-card">
                            <div class="iq-card-body">
                               <div class="table-responsive">
-                                 <div class="row justify-content-between">
-                                    <div class="col-sm-12 col-md-6">
-                                       <div id="user_list_datatable_info" class="dataTables_filter">
-                                          <form class="mr-3 position-relative">
-                                             <div class="form-group mb-0">
-                                                <input type="search" class="form-control" id="exampleInputSearch"
-                                                   placeholder="Search" aria-controls="user-list-table">
-                                             </div>
-                                          </form>
-                                       </div>
-                                    </div>
-                                    <div class="col-sm-12 col-md-6">
-                                       <div class="user-list-files d-flex float-right">
-                                          <a class="iq-bg-primary" href="javascript:void();">
-                                             Print
-                                          </a>
-                                          <a class="iq-bg-primary" href="javascript:void();">
-                                             Excel
-                                          </a>
-                                          <a class="iq-bg-primary" href="javascript:void();">
-                                             Pdf
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
+                                 
                                  <table id="user-list-table" class="table table-striped table-bordered mt-4" role="grid"
                                     aria-describedby="user-list-page-info">
                                     <thead>
                                        <tr>
-                                          <th>Name</th>
+                                          <th>Title</th>
                                           <th>Type</th>
-                                          <th>Vehicle Number</th>
-
+                                          <th>format</th>
+                                          <th>Size</th>
+                                          <th>Send to email</th>
+                                          <th>Is send</th>
                                        </tr>
                                     </thead>
                                     <tbody>
-                                       <tr style="text-align: left;">
-                                          <td>Vehicles Report- Test </td>
-                                          <td>Trip</td>
-                                          <td>765323545122</td>
-
-                                       </tr>
-                                       <tr style="text-align: left;">
-                                          <td>Riyadh Car 623916 Weekly Report </td>
-                                          <td>Trip</td>
-                                          <td>623916 Riyadh Hasan</td>
-
-                                       </tr>
-                                       <tr style="text-align: left;">
-                                          <td>Overspeed </td>
-                                          <td>OverSpeed</td>
-                                          <td>45151 Nissan Urvan H R,45313 Nissa</td>
-                                       </tr>
-                                       <tr style="text-align: left;">
-                                          <td>Office car report </td>
-                                          <td>mileageReport</td>
-                                          <td>333202 Sonata gray</td>
-                                       </tr>
-                                       <tr style="text-align: left;">
-                                          <td>Vehicles Report- Test </td>
-                                          <td>Trip</td>
-                                          <td>765323545122</td>
-                                       </tr>
-                                       <tr style="text-align: left;">
-                                          <td>Vehicles Report- Test </td>
-                                          <td>Trip</td>
-                                          <td>765323545122</td>
-                                       </tr>
-
-                                       <tr style="text-align: left;">
-                                          <td>Vehicles Report- Test </td>
-                                          <td>Trip</td>
-                                          <td>765323545122</td>
-                                       </tr>
-
-                                       <tr style="text-align: left;">
-                                          <td>Vehicles Report- Test </td>
-                                          <td>Trip</td>
-                                          <td>765323545122</td>
-                                       </tr>
-
-                                       <tr style="text-align: left;">
-                                          <td>Vehicles Report- Test </td>
-                                          <td>Trip</td>
-                                          <td>765323545122</td>
-                                       </tr>
                                     </tbody>
                                  </table>
                               </div>
-                              <div class="row justify-content-between mt-3">
-                                 <div id="user-list-page-info" class="col-md-6">
-                                    <span>Showing 1 to 5 of 5 entries</span>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <nav aria-label="Page navigation example">
-                                       <ul class="pagination justify-content-end mb-0">
-                                          <li class="page-item disabled">
-                                             <a class="page-link" href="#" tabindex="-1"
-                                                aria-disabled="true">Previous</a>
-                                          </li>
-                                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                          <li class="page-item">
-                                             <a class="page-link" href="#">Next</a>
-                                          </li>
-                                       </ul>
-                                    </nav>
-                                 </div>
-                              </div>
+                              <button type="reset" class="btn btn-secondary mr-2 ">Generate</button>
+                              <button type="submit" class="btn btn-primary mr-2">Save</button>
+                              <button type="submit" class="btn btn-info mr-2">New</button>
+                              <button type="reset" class="btn iq-bg-danger mr-2">Cancle</button>
+                              
                            </div>
                         </div>
                      </div>
+
+
+                     
+
                   </div>
                </div>
-            </div>
-
-
-
-
-
-
-
-            
-                       
+            </div>             
          </div>
       </div>
-   </div>
+   
    
    Wrapper END
    <!-- Footer -->
@@ -796,6 +811,7 @@
    <script src="js/chart-custom.js"></script>
    <!-- Custom JavaScript -->
    <script src="js/custom.js"></script>
+</div>
 </body>
 
 </html>
