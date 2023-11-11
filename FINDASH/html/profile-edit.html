@@ -58,7 +58,9 @@
                            <li class="active"><a href="profile-edit.html"><i class="las la-edit"></i>User Edit</a></li>
                            <li><a href="add-user.html"><i class="las la-plus-circle"></i>User Add</a></li>
                            <li><a href="user-list.html"><i class="las la-th-list"></i>User List</a></li>
-                           
+
+                           <li><a href="report.html"><i class="las la-th-list"></i>Report</a></li>
+
                         </ul>
                      </li>
                     
@@ -352,7 +354,7 @@
                         <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
                            <img src="images/user/1.jpg" class="img-fluid rounded mr-3" alt="user">
                            <div class="caption">
-                              <h6 class="mb-0 line-height">Barry Tech</h6>
+                              <h6 class="mb-0 line-height">Barry Teaqi</h6>
                               <p class="mb-0">Manager</p>
                            </div>
                         </a>
@@ -429,34 +431,19 @@
                         <div class="iq-card-body p-0">
                            <div class="iq-edit-list">
                               <ul class="iq-edit-profile d-flex nav nav-pills">
-                                 <li class="col-md-2 p-0">
+                                 <li class="col-md-4 p-0">
                                     <a class="nav-link active" data-toggle="pill" href="#vehicle-information">
                                     Vehicle Information
                                     </a>
                                  </li>
-                                 <li class="col-md-2 p-0">
-                                    <a class="nav-link" data-toggle="pill" href="#chang-pwd">
+                                 <li class="col-md-4 p-0">
+                                    <a class="nav-link" data-toggle="pill" href="#object">
                                     Object
                                     </a>
                                  </li>
-                                 <li class="col-md-2 p-0">
-                                    <a class="nav-link" data-toggle="pill" href="#emailandsms">
+                                 <li class="col-md-4 p-0">
+                                    <a class="nav-link" data-toggle="pill" href="#fuel-Consumption">
                                     Fuel Consumption
-                                    </a>
-                                 </li>
-                                 <li class="col-md-2 p-0">
-                                    <a class="nav-link" data-toggle="pill" href="#manage-contact">
-                                    Security Briefing
-                                    </a>
-                                 </li>
-                                 <li class="col-md-2 p-0">
-                                    <a class="nav-link" data-toggle="pill" href="#emailandsms">
-                                    Finance
-                                    </a>
-                                 </li>
-                                 <li class="col-md-2 p-0">
-                                    <a class="nav-link" data-toggle="pill" href="#manage-contact">
-                                    Connections
                                     </a>
                                  </li>
                               </ul>
@@ -467,7 +454,7 @@
                   <div class="col-lg-12">
                      <div class="iq-edit-list-data">
                         <div class="tab-content">
-                           <div class="tab-pane fade active show" id="personal-information" role="tabpanel">
+                           <div class="tab-pane fade active show" id="vehicle-information" role="tabpanel">
                               <div class="iq-card">
                                  <div class="iq-card-header d-flex justify-content-between">
                                     <div class="iq-header-title">
@@ -476,17 +463,6 @@
                                  </div>
                                  <div class="iq-card-body">
                                     <form>
-                                       <!-- <div class="form-group row align-items-center">
-                                          <div class="col-md-12">
-                                             <div class="profile-img-edit">
-                                                <img class="profile-pic" src="images/user/11.png" alt="profile-pic">
-                                                <div class="p-image">
-                                                   <i class="ri-pencil-line upload-button"></i>
-                                                   <input class="file-upload" type="file" accept="image/*"/>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div> -->
                                        <div class=" row align-items-center">
                                           <div class="form-group col-sm-6">
                                              <label for="fname">Vehicle Label</Label>
@@ -519,17 +495,17 @@
                                              <label for="dob">Request Form</label><br>
                                              <div class="custom-control custom-radio custom-control-inline">
                                                 <input type="radio" id="customRadio8" name="customRadio2" class="custom-control-input" checked="">
-                                                <label class="custom-control-label" for="customRadio6"> With Request
+                                                <label class="custom-control-label" for="customRadio8"> With Request
                                                 </label>
                                              </div>
                                              <div class="custom-control custom-radio custom-control-inline">
                                                 <input type="radio" id="customRadio9" name="customRadio2" class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadio7"> Without Request</label>
+                                                <label class="custom-control-label" for="customRadio9"> Without Request</label>
                                              </div>
-                                             <!-- <input  class="form-control" id="dob" value=""> -->
+                                            
                                           </div>
                                           <div class="form-group col-sm-6">
-                                             <label>Party</label>
+                                             <label>Client</label>
                                              <select class="form-control" id="exampleFormControlSelect1">
                                                 <option selected="">Select Option</option>
                                                 <option>Add New</option>
@@ -605,8 +581,66 @@
                                              <textarea class="form-control" name="address" rows="5" style="line-height: 22px;">
                                              </textarea>
                                           </div>
+                                          
+                                          
+                                          <br>
+                                          <div class="form-group col-12">
+                                             <label>Vehicle Features</label><p>
+                                                <div class="form-check form-check-inline">
+                                                   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                   <label class="form-check-label" for="inlineCheckbox1">RFID Card</label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                   <label class="form-check-label" for="inlineCheckbox2">Canbus</label>
+                                                 </div>
+                                                 <div class="form-check form-check-inline">
+                                                   <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                                   <label class="form-check-label" for="inlineCheckbox3"> SOS</label>
+                                                 </div>
+                                                 </p>
+                                          </div>
                                           <div class="form-group col-sm-6">
-                                             <label>Sale Person</label>
+                                             <label>Driver</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Select Option</option>
+                                                <option>Auto Matic</option>
+                                                
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Maker Name</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Toyota</option>
+                                                <option>Nissan</option>
+                                                <option>Acura</option>
+                                                <option></option>
+                                                <option></option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Vehicle Color</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Silver</option>
+                                                <option>Red</option>
+                                                <option>Blue</option>
+                                                <option>Black</option>
+                                                <option>white</option>
+                                                <option>Grey</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Technician</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Select Option</option>
+                                                <option>Import Technician</option>
+                                                <option>Fahad Javid</option>
+                                                <option></option>
+                                                <option></option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Brand</label>
                                              <select class="form-control" id="exampleFormControlSelect4">
                                                 <option selected="">Select Option</option>
                                                 <option></option>
@@ -615,30 +649,42 @@
                                                 <option></option>
                                              </select>
                                           </div>
-                                          <br>
                                           <div class="form-group col-sm-6">
-                                             <label class="col-md-3" for="npass">Vehicle Features</label>
-                                             <div class="col-md-9 ver">
-                                                <div class="custom-control custom-checkbox">
-                                                   <input type="checkbox" class="custom-control-input" id="email01">
-                                                   <label class="custom-control-label" for="email01"> RFID Card </label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">
-                                                   <input type="checkbox" class="custom-control-input" id="email02">
-                                                   <label class="custom-control-label" for="email02"> Canbus </label>
-                                                </div>
-                                                <div class="custom-control custom-checkbox">  
-                                                   <input type="checkbox" class="custom-control-input" id="email03" checked="">
-                                                   <label class="custom-control-label" for="email03"> SOS  </label>
-                                                </div>
-                                             </div>
-                                       </div>
+                                             <label for="fname">Operator</label>                                            
+                                             <input type="text" class="form-control" id="fname" placeholder="Operator">
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label for="fname">Expiry Date:</label>                                            
+                                             <input type="date" class="form-control" id="fname">
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Vehicle Type</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Select Option</option>
+                                                <option>Car</option>
+                                                <option>Bike</option>
+                                                <option>Bus</option>
+                                                <option>Truck</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group col-sm-6">
+                                             <label>Preference</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Select Option</option>
+                                                <option>Low</option>
+                                                <option>Medium</option>
+                                                <option>High</option>
+                                             </select> 
+                                          </div>
+
                                           <div class="iq-card-header d-flex justify-content-between">
                                              <div class="iq-header-title">
-                                                <h4 class="card-title">Counters</h6>
+                                                <h4 class="card-title">Counters</h4>
                                              </div>
                                           </div>
                                        </div>
+                                 <div 
+                                    <div class=" row align-items-center">
                                        <div class="form-group col-sm-2">
                                           <label>Odometer</label>
                                           <select class="form-control" id="exampleFormControlSelect4">
@@ -649,106 +695,192 @@
                                           </select>
                                        </div>
                                        <div class="form-group col-sm-6">
+                                       <input type="number" class="form-control" id="fuelsummerrater" value="">
+                                       </div>
+                                       <div class="form-group col-sm-2">
+                                          <label>Engine Hours</label>
                                           <select class="form-control" id="exampleFormControlSelect4">
                                              <option></option>
-                                             <option></option>
-                                             <option></option>
-                                             <option></option>
+                                             <option>Off</option>
+                                             <option>ACC</option>
+                                             <option>Sensor</option>
                                           </select>
                                        </div>
+                                       <div class="form-group col-sm-6">
+                                       <input type="number" class="form-control" id="fuelsummerrater" value="">
+                                       </div>
+                                       <br>
+                                    </div>
                                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                    </form>
-                                 </div>
+                                       <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                                 </form>
                               </div>
                            </div>
+                        </div>
 
-
-                           <div class="tab-pane fade" id="chang-pwd" role="tabpanel">
+                  
+                           <div class="tab-pane fade" id="object" role="tabpanel">
                               <div class="iq-card">
-
                                  <div class="iq-card-header d-flex justify-content-between">
                                     <div class="iq-header-title">
                                        <h4 class="card-title">Object</h6>
                                     </div>
                                  </div>
 
-                                 <div class="iq-card-body">
-                                    <form>
-                                       <div class="form-group">
-                                          <label for="cpass">Icon on map</label>
-                                          <!-- <a href="javascripe:void();" class="float-right">Forgot Password</a> -->
-                                          <input type="Password" class="form-control" id="cpass" value="">
+                                 <div class="iq-card-body"> 
+                                          <div class="form-group col-sm-6 col-lg-6">
+                                             <label>Icon on map</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Default</option>
+                                                <option>Icon</option>
+                                             </select>
+                                          </div>
+                                          <div class="form-group  col-lg-6 col-sm-6">
+                                             <label>Stopped Icon Color</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option selected="">Black</option>
+                                                <option>Yellow</option>
+                                                <option>Red</option>
+                                                <option>Green</option>
+                                                <option>Blue</option>
+                                                <option>Orange</option>
+                                             </select>
                                        </div>
-                                       <div class="form-group">
-                                          <label for="npass">New Password:</label>
-                                          <input type="Password" class="form-control" id="npass" value="">
+                                       <div class="form-group col-sm-6">
+                                             <label>Engine Idle Icon Color</label>
+                                             <select class="form-control" id="exampleFormControlSelect4">
+                                                <option></option>
+                                                <option selected="">Black</option>
+                                                <option>Yellow</option>
+                                                <option>Red</option>
+                                                <option>Green</option>
+                                                <option>Blue</option>
+                                                <option>Orange</option>
+                                             </select>
                                        </div>
-                                       <div class="form-group">
+                                       <div class="form-group col-sm-6">
+                                          <label for="nrtime">NR Time</label>
+                                          <input type="time" class="form-control" id="nrtime" value="22:00" placeholder="NR Time">
+                                       </div>
+
+                                       <!-- <div class="form-group">
                                           <label for="vpass">Verify Password:</label>
                                           <input type="Password" class="form-control" id="vpass" value="">
                                        </div>
                                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                       <button type="reset" class="btn iq-bg-danger">Cancel</button>
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="emailandsms" role="tabpanel">
-                              <div class="iq-card">
-                                 <div class="iq-card-header d-flex justify-content-between">
-                                    <div class="iq-header-title">
-                                       <h4 class="card-title">Email and SMS</h4>
-                                    </div>
-                                 </div>
-                                 <div class="iq-card-body">
-                                    <form>
-                                       <div class="form-group row align-items-center">
-                                          <label class="col-md-3" for="emailnotification">Email Notification:</label>
-                                          <div class="col-md-9 custom-control custom-switch">
-                                             <input type="checkbox" class="custom-control-input" id="emailnotification" checked="">
-                                             <label class="custom-control-label" for="emailnotification"></label>
+                                       <button type="reset" class="btn iq-bg-danger">Cancel</button> -->
+
+                                       <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Tail</h6>
                                           </div>
                                        </div>
-                                       <div class="form-group row align-items-center">
-                                          <label class="col-md-3" for="smsnotification">SMS Notification:</label>
-                                          <div class="col-md-9 custom-control custom-switch">
-                                             <input type="checkbox" class="custom-control-input" id="smsnotification" checked="">
-                                             <label class="custom-control-label" for="smsnotification"></label>
+                                       <br>
+                                       <div class="form-group col-sm-6">
+                                            <label for="tail-color" class="form-label">Tail Color</label>
+                                            <input type="color" id="tailcolor" name="t_color" class="jscolor {valueElement:'tailcolor', styleElement:'tailcolor', hash:true, mode:'HSV'} form-control"  value="" required>
+                                        </div>
+
+                                        <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Customer Communication Gateways</h6>
                                           </div>
+                                       </div> 
+                                       <br>
+                                       <div class="form-group col-sm-6">
+                                          <label class="d-block">Choose Gateway Type</label>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio10" name="customRadio3" class="custom-control-input" checked="">
+                                             <label class="custom-control-label" for="customRadio10"> SMS HTTP Gateway </label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio11" name="customRadio3" class="custom-control-input">
+                                             <label class="custom-control-label" for="customRadio11"> Android SMS Gateway </label>
+                                          </div>
+                                       </div> 
+                                       <div class="form-group col-sm-6">
+                                          <label>SMS HTTP Gateway</label>
+                                          <select class="form-control" id="exampleFormControlSelect4">
+                                             <option selected="">Mshastra</option>
+                                             <option>M shastra Long phone</option>
+                                             <option>SMS country</option>
+                                          </select>
                                        </div>
-                                       <div class="form-group row align-items-center">
-                                          <label class="col-md-3" for="npass">When To Email</label>
-                                          <div class="col-md-9">
-                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="email01">
-                                                <label class="custom-control-label" for="email01">You have new notifications.</label>
-                                             </div>
-                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="email02">
-                                                <label class="custom-control-label" for="email02">You're sent a direct message</label>
-                                             </div>
-                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="email03" checked="">
-                                                <label class="custom-control-label" for="email03">Someone adds you as a connection</label>
-                                             </div>
-                                          </div>
+                                       <div class="form-group col-sm-6">
+                                          <label>Email Server</label>
+                                          <select class="form-control" id="exampleFormControlSelect4">
+                                             <option selected="">Mail Gun</option>
+                                             <option>Mail Gun</option>
+                                             <option>Send Grid</option>
+                                          </select>
                                        </div>
-                                       <div class="form-group row align-items-center">
-                                          <label class="col-md-3" for="npass">When To Escalate Emails</label>
-                                          <div class="col-md-9">
-                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="email04">
-                                                <label class="custom-control-label" for="email04"> Upon new order.</label>
-                                             </div>
-                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="email05">
-                                                <label class="custom-control-label" for="email05"> New membership approval</label>
-                                             </div>
-                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="email06" checked="">
-                                                <label class="custom-control-label" for="email06"> Member registration</label>
-                                             </div>
+
+                                       <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Device Communication Gateways</h4>
                                           </div>
+                                       </div> 
+                                       <br>
+                                       <div class="form-group col-sm-6">
+                                          <label class="d-block">Choose Gateway Type</label>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio12" name="customRadio4" class="custom-control-input" checked="">
+                                             <label class="custom-control-label" for="customRadio12"> SMS HTTP Gateway </label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="customRadio13" name="customRadio4" class="custom-control-input">
+                                             <label class="custom-control-label" for="customRadio13"> Android SMS Gateway </label>
+                                          </div>
+                                       </div> 
+                                       <div class="form-group col-sm-6">
+                                          <label>SMS HTTP Gateway</label>
+                                          <select class="form-control" id="exampleFormControlSelect4">
+                                             <option selected="">Mshastra</option>
+                                             <option>M shastra Long phone</option>
+                                             <option>SMS country</option>
+                                          </select>
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label for="dpass">Device Password</label>
+                                          <input type="Password" class="form-control" id="dpass" value="ggps">
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label>No connection marker color</label>
+                                          <select class="form-control" id="exampleFormControlSelect4">
+                                             <option></option>
+                                             <option selected="">Black</option>
+                                             <option>Yellow</option>
+                                             <option>Red</option>
+                                             <option>Green</option>
+                                             <option>Blue</option>
+                                             <option>Orange</option>
+                                          </select>
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label>Moving Icon Color</label>
+                                          <select class="form-control" id="exampleFormControlSelect4">
+                                             <option></option>
+                                             <option selected="">Black</option>
+                                             <option>Yellow</option>
+                                             <option>Red</option>
+                                             <option>Green</option>
+                                             <option>Blue</option>
+                                             <option>Orange</option>
+                                          </select>
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label for="icon">Icon</label>
+                                          <button type="submit" class="btn btn-primary mr-2">Pick Icon</button>
+                                       </div> 
+                                       <div class="form-group col-sm-6">
+                                          <label>Save Raw Data</label>
+                                          <div class="form-check">
+                                             <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                           </div>
+                                       </div>
+                                       <div class="form-group col-sm-6">
+                                          <label for="fname">Tail Width</Label>
+                                          <input type="text" class="form-control" id="tailwid" placeholder="Tail Width">
                                        </div>
                                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                        <button type="reset" class="btn iq-bg-danger">Cancel</button>
@@ -756,6 +888,70 @@
                                  </div>
                               </div>
                            </div>
+                         
+
+               
+                           <div class="tab-pane fade" id="fuel-Consumption" role="tabpanel">
+                              <div class="iq-card">
+                                 <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                       <h4 class="card-title">Calculation</h4>
+                                    </div>
+                                 </div>
+                                    <div class="iq-card-body">
+                                       <form class="needs-validation" novalidate>
+                                          <div class="form-row">
+                                             <div class="col-md-6 mb-3">
+                                                <label for="validationCustom01">Source</label>
+                                                <select class="form-control" id="exampleFormControlSelect4">
+                                                   <option selected="">Rates</option>
+                                                   <option>Fuel Leval</option>
+                                                   <option>Fuel Consumption</option>
+                                                </select>
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="validationCustom02">Measurement </label>
+                                                <select class="form-control" id="exampleFormControlSelect4">
+                                                   <option selected="">Liter/100km</option>
+                                                   <option>Miles per gallon</option>
+                                                   
+                                                </select>
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="fuelcostperliter">Cost per liter</label>
+                                                <input type="text" class="form-control" id="fuelcostperliter" placeholder="Cost per liter">
+                                             </div>
+                                          </div>
+                                             <div class="iq-card-header d-flex justify-content-between">
+                                                <div class="iq-header-title">
+                                                   <h4 class="card-title">Rate</h4>
+                                                </div>
+                                             </div>
+                                             <br>
+                                          <div class="form-row">
+                                             <div class="col-md-6 mb-3">
+                                                <label for="fuelsummerrate">Summer rate (ltrs)</label>
+                                                <input type="number" class="form-control" id="fuelsummerrater" value="">
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="fuelwinterrate">Winter rate (ltrs)</label>
+                                                <input type="number" class="form-control" id="fuelwinterrater" value="">
+                                             </div>
+                                             <div class="col-md-6 mb-3">
+                                                <label for="winterduration">Winters Duration</label>
+                                                <input type="date" class="form-control" id="winterduration" value="">
+                                             </div>
+                                          </div>  
+                                          <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                          <button type="reset" class="btn iq-bg-danger">Cancel</button>
+                                       </form>
+                                    </div>
+                                 
+                              </div>
+                           </div>
+
+
+<!-- 
                            <div class="tab-pane fade" id="manage-contact" role="tabpanel">
                               <div class="iq-card">
                                  <div class="iq-card-header d-flex justify-content-between">
@@ -782,15 +978,15 @@
                                     </form>
                                  </div>
                               </div>
-                           </div>
+                           </div> -->
                         </div>
                      </div>
-                  </div>
+                  </div> 
                </div>
             </div>
          </div>
-      </div>
-      <!-- Wrapper END -->
+      </div> 
+            Wrapper END
        <!-- Footer -->
       <footer class="iq-footer">
          <div class="container-fluid">
