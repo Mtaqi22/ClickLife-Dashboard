@@ -263,10 +263,10 @@ a:hover { text-decoration: none; }
 .iq-sidebar-menu .iq-menu li.active { background: var(--iq-light-primary); }
 .iq-sidebar-menu .iq-menu li li { margin: 0; background: transparent !important; }
 .iq-sidebar-menu .iq-menu li a { font-size: 14px; white-space: nowrap; display: block; color: var(--iq-body-text); position: relative; padding: 0; line-height: 18px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow: hidden; border-radius: 5px; }
-.iq-sidebar-menu .iq-menu li li a { font-size: 14px; }
+.iq-sidebar-menu .iq-menu li li a { font-weight:600;font-size: 14px; }
 .iq-sidebar-menu .iq-menu li a i { font-size: 20px; margin-right: 10px; vertical-align: middle; width: 20px; display: inline-block; float: left; }
 .iq-sidebar-menu .iq-menu li li a i { font-size: 16px; }
-.iq-sidebar-menu .iq-menu li a span { white-space: nowrap; padding: 0; display: inline-block; float: left; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; transition: none; }
+.iq-sidebar-menu .iq-menu li a span {font-size: 17px;font-weight: 900; white-space: nowrap; padding: 0; display: inline-block; float: left; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; transition: none; }
 .iq-sidebar-menu .iq-menu li a .iq-arrow-right { margin-right: 10px; margin-left: auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
 .iq-sidebar-menu .iq-menu li a .badge { position: absolute; right: 15px; -webkit-transition: all 0.9s ease-out 0s; -moz-transition: all 0.9s ease-out 0s; -ms-transition: all 0.9s ease-out 0s; -o-transition: all 0.9s ease-out 0s; transition: all 0.9s ease-out 0s; }
 .iq-sidebar-menu .iq-menu li a:hover { color: var(--iq-primary); }
@@ -281,9 +281,9 @@ a:hover { text-decoration: none; }
 .iq-sidebar-menu .iq-menu li.active .iq-submenu li:last-child>a { border-radius: 0 0 5px 5px; }
 .iq-sidebar-menu .iq-menu li .iq-submenu li>a::before { display: none; }
 body.sidebar-main .iq-sidebar .iq-menu li a[aria-expanded="false"].collapsed { border-radius: 5px; }
-.iq-sidebar-menu .iq-menu li a i.iq-arrow-left, .iq-sidebar-menu .iq-menu li > a > i.iq-arrow-left { background: transparent; height: 40px; width: 40px; line-height: 40px; text-align: center; border-radius: 5px; font-size: 16px; }
-.iq-sidebar-menu .iq-menu li a[aria-expanded="true"] i.iq-arrow-left, .iq-sidebar-menu .iq-menu li.active > a > i.iq-arrow-left, .iq-sidebar-menu .iq-menu li.active-menu > a > i.iq-arrow-left { background: var(--iq-primary); color: var(--iq-white); }
-.iq-sidebar-menu .iq-menu li li a i { font-size: 15px; }
+.iq-sidebar-menu .iq-menu li a i.iq-arrow-left, .iq-sidebar-menu .iq-menu li > a > i.iq-arrow-left { background: transparent; height: 40px; width: 40px; line-height: 40px; text-align: center; border-radius: 5px; font-size: 30px; }
+.iq-sidebar-menu .iq-menu li a[aria-expanded="true"] i.iq-arrow-left, .iq-sidebar-menu .iq-menu li.active > a > i.iq-arrow-left, .iq-sidebar-menu .iq-menu li.active-menu > a > i.iq-arrow-left { font-size:30px; background: var(--iq-primary); color: var(--iq-white); }
+.iq-sidebar-menu .iq-menu li li a i { font-size: 25px; }
 
 /*------------------------*/
 .iq-sidebar-menu .iq-menu li ul { padding-left: 0; }
@@ -1110,14 +1110,14 @@ body.two-sidebar.sidebar-main .iq-sidebar { width: 0px; }
   color: white;
   font-size: 5px;
     height: 40px;
-    width: 100px;
+    width: 150px;
     line-height: 30px;
     text-align: center;
     margin-right: 10px;
     font-size: 26px;
     text-decoration: none;
     padding: 1px;
-    margin-top:2px;
+    margin-top:5px;
 }
 .txtsize{
   font-size: 15px;
@@ -1138,12 +1138,50 @@ background: #1e7145;
       .adcolor5{
         background: #0000FF;
         }
+        .adcolor6{
+          background: #000000;
+          }
         .coll{
            font-family: 'Manrope', sans-serif; 
             font-weight: 500; 
             margin: 0px; 
             line-height: 1.5; 
             color: white; }
+          .rgt{
+            float: right;
+          }
+        .onem{
+          width:190px;
+          margin-bottom: 5px;
+        }
+        .siza{
+          width: 320px;
+          height: 150px;
+          margin:20px;
+        }
+        .size2{
+          
+            width: 720px;
+            height: 250px;
+            margin:20px;
+       
+        }
+        .kam{
+          height: 30px;
+          width: 150px;
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+        .conn{
+          display: flex;
+          justify-content: center;
+
+        }
+        .siza option{
+          font-weight: 600;
+          font-size: 15px;
+        }
+          
   .gapp{
     margin: 2px;
   }
@@ -1152,7 +1190,99 @@ background: #1e7145;
     width:80% !important;
   }
         
-
+.combo-box {
+    width: 300px; /* Increase the width as needed */
+  }
+  
+  .combo-box-container {
+    position: relative;
+  }
+  
+  .combo-box input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .combo-box .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .combo-box .options label {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .combo-box .options input {
+    margin-right: 5px;
+  }
+  
+  .combo-box input:focus + .options, .combo-box .options:hover {
+    display: block;
+  }
+ 
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 8px;
+    width: 99%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 7px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #87cefa;
+    
+  }
+  .accordion{
+    margin-top: 10px;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    
+  }
+  .mar{
+    margin-top: 20px;
+  }
+  .accordion.active:after {
+    content: "\2212";
+    
+  }
+  .gapp{
+    margin-right: 10px;
+  }
+  
+  .panel1 {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 5px;
+  }
+  .panel1 label{
+  margin-right: 30px;
+  }
 
 /*-----------------------------------------------------------------
                           Horizontal  Menu Page
