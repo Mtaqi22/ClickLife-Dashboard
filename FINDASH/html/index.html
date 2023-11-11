@@ -26,7 +26,9 @@
    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/flatpickr.min.css">
-   
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
 
 </head>
 
@@ -74,11 +76,16 @@
                            class="ripple rippleEffect"></span><i
                            class="las la-user-tie iq-arrow-left"></i><span>User</span><i
                            class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                     <ul id="userinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                     <ul id="userinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                         <li><a href="profile.html"><i class="las la-id-card-alt"></i>User Profile</a></li>
                         <li><a href="profile-edit.html"><i class="las la-edit"></i>User Edit</a></li>
                         <li><a href="add-user.html"><i class="las la-plus-circle"></i>User Add</a></li>
                         <li><a href="user-list.html"><i class="las la-th-list"></i>User List</a></li>
+
+                        <li><a href="users.html"><i class="las la-th-list"></i>User</a></li>
+                        <li><a href="staff.html"><i class="las la-th-list"></i>Staff User</a></li>
+                        <li><a href="technician.html"><i class="las la-th-list"></i>Technician User</a></li>
+
                         <li><a href="report.html"><i class="las la-th-list"></i>Report</a></li>
                      </ul>
                   </li>
@@ -590,7 +597,7 @@
                </div>
 
 
-               <div class="col-lg-4">
+               <div class="col-lg-6">
                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
@@ -632,11 +639,20 @@
                   </div>
                </div>
 
-               <div class="col-lg-4">
+               <div class="col-lg-6">
                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                      <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
                            <h4 class="card-title">Fleet Status</h4>
+                        </div>
+                        <div class="col-lg-4">
+                           <label class="" for="filterSelected">Sort By:</label>
+                           <select id="filterSelected">
+                              <option value="daily">Daily</option>
+                              <option value="weekly">Weekly</option>
+                              <option value="monthly">Monthly</option>
+                              <option value="yearly">Yearly</option>
+                           </select>
                         </div>
                      </div>
                      <div class="iq-card-body">
@@ -654,6 +670,9 @@
                               <div class="icon adcolor4 adcolor  rounded mr-3">
                                  <h7 class="txtsize">24 InActive</h7>
                               </div>
+                              <div class="icon adcolor6 adcolor  rounded mr-3">
+                                 <h7 class="txtsize">20 Not Connected</h7>
+                              </div>
                               <div class="icon adcolor5 adcolor  rounded mr-3">
                                  <h7 class="txtsize">15 No Data</h7>
                               </div>
@@ -662,33 +681,46 @@
                            </div>
 
                            <div class="col-sm-10 col-lg-10">
-                              <canvas id="myChart" style="margin-top:30px;width:100%;max-width:900px; max-height: 500px;"></canvas>
-
+                              <canvas id="myChart"
+                                 style="max-height: 250px !important; max-width: 250px !important; margin-left: 120px;"></canvas>
                               <script>
+                                 const yValues = {
+                                    daily: [55, 49, 44, 124, 15, 20],
+                                    weekly: [30, 140, 35, 120, 10, 15],
+                                    monthly: [100, 90, 20, 45, 30, 40],
+                                    yearly: [400, 350, 1300, 50, 120, 200],
+                                 };
 
-                                 const yValues = [55, 49, 44, 24, 15];
                                  const barColors = [
                                     "#1e7145",
                                     "#FFA500",
                                     "#ff0000",
                                     "#808080",
-                                    "#0000FF"
+                                    "#0000FF",
+                                    "#000000"
                                  ];
 
-                                 new Chart("myChart", {
+                                 const ctxx = document.getElementById("myChart").getContext("2d");
+
+                                 const chartt = new Chart(ctxx, {
                                     type: "doughnut",
                                     data: {
-
                                        datasets: [{
                                           backgroundColor: barColors,
-                                          data: yValues
-                                       }]
-                                    },
+                                          data: yValues.daily, // Start with daily data
+                                       }],
+                                    }
+                                 });
 
+                                 const filterSelected = document.getElementById("filterSelected");
+                                 filterSelected.addEventListener("change", function () {
+                                    const selectedInterval = filterSelected.value;
+                                    chartt.data.datasets[0].data = yValues[selectedInterval]; // Update the chart data based on the selected interval
+                                    chartt.update(); // Update the chart
                                  });
                               </script>
                            </div>
-                           
+
                         </div>
                      </div>
                   </div>
@@ -696,62 +728,6 @@
 
 
 
-               <div class="col-lg-4">
-                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Technician</h4>
-                        </div>
-                     </div>
-                     <div class="iq-card-body">
-                        <div class="ver">
-
-
-                           <div class="col-sm-12">
-                              <div class="chart-container">
-                                 <canvas id="pieChart"></canvas>
-                              </div>
-
-
-                              <script>
-                                 document.addEventListener('DOMContentLoaded', function () {
-                                    const ctx = document.getElementById('pieChart').getContext('2d');
-
-                                    const data = {
-                                       labels: ['Fahad', 'Ali', 'Hassan'],
-                                       datasets: [{
-                                          data: [30, 40, 30],
-                                          backgroundColor: ['red', 'blue', 'green'],
-                                       }]
-                                    };
-
-                                    const chart = new Chart(ctx, {
-                                       type: 'pie',
-                                       data: data,
-                                    });
-
-                                    const filterSelect = document.getElementById('filterSelect');
-                                    filterSelect.addEventListener('change', function () {
-                                       const selectedCategory = filterSelect.value;
-                                       const selectedIndex = data.labels.indexOf(selectedCategory);
-                                       if (selectedIndex >= 0) {
-                                          chart.data.datasets[0].data = data.labels.map((label, index) => {
-                                             if (index === selectedIndex) {
-                                                return data.datasets[0].data[index];
-                                             } else {
-                                                return 0;
-                                             }
-                                          });
-                                          chart.update();
-                                       }
-                                    });
-                                 });
-                              </script>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
 
 
                <div class="col-lg-4">
@@ -760,33 +736,132 @@
                         <div class="iq-header-title">
                            <h4 class="card-title">Total Installations</h4>
                         </div>
-
+                        <div class="col-lg-6">
+                           <label>Sort by:</label>
+                           <select id="TIS">
+                              <option value="daily">Daily</option>
+                              <option value="weekly">Weekly</option>
+                              <option value="monthly">Monthly</option>
+                              <option value="yearly">Yearly</option>
+                            </select>
+                        </div>
                      </div>
                      <div class="iq-card-body">
-                        <canvas id="myChart2" style="width:100%;max-width:600px;height: 300px;"></canvas>
-
-                        <script>
-                        const xValues = ["22/02/23", "22/02/23", "22/02/23", "22/02/23", "22/02/23"];
-                        const zValues = [55, 49, 44, 24, 20];
-                        const barColors1 = ["red", "green","blue","orange","brown"];
+                        <canvas id="myChart3" width="200" height="200"></canvas>
                         
-                        new Chart("myChart2", {
-                          type: "bar",
-                          data: {
-                            labels: xValues,
-                            datasets: [{
-                              backgroundColor: barColors1,
-                              data: zValues
-                            }]
-                          },
-                          options: {
-                            legend: {display: false},
-                            title: {
-                              display: true,
-                             
+                        <script>
+                          const dD = [
+                            "2023-11-01",
+                            "2023-11-02",
+                            "2023-11-03",
+                            "2023-11-04",
+                            "2023-11-05",
+                            "2023-11-06",
+                            "2023-11-07",
+                          ];
+                      
+                          const dI = [55, 49, 44, 24, 20, 35, 30];
+                      
+                          const wD = [
+                            "2023-10-01",
+                            "2023-10-08",
+                            "2023-10-15",
+                            "2023-10-22",
+                            "2023-10-29",
+                            "2023-11-05",
+                          ];
+                      
+                          const wI = [140, 150, 165, 130, 120, 185];
+                      
+                          const mD = [
+                            "2023-01-01",
+                            "2023-02-01",
+                            "2023-03-01",
+                            "2023-04-01",
+                            "2023-05-01",
+                            "2023-06-01",
+                          ];
+                      
+                          const mI = [600, 700, 750, 800, 900, 950];
+                      
+                          const yD = [
+                            "2023-01-01",
+                            "2024-01-01",
+                            "2025-01-01",
+                            "2026-01-01",
+                            "2027-01-01",
+                          ];
+                      
+                          const yI = [2200, 2400, 2700, 3000, 3200];
+                      
+                          const cO = {
+                            type: "bar",
+                            data: {
+                              labels: dD,
+                              datasets: [
+                                {
+                                  backgroundColor: [
+                                    "blue", "green", "red", "orange", "purple", "cyan", "pink"
+                                  ],
+                                  data: dI,
+                                },
+                              ],
+                            },
+                            options: {
+                              plugins: {
+                                legend: { display: false },
+                              },
+                              title: {
+                                display: true,
+                                text: "Daily Installations",
+                              },
+                            },
+                          };
+                      
+                          const cC = document.getElementById("myChart3").getContext("2d");
+                          let c = new Chart(cC, cO);
+                      
+                          // Function to update the chart based on the selected time interval
+                          function uC() {
+                            const sI = document.getElementById("TIS").value;
+                            let uD = [];
+                            let uI = [];
+                            let bC = [];
+                      
+                            if (sI === "daily") {
+                              uD = dD;
+                              uI = dI;
+                              bC = ["blue", "green", "red", "orange", "purple", "cyan", "pink"];
+                            } else if (sI === "weekly") {
+                              uD = wD;
+                              uI = wI;
+                              bC = ["blue", "green", "red", "orange", "purple", "cyan", "pink"];
+                            } else if (sI === "monthly") {
+                              uD = mD;
+                              uI = mI;
+                              bC = ["blue", "green", "red", "orange", "purple", "cyan", "pink"];
+                            } else if (sI === "yearly") {
+                              uD = yD;
+                              uI = yI;
+                              bC = ["blue", "green", "red", "orange", "purple", "cyan", "pink"];
                             }
+                      
+                            // Update the chart data and animate the update
+                            c.data.labels = uD;
+                            c.data.datasets[0].data = uI;
+                            c.data.datasets[0].backgroundColor = bC;
+                            c.options.title.text = `${sI.charAt(0).toUpperCase() + sI.slice(1)} Installations`;
+                            c.update({
+                              duration: 1000,
+                              easing: "easeInOutQuart",
+                            });
                           }
-                        });
+                      
+                          // Add an event listener to the combo box
+                          const TIS = document.getElementById("TIS");
+                          TIS.addEventListener("change", function () {
+                            uC();
+                          });
                         </script>
                      </div>
                   </div>
@@ -924,6 +999,218 @@
                   </div>
                </div>
 
+               <div class="col-lg-6">
+                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                     <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+
+                           <h4 class="card-title">Technician</h4>
+                        </div>
+                        <div class="col-lg-4">
+                           <label>Sort by:</label>
+                           <select id="filterSelect">
+                              <option value="daily">Daily</option>
+                              <option value="weekly">Weekly</option>
+                              <option value="monthly">Monthly</option>
+                              <option value="yearly">Yearly</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="iq-card-body">
+                        <div class="ver">
+
+
+                           <div class="col-sm-12">
+                              <div class="chart-container">
+                                 <canvas id="pieChart"></canvas>
+                              </div>
+
+
+
+                              <script>
+                                 document.addEventListener('DOMContentLoaded', function () {
+                                    const ctx = document.getElementById('pieChart').getContext('2d');
+
+                                    // Initial data for all time intervals
+                                    const data = {
+                                       daily: {
+                                          labels: ['Fahad', 'Ali', 'Hassan'],
+                                          datasets: [{
+                                             data: [30, 40, 50],
+                                             backgroundColor: ['red', 'blue', 'green'],
+                                          }]
+                                       },
+                                       weekly: {
+                                          labels: ['Fahad', 'Ali', 'Hassan'],
+                                          datasets: [{
+                                             data: [15, 120, 115],
+                                             backgroundColor: ['red', 'blue', 'green'],
+                                          }]
+                                       },
+                                       monthly: {
+                                          labels: ['Fahad', 'Ali', 'Hassan'],
+                                          datasets: [{
+                                             data: [900, 1120, 90],
+                                             backgroundColor: ['red', 'blue', 'green'],
+                                          }]
+                                       },
+                                       yearly: {
+                                          labels: ['Fahad', 'Ali', 'Hassan'],
+                                          datasets: [{
+                                             data: [360, 1480, 1360],
+                                             backgroundColor: ['red', 'blue', 'green'],
+                                          }]
+                                       }
+                                    };
+
+                                    const chart = new Chart(ctx, {
+                                       type: 'pie',
+                                       data: data.daily, // Start with daily data
+                                       options: {
+                                          animation: {
+                                             animateRotate: true,
+                                             animateScale: true,
+                                          },
+                                       },
+                                    });
+
+                                    const filterSelect = document.getElementById('filterSelect');
+                                    filterSelect.addEventListener('change', function () {
+                                       const selectedInterval = filterSelect.value;
+                                       chart.data = data[selectedInterval]; // Update the chart data based on the selected interval
+                                       chart.update(); // Update the chart with animation
+                                    });
+                                 });
+                              </script>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col-lg-6">
+                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                     <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                           <h4 class="card-title">Idling</h4>
+                        </div>
+                        <div class="col-lg-4">
+                           <label>Sort by:</label>
+                           <select id="timeIntervalSelect1">
+
+                              <option value="daily">Daily</option>
+                              <option value="weekly">Weekly</option>
+                              <option value="monthly">Monthly</option>
+                              <option value="yearly">Yearly</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="iq-card-body">
+
+                        <canvas id="myChartmy" width="200" height="100"></canvas>
+
+
+                        <script>
+                           // Example data for daily, weekly, monthly, and yearly intervals
+                           const dailyValues = [
+                              117, 8, 1118, 9, 9, 119, 10, 11, 1114, 14, 15
+                           ];
+
+                           const weeklyValues = [
+                              53, 1155, 59, 62, 65, 169, 70, 1173, 78, 81, 185
+                           ];
+
+                           const monthlyValues = [
+                              1190, 210, 235, 250, 1270, 280, 295, 310, 325, 335, 350
+                           ];
+
+                           const yearlyValues = [
+                              900, 950, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800
+                           ];
+
+                           const chartConfig = {
+                              type: "line",
+                              data: {
+                                 labels: generateLabels("2023-11-01", 11), // Generate labels for November 1 to November 11
+                                 datasets: [
+                                    {
+                                       fill: false,
+                                       tension: 0,
+                                       backgroundColor: "rgba(0,0,255,1.0)",
+                                       borderColor: "rgba(0,0,255,0.1)",
+                                       data: dailyValues,
+                                    },
+                                 ],
+                              },
+                              options: {
+                                 plugins: {
+                                    legend: { display: false },
+                                 },
+                                 scales: {
+                                    y: {
+                                       beginAtZero: true,
+                                       max: 2000
+                                    },
+                                 },
+                              },
+                           };
+
+                           const chartContext = document.getElementById("myChartmy").getContext("2d");
+                           let myChartmy = new Chart(chartContext, chartConfig);
+
+                           // Function to generate labels for a given start date and number of days
+                           function generateLabels(startDate, numDays) {
+                              const labels = [];
+                              const start = moment(startDate);
+
+                              for (let i = 0; i < numDays; i++) {
+                                 labels.push(start.format("YYYY-MM-DD"));
+                                 start.add(1, "days");
+                              }
+
+                              return labels;
+                           }
+
+                           // Function to update the chart based on the selected time interval
+                           function updateChart() {
+                              const selectedInterval = document.getElementById("timeIntervalSelect1").value;
+                              let updatedValues = [];
+
+                              if (selectedInterval === "daily") {
+                                 updatedValues = dailyValues;
+                                 myChartmy.data.labels = generateLabels("2023-11-01", 11);
+                              } else if (selectedInterval === "weekly") {
+                                 updatedValues = weeklyValues;
+                                 myChartmy.data.labels = generateLabels("2023-11-01", 11); // Generate labels for 11 weeks
+                              } else if (selectedInterval === "monthly") {
+                                 updatedValues = monthlyValues;
+                                 myChartmy.data.labels = generateLabels("2023-01-01", 11); // Generate labels for 11 months
+                              } else if (selectedInterval === "yearly") {
+                                 updatedValues = yearlyValues;
+                                 myChartmy.data.labels = generateLabels("2023-01-01", 11); // Generate labels for 11 years
+                              }
+
+                              // Update the chart data and animate the update
+                              myChartmy.data.datasets[0].data = updatedValues;
+                              myChartmy.update({
+                                 duration: 1000, // Animation duration in milliseconds
+                                 easing: "easeInOutQuart", // Animation easing function
+                              });
+                           }
+
+                           // Add an event listener to the combo box
+                           const timeIntervalSelect1 = document.getElementById("timeIntervalSelect1");
+                           timeIntervalSelect1.addEventListener("change", function () {
+                              updateChart();
+                           });
+                        </script>
+
+                     </div>
+                  </div>
+               </div>
+
+
             </div>
          </div>
       </div>
@@ -1004,7 +1291,7 @@
    <script src="assets/vendor/libs/chartjs/chartjs.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-   
+
 </body>
 
 </html>
