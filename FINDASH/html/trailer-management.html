@@ -807,155 +807,115 @@
                 </div>
             </div>
         </div>
-        <!-- Wrapper END -->
-        <!-- Footer -->
-        <footer class="iq-footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 text-right">
-                        Copyright 2020 <a href="#">FinDash</a> All Rights Reserved.
-                    </div>
+    </div>
+    <!-- Wrapper END -->
+    <!-- Footer -->
+    <footer class="iq-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-right">
+                    Copyright 2020 <a href="#">FinDash</a> All Rights Reserved.
                 </div>
             </div>
-        </footer>
-        <!-- Footer END -->
+        </div>
+    </footer>
+    <!-- Footer END -->
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Appear JavaScript -->
-        <script src="js/jquery.appear.js"></script>
-        <!-- Countdown JavaScript -->
-        <script src="js/countdown.min.js"></script>
-        <!-- Counterup JavaScript -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <!-- Wow JavaScript -->
-        <script src="js/wow.min.js"></script>
-        <!-- Apexcharts JavaScript -->
-        <script src="js/apexcharts.js"></script>
-        <!-- Slick JavaScript -->
-        <script src="js/slick.min.js"></script>
-        <!-- Select2 JavaScript -->
-        <script src="js/select2.min.js"></script>
-        <!-- Owl Carousel JavaScript -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- Magnific Popup JavaScript -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- Smooth Scrollbar JavaScript -->
-        <script src="js/smooth-scrollbar.js"></script>
-        <!-- lottie JavaScript -->
-        <script src="js/lottie.js"></script>
-        <!-- am core JavaScript -->
-        <script src="js/core.js"></script>
-        <!-- am charts JavaScript -->
-        <script src="js/charts.js"></script>
-        <!-- am animated JavaScript -->
-        <script src="js/animated.js"></script>
-        <!-- am kelly JavaScript -->
-        <script src="js/kelly.js"></script>
-        <!-- am maps JavaScript -->
-        <script src="js/maps.js"></script>
-        <!-- am worldLow JavaScript -->
-        <script src="js/worldLow.js"></script>
-        <!-- Style Customizer -->
-        <script src="js/style-customizer.js"></script>
-        <!-- Chart Custom JavaScript -->
-        <script src="js/chart-custom.js"></script>
-        <!-- Custom JavaScript -->
-        <script src="js/custom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-        <script>
-            document.getElementById('downloadlink').addEventListener('click', function () {
-                // Get the table element
-                var table = document.getElementById('user-list-table');
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Appear JavaScript -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Countdown JavaScript -->
+    <script src="js/countdown.min.js"></script>
+    <!-- Counterup JavaScript -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Wow JavaScript -->
+    <script src="js/wow.min.js"></script>
+    <!-- Apexcharts JavaScript -->
+    <script src="js/apexcharts.js"></script>
+    <!-- Slick JavaScript -->
+    <script src="js/slick.min.js"></script>
+    <!-- Select2 JavaScript -->
+    <script src="js/select2.min.js"></script>
+    <!-- Owl Carousel JavaScript -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JavaScript -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Smooth Scrollbar JavaScript -->
+    <script src="js/smooth-scrollbar.js"></script>
+    <!-- lottie JavaScript -->
+    <script src="js/lottie.js"></script>
+    <!-- am core JavaScript -->
+    <script src="js/core.js"></script>
+    <!-- am charts JavaScript -->
+    <script src="js/charts.js"></script>
+    <!-- am animated JavaScript -->
+    <script src="js/animated.js"></script>
+    <!-- am kelly JavaScript -->
+    <script src="js/kelly.js"></script>
+    <!-- am maps JavaScript -->
+    <script src="js/maps.js"></script>
+    <!-- am worldLow JavaScript -->
+    <script src="js/worldLow.js"></script>
+    <!-- Style Customizer -->
+    <script src="js/style-customizer.js"></script>
+    <!-- Chart Custom JavaScript -->
+    <script src="js/chart-custom.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    <script>
+        // Add a click event listener to the button
+        document.getElementById("scrollButton").addEventListener("click", function () {
+            // Scroll to the second div
+            document.getElementById("secondDiv").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+    <script>
+        const leftCombo = document.getElementById("leftCombo");
+        const rightCombo = document.getElementById("rightCombo");
+        const addedItems = new Set(); // To keep track of added items
 
-                // Use html2canvas to capture the table as an image
-                html2canvas(table).then(function (canvas) {
-                    // Create a new jsPDF instance
-                    var pdf = new window.jspdf.jsPDF();
+        leftCombo.addEventListener("click", function () {
+            const selectedOptions = Array.from(leftCombo.selectedOptions);
 
-                    // Add the captured image to the PDF
-                    pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, canvas.width, canvas.height);
+            for (const option of selectedOptions) {
+                if (!addedItems.has(option.textContent)) {
+                    const newOption = option.cloneNode(true);
+                    rightCombo.appendChild(newOption);
+                    addedItems.add(option.textContent); // Add the item to the set to track it
+                }
+            }
+        });
+    </script>
 
-                    // Save the PDF with a specific name
-                    pdf.save('table.pdf');
-                });
-            });
-        </script>
-        <script>
-            document.getElementById('downloadBtn').addEventListener('click', function () {
-                // Get the table HTML content
-                var tableHtml = document.getElementById('user-list-table').outerHTML;
 
-                // Create a blob with Excel MIME type
-                var blob = new Blob([tableHtml], { type: 'application/vnd.ms-excel' });
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-                // Create a download link
-                var downloadLink = document.createElement('a');
-                downloadLink.href = window.URL.createObjectURL(blob);
-                downloadLink.download = 'table.xls';
-
-                // Append the link to the body and trigger the click
-                document.body.appendChild(downloadLink);
-                downloadLink.click();
-
-                // Remove the link from the body
-                document.body.removeChild(downloadLink);
-            });
-        </script>
-        <script>
-            // Add a click event listener to the button
-            document.getElementById("scrollButton").addEventListener("click", function () {
-                // Scroll to the second div
-                document.getElementById("secondDiv").scrollIntoView({ behavior: "smooth" });
-            });
-        </script>
-        <script>
-            const leftCombo = document.getElementById("leftCombo");
-            const rightCombo = document.getElementById("rightCombo");
-            const addedItems = new Set(); // To keep track of added items
-
-            leftCombo.addEventListener("click", function () {
-                const selectedOptions = Array.from(leftCombo.selectedOptions);
-
-                for (const option of selectedOptions) {
-                    if (!addedItems.has(option.textContent)) {
-                        const newOption = option.cloneNode(true);
-                        rightCombo.appendChild(newOption);
-                        addedItems.add(option.textContent); // Add the item to the set to track it
-                    }
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
                 }
             });
-        </script>
-
-
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
+        }
+    </script>
 </body>
 
 </html>
+
