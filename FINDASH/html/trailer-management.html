@@ -483,7 +483,7 @@
                         <div class="iq-card">
                             <div class="iq-card-header d-flex justify-content-between">
                                 <div class="iq-header-title">
-                                    <h4 class="card-title ">Driver Management</h4>
+                                    <h4 class="card-title ">Trailer Management</h4>
                                 </div>
                             </div>
                             <div class="iq-card-body">
@@ -492,7 +492,7 @@
 
                                         <div class="mt-2 p-0 col-sm-12 col-md-12">
                                             <button data-toggle="modal" data-target="#exampleModalCenter"
-                                                class="btn onem btn-primary"> Add / Update Driver
+                                                class="btn onem btn-primary"> Add / Update Trailer
                                             </button>
                                             <div class="modal fade " id="exampleModalCenter" tabindex="-1"
                                                 role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -513,7 +513,7 @@
                                                                     <div
                                                                         class="iq-card-header d-flex justify-content-between">
                                                                         <div class="iq-header-title">
-                                                                            <h4 class="card-title">Add/Update Driver
+                                                                            <h4 class="card-title">Add/Update Trailer
                                                                             </h4>
                                                                         </div>
                                                                     </div>
@@ -521,11 +521,10 @@
                                                                         <div class="form">
                                                                             <div class="col-sm-12 mb-2">
                                                                                 <label
-                                                                                    for="validationCustom01">First
-                                                                                    Name</label>
+                                                                                    for="validationCustom01">Trailer Name</label>
                                                                                 <input type="text"
                                                                                     class="form-control"
-                                                                                    id="validationCustom01"
+                                                                                    id="validationCustom01" placeholder="Trailer Name"
                                                                                     required>
                                                                                 <div class="valid-feedback">
                                                                                     Looks good!
@@ -534,65 +533,40 @@
 
                                                                             <div class="col-sm-12 mb-2">
                                                                                 <label
-                                                                                    for="validationCustomUsername">Last
-                                                                                    Name</label>
+                                                                                    for="validationCustomUsername">Modal Name</label>
                                                                                 <input type="text"
                                                                                     class="form-control"
                                                                                     id="validationCustomUsername"
-                                                                                    aria-describedby="inputGroupPrepend"
+                                                                                    aria-describedby="inputGroupPrepend" placeholder="Modal Name"
                                                                                     required>
-                                                                                <div class="invalid-feedback">
-                                                                                    Please choose a username.
-                                                                                </div>
 
                                                                             </div>
                                                                             <div class="col-sm-12 mb-2">
                                                                                 <label
-                                                                                    for="validationCustom04">Party
-                                                                                    Account</label>
-                                                                                <select class="form-control"
-                                                                                    id="validationCustom04"
+                                                                                    for="validationCustom04">VIN</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="validationCustom04" placeholder="VIN"
                                                                                     required>
-                                                                                    <option selected disabled
-                                                                                        value="">
-                                                                                        Select Option</option>
-                                                                                    <option>viprentacar</option>
-                                                                                    <option>Wanaan Tours2</option>
-                                                                                    <option>ALmoayyed Transport
-                                                                                    </option>
-                                                                                </select>
-                                                                                <div class="invalid-feedback">
-                                                                                    Please select a valid state.
-                                                                                </div>
                                                                             </div>
 
                                                                             <div class="col-sm-12 mb-2">
                                                                                 <label
-                                                                                    for="validationCustom05">Mobile1</label>
+                                                                                    for="validationCustom05">Plate Number
+                                                                                </label>
                                                                                 <input type="text"
                                                                                     class="form-control"
                                                                                     id="validationCustom05"
-                                                                                    placeholder="Phone Number 1"
+                                                                                    placeholder="Plate Number"
                                                                                     required>
                                                                                 <div class="invalid-feedback">
                                                                                     Please provide a valid zip.
                                                                                 </div>
                                                                             </div>
+                                                                            
                                                                             <div class="col-sm-12 mb-2">
                                                                                 <label
-                                                                                    for="validationCustom05">Mobile2</label>
-                                                                                <input type="text"
-                                                                                    class="form-control"
-                                                                                    id="validationCustom05"
-                                                                                    placeholder="Phone Number 2"
-                                                                                    required>
-                                                                                <div class="invalid-feedback">
-                                                                                    Please provide a valid zip.
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-sm-12 mb-2">
-                                                                                <label
-                                                                                    for="validationCustom05">Address</label>
+                                                                                    for="validationCustom05">Description
+                                                                                </label>
                                                                                 <textarea class="form-control"
                                                                                     name="address" rows="5"
                                                                                     style="line-height: 22px;">
@@ -671,9 +645,10 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Driver Name</th>
-                                                    <th>Party Account Name</th>
-                                                    <th>Contact Details</th>
+                                                    <th>Trailer</th>
+                                                    <th>Model</th>
+                                                    <th>VIN</th>
+                                                    <th>Plate Number</th>
                                                     <th>Button Key</th>
                                                     <th>RFID Card</th>
                                                     <th>Date Added</th>
@@ -693,6 +668,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
 
                                                 </tr>
                                                 <tr>
@@ -706,6 +682,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td><label>
@@ -718,6 +695,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td><label>
@@ -730,6 +708,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td><label>
@@ -742,6 +721,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td><label>
@@ -754,6 +734,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td><label>
@@ -766,6 +747,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td><label>
@@ -778,6 +760,7 @@
                                                     <td>810129639</td>
                                                     <td>02-11-23</td>
                                                     <td>alminar</td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr>
                                                     <td><label>
@@ -790,6 +773,7 @@
                                                     <td></td>
                                                     <td>02-11-23</td>
                                                     <td>Awaloffice</td>
+                                                    <td></td>
                                                 </tr>
                                             </tbody>
                                         </table>

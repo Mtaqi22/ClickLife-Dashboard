@@ -409,7 +409,7 @@ Index Of Script
             jQuery(this).toggleClass('open');
         });
 
-        jQuery(document).on('mouseenter', ".wrapper-menu", function() {
+        jQuery(document).on('click', ".wrapper-menu", function() {
             jQuery("body").toggleClass("sidebar-main");
         });
        
