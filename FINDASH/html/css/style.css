@@ -410,10 +410,10 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt { opacity: 1; }
                               Content Page
 -----------------------------------------------------------------------*/
 .content-page { overflow: hidden; margin-left: 260px; padding: 105px 15px 0; min-height: 100vh; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; background-color: rgb(177 149 149 / 50%); }
-.content-page1 { margin-left: 220px; padding: 75px 1px 0; min-height: 72vh; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; background-color: rgb(177 149 149 / 50%); }
+.content-page1 { margin-left: 220px; padding: 75px 1px 0; min-height: 96vh; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; background-color: rgb(177 149 149 / 50%); }
 .outer{
   overflow: auto;
-  max-height: 72vh;
+  max-height: 82vh;
 }
 .iq-user-dropdown { width: 350px; }
 body.sidebar-main .content-page { margin-left: 80px; }
@@ -437,12 +437,12 @@ body.sidebar-main .content-page1 { margin-left: 40px;  }
 .countt {
   position: absolute;
   top: 10px;
-  left: 85%; /* Horizontally center the div */
+  left: 90%; /* Horizontally center the div */
   transform: translateX(-50%); /* Center the div horizontally */
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   width: 80%; /* Adjust the width as needed */
-  max-width: 210px; /* Add a maximum width to prevent it from becoming too wide on large screens */
+  max-width: 120px; /* Add a maximum width to prevent it from becoming too wide on large screens */
   display: flex;
   border-radius: 5px;
   max-height: 40px;

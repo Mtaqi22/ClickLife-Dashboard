@@ -67,7 +67,7 @@ Index Of Script
                     break;
             }
         }
-        jQuery('.iq-sidebar-menu .active').each(function(ele, index) {
+        jQuery('.iq-sidebar-menu .active .non').each(function(ele, index) {
             jQuery(this).find('.iq-submenu').addClass('show');
             jQuery(this).addClass('active-menu');
             jQuery(this).next().attr("aria-expanded","true");
@@ -413,7 +413,15 @@ Index Of Script
             jQuery("body").toggleClass("sidebar-main");
         });
        
-      
+        jQuery(document).on('mouseenter', ".iq-sidebar", function() {
+            jQuery("body").toggleClass("sidebar-main");
+        });
+        jQuery(document).on('mouseleave', ".iq-sidebar", function() {
+            jQuery("body").toggleClass("sidebar-main");
+        });
+      jQuery(document).ready(function(){
+        jQuery("body").toggleClass("sidebar-main");
+      });
 
         
 
