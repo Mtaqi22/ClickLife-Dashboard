@@ -59,7 +59,6 @@
                             </ul>
                         </li>
                         <li class="active">
-
                             <a href="#livetrack" class="iq-waves-effect" data-toggle="collapse"
                                 aria-expanded="false"><span class="ripple rippleEffect"></span><i
                                     class="fas fa-map-marker-alt iq-arrow-left"></i><span>Live Tracking</span><i
@@ -74,10 +73,6 @@
                                 <li><a href="#"><i class="fas fa-book"></i>Vehicle History</a></li>
                                 <li><a href="#"><i class="fab fa-codepen"></i>Device Testing</a></li>
                                 <li><a href="#"><i class="fas fa-camera"></i>Camera & Media</a></li>
-
-
-
-
                             </ul>
                         </li>
                         <li>
@@ -89,15 +84,12 @@
                                 <li><a href="reports.html"><i class="fas fa-file-contract"></i>Vehicle Reports</a></li>
                             </ul>
                         </li>
-
                         <li>
                             <a href="#system" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                                     class="ripple rippleEffect"></span><i class="fas fa-atom iq-arrow-left"
                                     style="font-size: 22px;"></i><span>
                                     Management</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                             <ul id="system" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-
-
                                 <li><a href="#client" class="iq-waves-effect " data-toggle="collapse"
                                         aria-expanded="false"><span class="ripple rippleEffect"></span><i
                                             class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage
@@ -222,7 +214,7 @@
 
         <!-- TOP Nav Bar END -->
         <!-- Page Content  -->
-        <div id="content-page" class="content-page" style=" padding: 0px 1px 1px 1px; margin-bottom: -20px;">
+        <div id="content-page " class="content-page" style=" padding: 0px 0px 0px 0px; margin-bottom: -10px;">
 
             <div id="map" style="height: 100vh; width: 100%;">
 
@@ -236,11 +228,53 @@
                     <option value="satellite">Satellite View</option>
                     <option value="traffic-view">Traffic View</option>
 
-
                 </select>
             </div>
-            <div id="content-page" class="content-page1"
-                style="overflow: auto !important; position: absolute; top: 10px; left: 50px; background-color: white; padding: 10px; max-width: 600px; border-radius: 5px;">
+            <div class="container-fluid tile">
+
+                <label style="color: purple;">Location: Bahrain</label>
+            </div>
+
+            <button id="movingButton" onclick="toggleWidth()" data-toggle="modal" data-target="#addv"
+                class="btn onem btn-primary moving-button ">🡰</button>
+
+            <div class="rightside">
+                <div class="headin"><label style="color: white; margin-left: 5px;">Device Info</label></div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Device Number:</label>8757854</div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Address:</label><br>
+                    <p style="margin-top:-10px;margin-left: 5px;margin-right: 5px;">Avenue 28, Arad, Muharraq
+                        Governorate, 109, Bahrain</p>
+                </div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Time:</label>13-11-2023 05:32:45</div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Stop:</label>44h 44min 14s</div>
+                <hr style="border-color: rgb(204, 187, 187);">
+                <div style="margin-left: 5px;margin-right: 5px;"><i class="fas fa-tachometer-alt"
+                        style="font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">Speed:</label>
+                    25kph</div>
+                <div style="margin-left: 5px;margin-right: 5px;"><i class="fas fa-tachometer-alt"
+                        style="font-size: 25px;"></i><label
+                        style="margin-left: 5px;margin-right: 5px;">Altitude:</label> 15m</div>
+
+                <div class="headin"><label style="color: white; margin-left: 5px;">Location</label></div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">City:</label>Manama<br>
+                    <label style="margin-left: 5px;margin-right: 5px;">Road:</label>8757854<br>
+                    <label style="margin-left: 5px;margin-right: 5px;">House:</label>1287854<br>
+                    <label style="margin-left: 5px;margin-right: 5px;">State:</label>Al Muharraq<br>
+                </div>
+                <div class="headin"><label style="color: white; margin-left: 5px;">Fuel</label></div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Total:</label>150 liters<br>
+                    <label style="margin-left: 5px;margin-right: 5px;">Limit:</label>250 liters<br>  
+                </div>
+                <div class="headin"><label style="color: white; margin-left: 5px;">Driver</label></div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Name:</label>Hassan<br>
+                    <label style="margin-left: 5px;margin-right: 5px;">Email:</label>hassan@gmail.com<br> 
+                    <label style="margin-left: 5px;margin-right: 5px;">Phone:</label>35478954<br> 
+                    <label style="margin-left: 5px;margin-right: 5px;">RFID:</label>45478954<br>  
+                </div>
+
+            </div>
+            <div id="animatedDiv" class="content-page1"
+                style="transition: max-width 0.5s ease, margin-left 0.5 ease ; display: inline-block; overflow: hidden !important; position: absolute; top: 10px; left: 50px; background-color: white; padding: 10px; max-width: 600px; border-radius: 5px;">
                 <!-- Your table content goes here -->
                 <div class="col-lg-12" style="display: flex;">
                     <div
@@ -285,11 +319,607 @@
                     </ul>
                     <div class="tab-content" id="myTabContent-2" style="background-color: white !important;">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+                            <div style="display: flex;">
+                                <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"
+                                    aria-controls="user-list-table" style="width: 165px;">
+
+                                <a href="all-vehicle.html" style="width: 40px; margin-left: 2px;"
+                                    class="btn onem btn-primary" role="button"><i class='fas fa-align-justify'
+                                        style='font-size:18px'></i></a>
+                                <button style="width: 40px; margin-left: 2px;" data-toggle="modal"
+                                    data-target="#exampleModalCenter" class="btn onem btn-primary"><i
+                                        class='fa fa-refresh' style='font-size:18px'></i></button>
+                                <button style="width: 40px; margin-left: 2px;" data-toggle="modal"
+                                    data-target="#addvehicle" class="btn onem btn-primary"><b>+</b></button>
+
+                            </div>
                             <div class="outer">
-                                <div>
-                                    <input type="search" class="form-control" id="exampleInputSearch"
-                                        placeholder="Search" aria-controls="user-list-table" style="width: 165px;">
+                                <div class="modal fade " id="addvehicle" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Add New Vehicle
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <ul class="nav nav-tabs" id="myTab-1" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                            href="#vehinfo" role="tab" aria-controls="home"
+                                                            aria-selected="true">Vehicle Information</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                            href="#obj" role="tab" aria-controls="profile"
+                                                            aria-selected="false">Object</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                            href="#fuel" role="tab" aria-controls="contact"
+                                                            aria-selected="false">Fuel Consumption</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent-2">
+                                                    <div class="tab-pane fade show active" id="vehinfo" role="tabpanel"
+                                                        aria-labelledby="home-tab">
+                                                        <form>
+                                                            <div class=" row align-items-center">
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="fname">Vehicle Label</Label>
+                                                                    <input type="text" class="form-control" id="fname"
+                                                                        placeholder="vehicle label">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="lname">License Plate Number</label>
+                                                                    <input type="text" class="form-control" id="lname"
+                                                                        placeholder="License Plate Number">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="uname">Engine Number</label>
+                                                                    <input type="text" class="form-control" id="uname"
+                                                                        placeholder="Engine Number">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="cname">Chassis Number</label>
+                                                                    <input type="text" class="form-control" id="cname"
+                                                                        placeholder="Chassis Number">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label class="d-block">Vehicle Status</label>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio6"
+                                                                            name="customRadio1"
+                                                                            class="custom-control-input" checked="">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio6"> Active </label>
+                                                                    </div>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio7"
+                                                                            name="customRadio1"
+                                                                            class="custom-control-input">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio7"> Inactive </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="dob">Request Form</label><br>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio8"
+                                                                            name="customRadio2"
+                                                                            class="custom-control-input" checked="">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio8"> With Request
+                                                                        </label>
+                                                                    </div>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio9"
+                                                                            name="customRadio2"
+                                                                            class="custom-control-input">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio9"> Without
+                                                                            Request</label>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Client</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect1">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option>Add New</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Cluster</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect2">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Trailer</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect3">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Model</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option>Add model</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Year of Manufacture</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option>2023</option>
+                                                                        <option>2022</option>
+                                                                        <option>2021</option>
+                                                                        <option>2020</option>
+                                                                        <option>2019</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>IMEI</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="fname">Sim Number</label>
+                                                                    <input type="text" class="form-control" id="fname"
+                                                                        placeholder="Sim Number">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="lname">Installation Date:
+                                                                    </label>
+                                                                    <input type="date" class="form-control" id="lname"
+                                                                        value="">
+                                                                </div>
+                                                                <div class="form-group col-sm-12">
+                                                                    <label>Remarks</label>
+                                                                    <textarea class="form-control" name="address"
+                                                                        rows="5" style="line-height: 22px;">
+                                                                      </textarea>
+                                                                </div>
+
+
+                                                                <br>
+                                                                <div class="form-group col-12">
+                                                                    <label>Vehicle Features</label>
+                                                                    <p>
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="inlineCheckbox1" value="option1">
+                                                                        <label class="form-check-label"
+                                                                            for="inlineCheckbox1">RFID Card</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="inlineCheckbox2" value="option2">
+                                                                        <label class="form-check-label"
+                                                                            for="inlineCheckbox2">Canbus</label>
+                                                                    </div>
+                                                                    <div class="form-check form-check-inline">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="inlineCheckbox3" value="option3">
+                                                                        <label class="form-check-label"
+                                                                            for="inlineCheckbox3"> SOS</label>
+                                                                    </div>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Driver</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option>Auto Matic</option>
+
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Maker Name</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Toyota</option>
+                                                                        <option>Nissan</option>
+                                                                        <option>Acura</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Vehicle Color</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Silver</option>
+                                                                        <option>Red</option>
+                                                                        <option>Blue</option>
+                                                                        <option>Black</option>
+                                                                        <option>white</option>
+                                                                        <option>Grey</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Technician</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option>Import Technician</option>
+                                                                        <option>Fahad Javid</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Brand</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                        <option></option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="fname">Operator</label>
+                                                                    <input type="text" class="form-control" id="fname"
+                                                                        placeholder="Operator">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="fname">Expiry Date:</label>
+                                                                    <input type="date" class="form-control" id="fname">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Vehicle Type</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option>Car</option>
+                                                                        <option>Bike</option>
+                                                                        <option>Bus</option>
+                                                                        <option>Truck</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Preference</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Select Option</option>
+                                                                        <option>Low</option>
+                                                                        <option>Medium</option>
+                                                                        <option>High</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" row align-items-center">
+                                                                <div
+                                                                    class="iq-card-header d-flex justify-content-between">
+                                                                    <div class="iq-header-title">
+                                                                        <h4 class="card-title"
+                                                                            style="margin-left: 15px;">Counters</h4>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" row align-items-center">
+                                                                <div class="form-group col-sm-4">
+                                                                    <label>Odometer</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option></option>
+                                                                        <option>GPS</option>
+                                                                        <option>Device</option>
+                                                                        <option>off</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-2">
+                                                                    <label></label>
+                                                                    <input type="number" class="form-control"
+                                                                        id="fuelsummerrater" value="">
+                                                                </div>
+                                                            </div>
+                                                            <div class=" row align-items-center">
+                                                                <div class="form-group col-sm-4">
+                                                                    <label>Engine Hours</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option></option>
+                                                                        <option>Off</option>
+                                                                        <option>ACC</option>
+                                                                        <option>Sensor</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-2">
+                                                                    <label></label>
+                                                                    <input type="number" class="form-control"
+                                                                        id="fuelsummerrater" value="">
+                                                                </div>
+
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="obj" role="tabpanel"
+                                                        aria-labelledby="profile-tab">
+                                                        <form>
+                                                            <div class=" row align-items-center">
+                                                                <div class="form-group col-sm-6 col-lg-6">
+                                                                    <label>Icon on map</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Default</option>
+                                                                        <option>Icon</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group  col-lg-6 col-sm-6">
+                                                                    <label>Stopped Icon Color</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Black</option>
+                                                                        <option>Yellow</option>
+                                                                        <option>Red</option>
+                                                                        <option>Green</option>
+                                                                        <option>Blue</option>
+                                                                        <option>Orange</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Engine Idle Icon Color</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option></option>
+                                                                        <option selected="">Black</option>
+                                                                        <option>Yellow</option>
+                                                                        <option>Red</option>
+                                                                        <option>Green</option>
+                                                                        <option>Blue</option>
+                                                                        <option>Orange</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="nrtime">NR Time</label>
+                                                                    <input type="time" class="form-control" id="nrtime"
+                                                                        value="22:00" placeholder="NR Time">
+                                                                </div>
+
+
+
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="tail-color" class="form-label">Tail
+                                                                        Color</label>
+                                                                    <input type="color" id="tailcolor" name="t_color"
+                                                                        class="jscolor {valueElement:'tailcolor', styleElement:'tailcolor', hash:true, mode:'HSV'} form-control"
+                                                                        value="" required>
+                                                                </div>
+
+
+                                                                <br>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label class="d-block">Choose Gateway
+                                                                        Type</label>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio10"
+                                                                            name="customRadio3"
+                                                                            class="custom-control-input" checked="">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio10"> SMS HTTP Gateway
+                                                                        </label>
+                                                                    </div>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio11"
+                                                                            name="customRadio3"
+                                                                            class="custom-control-input">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio11"> Android SMS Gateway
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>SMS HTTP Gateway</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Mshastra</option>
+                                                                        <option>M shastra Long phone</option>
+                                                                        <option>SMS country</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Email Server</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Mail Gun</option>
+                                                                        <option>Mail Gun</option>
+                                                                        <option>Send Grid</option>
+                                                                    </select>
+                                                                </div>
+
+
+
+                                                                <div class="form-group col-sm-6">
+                                                                    <label class="d-block">Choose Gateway
+                                                                        Type</label>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio12"
+                                                                            name="customRadio4"
+                                                                            class="custom-control-input" checked="">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio12"> SMS HTTP Gateway
+                                                                        </label>
+                                                                    </div>
+                                                                    <div
+                                                                        class="custom-control custom-radio custom-control-inline">
+                                                                        <input type="radio" id="customRadio13"
+                                                                            name="customRadio4"
+                                                                            class="custom-control-input">
+                                                                        <label class="custom-control-label"
+                                                                            for="customRadio13"> Android SMS Gateway
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>SMS HTTP Gateway</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Mshastra</option>
+                                                                        <option>M shastra Long phone</option>
+                                                                        <option>SMS country</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="dpass">Device Password</label>
+                                                                    <input type="Password" class="form-control"
+                                                                        id="dpass" value="ggps">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>No connection marker color</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option></option>
+                                                                        <option selected="">Black</option>
+                                                                        <option>Yellow</option>
+                                                                        <option>Red</option>
+                                                                        <option>Green</option>
+                                                                        <option>Blue</option>
+                                                                        <option>Orange</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Moving Icon Color</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option></option>
+                                                                        <option selected="">Black</option>
+                                                                        <option>Yellow</option>
+                                                                        <option>Red</option>
+                                                                        <option>Green</option>
+                                                                        <option>Blue</option>
+                                                                        <option>Orange</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="icon">Icon</label>
+                                                                    <button type="submit"
+                                                                        class="btn btn-primary mr-2">Pick
+                                                                        Icon</button>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label>Save Raw Data</label>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input position-static"
+                                                                            type="checkbox" id="blankCheckbox"
+                                                                            value="option1" aria-label="...">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="fname">Tail Width</Label>
+                                                                    <input type="text" class="form-control" id="tailwid"
+                                                                        placeholder="Tail Width">
+                                                                </div>
+
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="fuel" role="tabpanel"
+                                                        aria-labelledby="contact-tab">
+                                                        <form class="needs-validation" novalidate>
+                                                            <div class="form-row">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom01">Source</label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Rates</option>
+                                                                        <option>Fuel Leval</option>
+                                                                        <option>Fuel Consumption</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom02">Measurement </label>
+                                                                    <select class="form-control"
+                                                                        id="exampleFormControlSelect4">
+                                                                        <option selected="">Liter/100km</option>
+                                                                        <option>Miles per gallon</option>
+
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="fuelcostperliter">Cost per liter</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="fuelcostperliter"
+                                                                        placeholder="Cost per liter">
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="fuelsummerrate">Summer rate
+                                                                        (ltrs)</label>
+                                                                    <input type="number" class="form-control"
+                                                                        id="fuelsummerrater" value="">
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="fuelwinterrate">Winter rate
+                                                                        (ltrs)</label>
+                                                                    <input type="number" class="form-control"
+                                                                        id="fuelwinterrater" value="">
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="winterduration">Winters Duration</label>
+                                                                    <input type="date" class="form-control"
+                                                                        id="winterduration" value="">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
                                     role="grid" aria-describedby="user-list-page-info" style="width: 290px;">
                                     <thead>
@@ -396,23 +1026,139 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+
+                            <div style="display: flex;">
+                                <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"
+                                    aria-controls="user-list-table" style="width: 200px;">
+                                <button style="width: 40px; margin-left: 2px;" data-toggle="modal"
+                                    data-target="#example" class="btn onem btn-primary"><i class='fas fa-calendar-alt'
+                                        style='font-size:18px'></i></button>
+                                <button style="width: 40px; margin-left: 2px;" data-toggle="modal" data-target="#addv"
+                                    class="btn onem btn-primary"><b>X</b></button>
+
+                            </div>
                             <div class="outer">
-                                <div>
-                                    <input type="search" class="form-control" id="exampleInputSearch"
-                                        placeholder="Search" aria-controls="user-list-table" style="width: 190px;">
-                                </div>
                                 <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
                                     role="grid" aria-describedby="user-list-page-info" style="width: 290px;">
                                     <thead>
                                         <tr>
-                                            <th>Table</th>
-                                            <th>Object</th>
-                                            <th>Event</th>
+                                            <th>Device</th>
+                                            <th>Events</th>
+                                            <th>Speed</th>
+                                            <th>Ignition</th>
+                                            <th>Time</th>
 
 
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody style="font-size: 15px;">
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fas fa-power-off"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: red;"><i class="fas fa-power-off"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fas fa-power-off"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: red;"><i class="fas fa-power-off"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fas fa-power-off"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: red;"><i class="fas fa-power-off"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fas fa-power-off"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: red;"><i class="fas fa-power-off"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fas fa-power-off"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: red;"><i class="fas fa-power-off"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fas fa-power-off"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: red;"><i class="fas fa-power-off"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465</td>
+                                            <td>Signal</td>
+                                            <td>8.00</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fas fa-power-off"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+
 
                                     </tbody>
                                 </table>
@@ -421,40 +1167,79 @@
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                             <div class="outer">
-                                <div>
-                                    <input type="search" class="form-control" id="exampleInputSearch"
-                                        placeholder="Search" aria-controls="user-list-table" style="width: 190px;">
-                                </div>
-                                <div class="form-group row" style="margin-top: 5px;">
-                                    <label class="control-label col-sm-2 align-self-center mb-0"
-                                        for="email" style="margin-right: 5px;">Device:</label>
-                                    <div class="col-sm-6">
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option selected="" disabled="">Select Device</option>
-                                            <option>351654 yaris</option>
-                                            <option>515654 Tyoyta</option>
-                                            <option>Harsh Testing</option>
-                                            <option>466051 Camry</option>
-                                            <option>Above All</option>
-                                         </select>
+
+
+                                <div style="overflow: hidden;">
+                                    <div>
+                                        <label>Devices:</label>
+                                        <select class="form-control" id="exampleFormControlSelect1"
+                                            style="margin-top: -10px;">
+                                            <option selected="" disabled="">Select your age</option>
+                                            <option>087854 Toyota</option>
+                                            <option>188726 Camri</option>
+                                            <option>264461 Honda</option>
+                                            <option>468760 Audi</option>
+                                            <option>All</option>
+                                        </select>
+                                    </div>
+                                    <div style="display: flex;">
+
+                                        <div>
+                                            <label>From:</label>
+                                            <input type="date" class="form-control" id="exampleInputSearch"
+                                                placeholder="Search" aria-controls="user-list-table"
+                                                style="width: 165px; margin-top: -10px;">
+                                        </div>
+                                        <div>
+                                            <select class="form-control" id="exampleFormControlSelect1"
+                                                style="width: 120px; margin-top: 24px; margin-left: 5px;">
+
+                                                <option selected="" disabled="">00:00</option>
+                                                <option>12 am</option>
+                                                <option>1 am</option>
+                                                <option>2 am</option>
+                                                <option>3 am</option>
+                                                <option>4 am</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div style="display: flex;">
+
+                                        <div>
+                                            <label>To:</label>
+                                            <input type="date" class="form-control" id="exampleInputSearch"
+                                                placeholder="Search" aria-controls="user-list-table"
+                                                style="width: 165px; margin-top: -10px;">
+                                        </div>
+                                        <div>
+                                            <select class="form-control" id="exampleFormControlSelect1"
+                                                style="width: 120px; margin-top: 24px; margin-left: 5px;">
+
+                                                <option selected="" disabled="">00:00</option>
+                                                <option>12 am</option>
+                                                <option>1 am</option>
+                                                <option>2 am</option>
+                                                <option>3 am</option>
+                                                <option>4 am</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div style="margin-top: 10px;">
+                                        <button data-toggle="modal" data-target="#exampleModalCenter"
+                                            class="btn onem btn-primary">Show History</button>
+
+                                        <button style="width: 40px; margin-left: 10px;" data-toggle="modal"
+                                            data-target="#exampleModalCenter" class="btn onem btn-primary"><i
+                                                class='fas fa-file-export' style='font-size:18px'></i></button>
+
+                                        <button style="width: 40px;" data-toggle="modal"
+                                            data-target="#exampleModalCenter"
+                                            class="btn onem btn-primary"><b>X</b></button>
                                     </div>
                                 </div>
-                                <div class="form-group row" style="margin-top: -12px;">
-                                    <label class="control-label col-sm-2 align-self-center mb-0"
-                                        for="pwd1" style="margin-right: 5px;">From:</label>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control" id="pwd1"
-                                            placeholder="Enter Your password">
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="margin-top: -12px;">
-                                    <label class="control-label col-sm-2 align-self-center mb-0"
-                                        for="pwd1" style="margin-right: 5px;">To:</label>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control" id="pwd1"
-                                            placeholder="Enter Your password">
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -491,9 +1276,7 @@
     </div>
     <!-- Wrapper END -->
     <!-- Footer -->
-
     <!-- Footer END -->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
@@ -663,6 +1446,53 @@
 
         // Start the countdown with the default value of 10
         startCountdown(10);
+    </script>
+    <script>
+        function toggleWidth() {
+            var div = document.getElementById('animatedDiv');
+            var currentWidth = div.style.maxWidth;
+
+
+            // Toggle between 0 and a specific width (e.g., 200px)
+            div.style.maxWidth = currentWidth === '0px' ? '600px' : '0';
+            div.style.left = currentWidth === '0px' ? '50px' : '0';
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to the buttons
+            var triggerButton = document.getElementById('ap');
+            var disappearingButton = document.getElementById('dp');
+
+            // Add a click event listener to the trigger button
+            triggerButton.addEventListener('click', function () {
+                // Animate the disappearing button
+                disappearingButton.style.opacity = '0';
+
+                // You can add more animation effects or use a library like GSAP for complex animations
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get a reference to the button
+            var movingButton = document.getElementById('movingButton');
+
+            // Add a click event listener to the button
+            movingButton.addEventListener('click', function () {
+                // Toggle the "moved" class on each click
+                movingButton.classList.toggle('moved');
+
+
+                // Change the button text based on the class
+                if (movingButton.classList.contains('moved')) {
+
+                    movingButton.innerHTML = '🡲';
+                } else {
+                    movingButton.innerHTML = '🡰';
+                }
+            });
+        });
     </script>
 </body>
 
