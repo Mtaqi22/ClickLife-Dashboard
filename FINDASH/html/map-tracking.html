@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
+<body class="hang">
     <!-- loader Start -->
     <div id="loading">
         <div id="loading-center">
@@ -214,9 +214,9 @@
 
         <!-- TOP Nav Bar END -->
         <!-- Page Content  -->
-        <div id="content-page " class="content-page" style=" padding: 0px 0px 0px 0px; margin-bottom: -10px;">
+        <div id="content-page " class="content-page" style=" padding: 0px 0px 0px 0px; margin-bottom: -10px; overflow: hidden;">
 
-            <div id="map" style="height: 100vh; width: 100%;">
+            <div id="map" class="mp" style="height: 100vh; width: 100%;">
 
             </div>
             <div style="position: absolute; left: 55%; top: 20px;
@@ -232,13 +232,16 @@
             </div>
             <div class="container-fluid tile">
 
-                <label style="color: purple;">Location: Bahrain</label>
+                <label style="color: rgb(255, 255, 255);margin-top: 30px;">Location: Bahrain</label>
             </div>
 
             <button id="movingButton" onclick="toggleWidth()" data-toggle="modal" data-target="#addv"
                 class="btn onem btn-primary moving-button ">🡰</button>
 
-            <div class="rightside">
+                <button id="movingButton1" onclick="toggleDiv()" data-toggle="modal" data-target="#addv"
+                class="btn onem btn-primary moving-button1">🡲</button>
+
+            <div id="rghtsde" class="rightside">
                 <div class="headin"><label style="color: white; margin-left: 5px;">Device Info</label></div>
                 <div><label style="margin-left: 5px;margin-right: 5px;">Device Number:</label>8757854</div>
                 <div><label style="margin-left: 5px;margin-right: 5px;">Address:</label><br>
@@ -247,29 +250,40 @@
                 </div>
                 <div><label style="margin-left: 5px;margin-right: 5px;">Time:</label>13-11-2023 05:32:45</div>
                 <div><label style="margin-left: 5px;margin-right: 5px;">Stop:</label>44h 44min 14s</div>
-                <hr style="border-color: rgb(204, 187, 187);">
+                <div class="headin"><label style="color: white; margin-left: 5px;">Details</label></div>
                 <div style="margin-left: 5px;margin-right: 5px;"><i class="fas fa-tachometer-alt"
-                        style="font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">Speed:</label>
-                    25kph</div>
-                <div style="margin-left: 5px;margin-right: 5px;"><i class="fas fa-tachometer-alt"
-                        style="font-size: 25px;"></i><label
-                        style="margin-left: 5px;margin-right: 5px;">Altitude:</label> 15m</div>
+                        style="font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">Speed:</label>25kph<br>
+                    <i class="fas fa-tachometer-alt" style="font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">Altitude:</label> 15m<br>
+                    <i class="fas fa-satellite-dish" style="font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">Satellite:</label> 15<br>
+                    <i class="fa fa-power-off" style="font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">External Power:</label> On<br>
+                    <i class="fa fa-battery-2" style="font-size: 17px;"></i><label style="margin-left: 5px;margin-right: 5px;">Internal Battery:</label>3.93v<br>
+                    <i class="fa fa-power-off" style="font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">Ignition:</label> On<br>
+                    <i class="fa fa-power-off" style="font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">Immobilizer:</label> Off<br>
+                    <i class="fa fa-battery-2" style="font-size: 17px;"></i><label style="margin-left: 5px;margin-right: 5px;">External Battery:</label>3.93v<br>   
+                    <i class="fas fa-street-view" style="font-size: 23px;"></i><label style="margin-left: 5px;margin-right: 5px;">Seat Belt:</label>Off<br>
+                    <i class="fab fa-squarespace" style="font-size: 23px;"></i><label style="margin-left: 5px;margin-right: 5px;">Distance:</label>Off<br> 
+                </div>
 
-                <div class="headin"><label style="color: white; margin-left: 5px;">Location</label></div>
-                <div><label style="margin-left: 5px;margin-right: 5px;">City:</label>Manama<br>
-                    <label style="margin-left: 5px;margin-right: 5px;">Road:</label>8757854<br>
-                    <label style="margin-left: 5px;margin-right: 5px;">House:</label>1287854<br>
-                    <label style="margin-left: 5px;margin-right: 5px;">State:</label>Al Muharraq<br>
+                <div class="headin"><label style="color: white; margin-left: 5px;">GPRS Command</label></div>
+                <div><button style="margin-left: 15px;margin-right: 15px; margin-top:5px;width:170px;" class="btn btn-primary">Send Command SMS</button><br>
+                    <button style="margin-left: 15px;margin-right: 15px; margin-top: 5px; margin-bottom: 5px; width:170px;" class="btn btn-primary">Send Command GPRS</button>
+                  
                 </div>
-                <div class="headin"><label style="color: white; margin-left: 5px;">Fuel</label></div>
-                <div><label style="margin-left: 5px;margin-right: 5px;">Total:</label>150 liters<br>
-                    <label style="margin-left: 5px;margin-right: 5px;">Limit:</label>250 liters<br>  
-                </div>
+               
                 <div class="headin"><label style="color: white; margin-left: 5px;">Driver</label></div>
+                <div style="width: 190px; height: 200px; margin: 5px; background-image:url('./images/driver.jpg'); background-size: cover; background-position: center; border-radius: 5px;"></div>
                 <div><label style="margin-left: 5px;margin-right: 5px;">Name:</label>Hassan<br>
                     <label style="margin-left: 5px;margin-right: 5px;">Email:</label>hassan@gmail.com<br> 
                     <label style="margin-left: 5px;margin-right: 5px;">Phone:</label>35478954<br> 
                     <label style="margin-left: 5px;margin-right: 5px;">RFID:</label>45478954<br>  
+                </div>
+                <div class="headin"><label style="color: white; margin-left: 5px;">Locking</label></div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Status:</label>Locked<br>
+                     
+                </div>
+                <div class="headin"><label style="color: white; margin-left: 5px;">Fuel</label></div>
+                <div><label style="margin-left: 5px;margin-right: 5px;">Total:</label>150 liters<br>
+                    <label style="margin-left: 5px;margin-right: 5px;">Limit:</label>250 liters<br>  
                 </div>
 
             </div>
@@ -924,7 +938,7 @@
                                     role="grid" aria-describedby="user-list-page-info" style="width: 290px;">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th> <input type="checkbox" id="selectAll" onchange="selectAllCheckboxes()" /></th>
                                             <th>Tracker</th>
                                             <th>Information</th>
 
@@ -934,7 +948,7 @@
                                     <tbody>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -943,7 +957,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -951,7 +965,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -959,7 +973,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -967,7 +981,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -975,7 +989,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -983,7 +997,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -991,7 +1005,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="" />
+                                                    <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -999,7 +1013,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="1" />
+                                                    <input type="checkbox" class="checkbox" data-index="1" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -1007,7 +1021,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="1" />
+                                                    <input type="checkbox" class="checkbox" data-index="1" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -1015,7 +1029,7 @@
                                         </tr>
                                         <tr>
                                             <td><label>
-                                                    <input type="checkbox" data-index="1" />
+                                                    <input type="checkbox" class="checkbox" data-index="1" />
                                                 </label></td>
                                             <td>Sunny</td>
                                             <td>13-11-2023 14:57:20</td>
@@ -1200,6 +1214,26 @@
                                                 <option>2 am</option>
                                                 <option>3 am</option>
                                                 <option>4 am</option>
+                                                <option>5 am</option>
+                                                <option>6 am</option>
+                                                <option>7 am</option>
+                                                <option>8 am</option>
+                                                <option>9 am</option>
+                                                <option>10 am</option>
+                                                <option>11 am</option>
+                                                <option>12 pm</option>
+                                                <option>1 pm</option>
+                                                <option>2 pm</option>
+                                                <option>3 pm</option>
+                                                <option>4 pm</option>
+                                                <option>5 pm</option>
+                                                <option>6 pm</option>
+                                                <option>7 pm</option>
+                                                <option>8 pm</option>
+                                                <option>9 pm</option>
+                                                <option>10 pm</option>
+                                                <option>11 pm</option>
+                                               
                                             </select>
                                         </div>
 
@@ -1222,6 +1256,25 @@
                                                 <option>2 am</option>
                                                 <option>3 am</option>
                                                 <option>4 am</option>
+                                                <option>5 am</option>
+                                                <option>6 am</option>
+                                                <option>7 am</option>
+                                                <option>8 am</option>
+                                                <option>9 am</option>
+                                                <option>10 am</option>
+                                                <option>11 am</option>
+                                                <option>12 pm</option>
+                                                <option>1 pm</option>
+                                                <option>2 pm</option>
+                                                <option>3 pm</option>
+                                                <option>4 pm</option>
+                                                <option>5 pm</option>
+                                                <option>6 pm</option>
+                                                <option>7 pm</option>
+                                                <option>8 pm</option>
+                                                <option>9 pm</option>
+                                                <option>10 pm</option>
+                                                <option>11 pm</option>
                                             </select>
                                         </div>
 
@@ -1458,6 +1511,22 @@
             div.style.left = currentWidth === '0px' ? '50px' : '0';
         }
     </script>
+   
+   <script>
+    function toggleDiv() {
+        var container = document.getElementById('rghtsde');
+
+        // Toggle the visibility using transform and opacity
+        if (container.style.transform === 'translateX(0%)' || container.style.transform === '') {
+            container.style.transform = 'translateX(100%)';
+            container.style.opacity = '0';
+        } else {
+            container.style.transform = 'translateX(0%)';
+            container.style.opacity = '1';
+        }
+    }
+</script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Get references to the buttons
@@ -1493,6 +1562,37 @@
                 }
             });
         });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get a reference to the button
+            var movingButton = document.getElementById('movingButton1');
+
+            // Add a click event listener to the button
+            movingButton.addEventListener('click', function () {
+                // Toggle the "moved" class on each click
+                movingButton.classList.toggle('moved1');
+
+
+                // Change the button text based on the class
+                if (movingButton.classList.contains('moved1')) {
+
+                    movingButton.innerHTML = '🡰';
+                } else {
+                    movingButton.innerHTML = '🡲';
+                }
+            });
+        });
+    </script>
+    <script>
+        function selectAllCheckboxes() {
+            const selectAllCheckbox = document.getElementById('selectAll');
+            const checkboxes = document.getElementsByClassName('checkbox');
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
+            }
+        }
     </script>
 </body>
 
