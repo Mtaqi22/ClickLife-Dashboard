@@ -410,12 +410,49 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt { opacity: 1; }
                               Content Page
 -----------------------------------------------------------------------*/
 .content-page { overflow: hidden; margin-left: 260px; padding: 105px 15px 0; min-height: 100vh; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; background-color: rgb(177 149 149 / 50%); }
+.content-page1 { margin-left: 220px; padding: 75px 1px 0; min-height: 96vh; -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; background-color: rgb(177 149 149 / 50%); }
+.outer{
+  overflow: auto;
+  max-height: 82vh;
+}
 .iq-user-dropdown { width: 350px; }
 body.sidebar-main .content-page { margin-left: 80px; }
+body.sidebar-main .content-page1 { margin-left: 40px;  }
+@media (max-width: 768px) {
+  .content-page1 {
+      padding: 75px 1px 0;
+      min-height: 91vh;
+      background-color: rgba(177, 149, 149, 0.8); /* Adjust the background color and transparency for smaller screens */
+  }
+
+  body.sidebar-main .content-page1 {
+      margin-left: 10px; /* Adjust the margin for smaller screens */
+  }
+}
 .chart-container {
   width: 100%;
   height: 100%;
   margin: 10px;
+}
+.countt {
+  position: absolute;
+  top: 10px;
+  left: 90%; /* Horizontally center the div */
+  transform: translateX(-50%); /* Center the div horizontally */
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 120px; /* Add a maximum width to prevent it from becoming too wide on large screens */
+  display: flex;
+  border-radius: 5px;
+  max-height: 40px;
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  .countt {
+      width: 90%; /* Adjust the width for smaller screens */
+  }
 }
 
 .filters {
@@ -1094,6 +1131,8 @@ small sidebar with icon
 body.two-sidebar.sidebar-main .iq-sidebar { width: 0px; }
 .two-sidebar .content-page { margin-left: 320px; }
 .two-sidebar.sidebar-main .content-page { margin-left: 60px;  }
+.two-sidebar .content-page1 { margin-left: 320px; }
+.two-sidebar.sidebar-main .content-page1 { margin-left: 60px;  }
 
 
 .two-sidebar .iq-timeline li .timeline-dots,.iq-page-menu-horizontal .iq-timeline li .timeline-dots { height: 10px; width: 10px; left: -44px; }
@@ -1247,7 +1286,7 @@ background: #1e7145;
   }
   
   .active, .accordion:hover {
-    background-color: #87cefa;
+    background-color: white;
     
   }
   .accordion{
