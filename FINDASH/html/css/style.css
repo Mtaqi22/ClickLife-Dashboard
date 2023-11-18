@@ -161,8 +161,9 @@ a:hover { text-decoration: none; }
 .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover { background: transparent; color: var(--iq-primary); }
 
 /*--------------*/
-.iq-card-header select.form-control { background: var(--iq-border-light); border: none; font-size: 14px; margin-right: 15px; }
+.iq-card-header select.form-control { background: var(--iq-border-light); border: none; font-size: 14px; margin-right: 15px;  border: 2px solid #b0cfcd !important; }
 .iq-card-header select.form-control.width-100 { width: 180px; }
+
 
 /*---------------------------------------------------------------------
                              Badge Img Tag
@@ -419,6 +420,21 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt { opacity: 1; }
 .content-page1::-webkit-scrollbar{
   display: none;
 }
+#sidebar11 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  border: 2px solid rgb(179, 161, 161);
+  transition: 0.5s;
+}
+
+#main11 {
+  transition: margin-right .5s;
+}
 .mp{
   overflow: hidden;
   scrollbar-width: none;
@@ -426,6 +442,13 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt { opacity: 1; }
 }
 .mp::-webkit-scrollbar{
   display: none;
+}
+.vl {
+  border-left: 2px solid gray;
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+
 }
 .hang{
   overflow: hidden;
@@ -1224,6 +1247,9 @@ body.two-sidebar.sidebar-main .iq-sidebar { width: 0px; }
 .two-sidebar .iq-timeline li .timeline-dots,.iq-page-menu-horizontal .iq-timeline li .timeline-dots { height: 10px; width: 10px; left: -44px; }
 .gap{
   margin-top:15%;
+}
+.wid{
+  max-width: 400px !important;
 }
 .gap1{
   margin: 5%
