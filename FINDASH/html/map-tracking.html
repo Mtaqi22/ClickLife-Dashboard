@@ -69,7 +69,7 @@
                                 <li><a href="#"><i class="fa fa-signal"></i>Events</a>
                                 </li>
                                 <li><a href="#"><i class="las la-tag"></i>Alerts</a></li>
-                                <li><a href="#"><i class="las la-sync"></i>Geo Boundries</a></li>
+                                <li><a href="geofencing.html"><i class="las la-sync"></i>Geo Boundries</a></li>
                                 <li><a href="#"><i class="fas fa-book"></i>Vehicle History</a></li>
                                 <li><a href="#"><i class="fab fa-codepen"></i>Device Testing</a></li>
                                 <li><a href="#"><i class="fas fa-camera"></i>Camera & Media</a></li>
@@ -251,22 +251,22 @@
                 <div><label style="margin-left: 5px;margin-right: 5px;">Time:</label>13-11-2023 05:32:45</div>
                 <div><label style="margin-left: 5px;margin-right: 5px;">Stop:</label>44h 44min 14s</div>
                 <div class="headin"><label style="color: white; margin-left: 5px;">Details</label></div>
-                <div style="margin-left: 5px;margin-right: 5px;"><i style="font-size: 20px;color: #2bd91e;" class="fas fa-tachometer-alt"
+                <div style="margin-left: 5px;margin-right: 5px;"><i style="font-size: 15px;color: #2bd91e;" class="fas fa-tachometer-alt"
                         style="font-size: 20px;"></i><label style= " margin-left: 5px;margin-right: 5px;">Speed:</label>25kph<br>
-                    <i class="fas fa-tachometer-alt" style="color: #2bd91e; font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">Altitude:</label> 15m<br>
-                    <i class="fas fa-satellite-dish" style="color: #2bd91e; font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">Satellite:</label> 15<br>
-                    <i class="fa fa-power-off" style="color: #2bd91e; font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">External Power:</label> On<br>
-                    <i class="fa fa-battery-2" style="color: #2bd91e; font-size: 17px;"></i><label style="margin-left: 5px;margin-right: 5px;">Internal Battery:</label>3.93v<br>
-                    <i class="fa fa-power-off" style="color: #2bd91e; font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">Ignition:</label> On<br>
-                    <i class="fa fa-power-off" style="color: #2bd91e;font-size: 25px;"></i><label style="margin-left: 5px;margin-right: 5px;">Immobilizer:</label> Off<br>
-                    <i class="fa fa-battery-2" style="color: #2bd91e; font-size: 17px;"></i><label style="margin-left: 5px;margin-right: 5px;">External Battery:</label>3.93v<br>   
-                    <i class="fas fa-street-view" style="color: #2bd91e; font-size: 23px;"></i><label style="margin-left: 5px;margin-right: 5px;">Seat Belt:</label>Off<br>
-                    <i class="fab fa-squarespace" style="color: #2bd91e; font-size: 23px;"></i><label style="margin-left: 5px;margin-right: 5px;">Distance:</label>Off<br> 
+                    <i class="fas fa-tachometer-alt" style="color: #2bd91e; font-size: 15px;"></i><label style="margin-left: 5px;margin-right: 5px;">Altitude:</label> 15m<br>
+                    <i class="fas fa-satellite-dish" style="color: #2bd91e; font-size: 15px;"></i><label style="margin-left: 5px;margin-right: 5px;">Satellite:</label> 15<br>
+                    <i class="fa fa-power-off" style="color: #2bd91e; font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">External Power:</label> On<br>
+                    <i class="fa fa-battery-2" style="color: #2bd91e; font-size: 12px;"></i><label style="margin-left: 5px;margin-right: 5px;">Internal Battery:</label>3.93v<br>
+                    <i class="fa fa-power-off" style="color: #2bd91e; font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">Ignition:</label> On<br>
+                    <i class="fa fa-power-off" style="color: #2bd91e;font-size: 20px;"></i><label style="margin-left: 5px;margin-right: 5px;">Immobilizer:</label> Off<br>
+                    <i class="fa fa-battery-2" style="color: #2bd91e; font-size: 12px;"></i><label style="margin-left: 5px;margin-right: 5px;">External Battery:</label>3.93v<br>   
+                    <i class="fas fa-street-view" style="color: #2bd91e; font-size: 17px;"></i><label style="margin-left: 5px;margin-right: 5px;">Seat Belt:</label>Off<br>
+                    <i class="fab fa-squarespace" style="color: #2bd91e; font-size: 17px;"></i><label style="margin-left: 5px;margin-right: 5px;">Distance:</label>Off<br> 
                 </div>
 
                 <div class="headin"><label style="color: white; margin-left: 5px;">GPRS Command</label></div>
-                <div><button style="margin-left: 15px;margin-right: 15px; margin-top:5px;width:170px;" class="btn btn-primary">Send Command SMS</button><br>
-                    <button style="margin-left: 15px;margin-right: 15px; margin-top: 5px; margin-bottom: 5px; width:170px;" class="btn btn-primary">Send Command GPRS</button>
+                <div><button style="margin-left: 15px;margin-right: 15px; margin-top:5px;width:170px;" class="btn btn-primary">Switch On Vehicle</button><br>
+                    <button style="margin-left: 15px;margin-right: 15px; margin-top: 5px; margin-bottom: 5px; width:170px;" class="btn btn-primary">Switch Off Vehicle</button>
                   
                 </div>
                
@@ -520,6 +520,11 @@
                                                                     <label for="fname">Sim Number</label>
                                                                     <input type="text" class="form-control" id="fname"
                                                                         placeholder="Sim Number">
+                                                                </div>
+                                                                <div class="form-group col-sm-6">
+                                                                    <label for="fname">Device Number</label>
+                                                                    <input type="text" class="form-control" id="fname"
+                                                                        placeholder="Device Number">
                                                                 </div>
                                                                 <div class="form-group col-sm-6">
                                                                     <label for="lname">Installation Date:

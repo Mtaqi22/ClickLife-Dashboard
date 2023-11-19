@@ -512,7 +512,8 @@
                               <button data-toggle="modal" data-target="#addvehicle" type="button"
                                  style=" margin-top: 5px; height: 40px;" class="btn btn-primary">+
                                  Add</button>
-                              <button type="button" style="margin-top: 5px; margin-left: 5px; height: 40px;"
+                              <button type="button" data-toggle="modal" data-target="#remove"
+                                 style="margin-top: 5px; margin-left: 5px; height: 40px;"
                                  class="btn btn-primary">Remove</button>
                               <div class="form-group" style="margin-top: 10px; margin-left: 5px; height: 40px;">
 
@@ -702,6 +703,11 @@
                                                       <input type="text" class="form-control" id="fname"
                                                          placeholder="Sim Number">
                                                    </div>
+                                                   <div class="form-group col-sm-6">
+                                                      <label for="fname">Device Number</label>
+                                                      <input type="text" class="form-control" id="fname"
+                                                          placeholder="Device Number">
+                                                  </div>
                                                    <div class="form-group col-sm-6">
                                                       <label for="lname">Installation Date:
                                                       </label>
@@ -1168,7 +1174,66 @@
                                  </div>
                               </div>
                            </div>
+                           <div class="modal fade" id="remove" tabindex="-1" role="dialog"
+                              aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered wid" role="document">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title" id="exampleModalLongTitle">Removing Reason</h5>
 
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="form-group" style="margin: 5px;">
+
+                                          <select class="form-control" id="exampleFormControlSelect1">
+                                             <option selected="" disabled="">Technician</option>
+                                             <option> Fahad</option>
+                                             <option>Kashif</option>
+                                             <option><i></i>Qasim</option>
+                                          </select>
+
+                                       </div>
+                                       <div class="form-group" style="margin: 5px;">
+                                          <select class="form-control" id="exampleFormControlSelect1">
+                                             <option selected="" disabled="">Status</option>
+                                             <option> Active</option>
+                                             <option>InActive</option>
+
+                                          </select>
+                                       </div>
+                                       <div class="form-group" style="margin: 8px;">
+                                          <label>
+                                             <input type="checkbox" data-index="" />
+                                             Car Sold
+                                          </label>
+                                          <br>
+                                          <label>
+                                             <input type="checkbox" data-index="" />
+                                             Damage Device
+                                          </label>
+                                          <br>
+                                          <label>
+                                             <input type="checkbox" data-index="" />
+                                             Finish Contract with payment
+                                          </label>
+                                          <br>
+                                          <label>
+                                             <input type="checkbox" data-index="" />
+                                             Finish Contract without payment
+                                          </label>
+                                          <br>
+                                          <label>
+                                             <input type="checkbox" data-index="" />
+                                            Car Accident
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-primary">Remove</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
 
                      </div>
@@ -1581,30 +1646,46 @@
    <div id="sidebar11" onclick="toggleNav()">
 
       <label style=" margin-top: 40%; margin-left: 20%;"><i style=" font-size: 24px; margin-right: 5px;"
-         class="fas fa-chart-bar"></i>Table Statistics</label>
+            class="fas fa-chart-bar"></i>Table Statistics</label>
       <div style="position: relative;">
          <canvas id="chartjs-doughnut" width="100" height="100"></canvas>
          <!-- Centered text -->
       </div>
-      <div style="border-left: 3px solid green;height: 50px;margin-right: 5px;margin-left: 5px;"><label style="margin-left: 10px;"> 1234 <br>Online</label></div>
-      <div style="border-left: 3px solid gray;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>In Activ</label></div>
-      <div style="border-left: 3px solid red;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>Offline</label></div>
+      <div style="border-left: 3px solid green;height: 50px;margin-right: 5px;margin-left: 5px;"><label
+            style="margin-left: 10px;"> 1234 <br>Online</label></div>
+      <div style="border-left: 3px solid gray;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label
+            style="margin-left: 10px;"> 12 <br>In Active</label></div>
+      <div style="border-left: 3px solid red;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label
+            style="margin-left: 10px;"> 12 <br>Offline</label></div>
       <hr style="border: 1px solid rgb(136, 127, 127); margin: 5px;">
       <label style="margin-left: 5px;">Model</label>
-      <div style="border-left: 3px solid navy;height: 50px;margin-right: 5px;margin-left: 5px;"><label style="margin-left: 10px;"> 1234 <br>FMB920</label></div>
-      <div style="border-left: 3px solid navy;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
-      <div style="border-left: 3px solid navy;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
+      <div style="border-left: 3px solid navy;height: 50px;margin-right: 5px;margin-left: 5px;"><label
+            style="margin-left: 10px;"> 1234 <br>FMB920</label></div>
+      <div style="border-left: 3px solid navy;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label
+            style="margin-left: 10px;"> 12 <br>FMB920</label></div>
+      <div style="border-left: 3px solid navy;height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label
+            style="margin-left: 10px;"> 12 <br>FMB920</label></div>
       <hr style="border: 1px solid rgb(136, 127, 127); margin: 5px;">
       <label style="margin-left: 5px;">Firmware</label>
-      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px;"><label style="margin-left: 10px;"> 1234 <br>FMB920</label></div>
-      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
-      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
+      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px;"><label
+            style="margin-left: 10px;"> 1234 <br>FMB920</label></div>
+      <div
+         style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;">
+         <label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
+      <div
+         style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;">
+         <label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
       <hr style="border: 1px solid rgb(136, 127, 127); margin: 5px;">
       <label style="margin-left: 5px;">Firmware</label>
-      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px;"><label style="margin-left: 10px;"> 1234 <br>FMB920</label></div>
-      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
-      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;"><label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
-      
+      <div style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px;"><label
+            style="margin-left: 10px;"> 1234 <br>FMB920</label></div>
+      <div
+         style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;">
+         <label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
+      <div
+         style="border-left: 3px solid rgb(106, 106, 173);height: 50px;margin-right: 5px;margin-left: 5px; margin-top: 10px;">
+         <label style="margin-left: 10px;"> 12 <br>FMB920</label></div>
+
 
    </div>
    <!-- Footer END -->
@@ -1767,14 +1848,16 @@
          new Chart(document.getElementById("chartjs-doughnut"), {
             type: "doughnut",
             data: {
-
                datasets: [{
                   data: [260, 125, 54, 146],
                   backgroundColor: [
-                     window.theme.primary,
-                     window.theme.success,
-                     window.theme.warning,
-                     "#dee2e6"
+                    "green",
+                     // Adding green color
+                     "blue",
+                     // Adding red color
+                     "red",
+                     // Adding gray color
+                     "gray"
                   ],
                   borderColor: "transparent"
                }]

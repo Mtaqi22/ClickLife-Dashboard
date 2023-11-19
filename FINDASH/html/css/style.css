@@ -463,9 +463,15 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt { opacity: 1; }
  
   transition: transform 0.3s ease-in-out;
 }
+.moving-button2{
+  cursor: pointer;
+  position: absolute; top: 40% ;left: 33%; max-width: 35px;
+ 
+  transition: transform 0.3s ease-in-out;
+}
 .moving-button1{
   cursor: pointer;
-  position: absolute; top: 40% ;left: 84%; max-width: 35px;
+  position: absolute; top: 8% ;left: 84%; max-width: 35px;
  
   transition: transform 0.3s ease-in-out;
 }
@@ -501,6 +507,9 @@ body.sidebar-main .iq-menu-bt-sidebar .iq-menu-bt { opacity: 1; }
 }
 .moved {
   transform: translateX(-980%);
+}
+.moved2 {
+  transform: translateX(-1250%);
 }
 .moved1 {
   transform: translateX(630%);
@@ -1250,6 +1259,9 @@ body.two-sidebar.sidebar-main .iq-sidebar { width: 0px; }
 }
 .wid{
   max-width: 400px !important;
+}
+.wid22{
+  max-width: 700px !important;
 }
 .gap1{
   margin: 5%
