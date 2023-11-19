@@ -72,8 +72,7 @@
                      <ul id="livetrack" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                         <li><a href="#"><i class="fas fa-map-marker"></i>Map Tracking</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-signal"></i>Events</a>
-                        </li>
+                        
                         <li><a href="#"><i class="las la-tag"></i>Alerts</a></li>
                         <li><a href="#"><i class="las la-sync"></i>Geo Boundries</a></li>
                         <li><a href="#"><i class="fas fa-book"></i>Vehicle History</a></li>
@@ -137,12 +136,10 @@
                                  class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Manage Vehicle
                               <i class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                            <ul id="vehicle" class="iq-submenu collapse show">
-                              <li><a href="profile-edit.html"><i class="fas fa-plus-square"
-                                       style="font-size: 18px;"></i>Add New Vehicles</a></li>
+                              
                               <li class="active"><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
                                        style="font-size: 18px;"></i>All Vehicles</a></li>
-                              <li><a href="user-list.html"><i class="fas fa-history"
-                                       style="font-size: 18px;"></i>Vehicle History</a></li>
+                              
                               <li><a href="#"><i class="fa fa-recycle" style="font-size: 18px;"></i>Deleted
                                     Vehicles</a>
                               </li>
@@ -171,7 +168,7 @@
                            </ul>
                         </li>
                         <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
-                        <li><a href="#"><i class="ri-stack-line" style="font-size: 18px;"></i>Manage Device
+                        <li><a href="adding-device.html"><i class="ri-stack-line" style="font-size: 18px;"></i>Manage Device
                            </a></li>
                         <li><a href="driver-management.html"><i class="fab fa-staylinked"
                                  style="font-size: 18px;"></i>Manage Driver</a></li>
@@ -286,13 +283,10 @@
                                     class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Vehicle Management<i
                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                               <ul id="vehicle" class="iq-submenu collapse show">
-                                 <li><a href="profile-edit.html"><i class="fas fa-plus-square"
-                                          style="font-size: 18px;"></i>Add New Vehicles</a></li>
+                                 
                                  <li class="active"><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
                                           style="font-size: 18px;"></i>All Vehicles</a></li>
-                                 <li><a href="user-list.html"><i class="fas fa-history"
-                                          style="font-size: 18px;"></i>Vehicle
-                                       History</a></li>
+                                 
                                  <li><a href="deleted-vehicle.html"><i class="fa fa-recycle"
                                           style="font-size: 18px;"></i>Deleted Vehicles</a>
                                  </li>
@@ -637,6 +631,8 @@
                <div class="col-sm-12">
                   <div class="iq-card">
                      <div class="iq-card-header d-flex justify-content-between">
+
+               
                         <div class="iq-header-title">
                            <h4 class="card-title">All Vehicles (1,706)</h4>
                         </div>
@@ -669,31 +665,718 @@
                           
                         </style>
 
-                        <div style="margin-left: -10px;">
+                        <div style="margin-left: 46px;">
                            <button type="button" class="btn btn-light" id="toggleButton" onclick="toggleSidebar()">Table
                               statistics</button>
 
                            <div id="side1">
+                              <div class="headin"><label style="color: white; margin-left: 8px;">Table statistics</label></div>
                               <ul>
-                                 <li>Menu Item 1</li>
-                                 <li>Menu Item 2</li>
-                                 <li>Menu Item 3</li>
+                                 <li></li>
+                                 <li></li>
+                                 <li></li>
                               </ul>
                            </div>
 
                         </div>
 
+                        
+                        <!-- <div style="display: flex;">
+                                  -->
+                           <button style=" margin-left: 362px;" data-toggle="modal"
+                               data-target="#addvehicle" class="btn onem btn-primary"><b>Add New Vehicle</b></button>
+                       <!-- </div>  -->
+                        
+                        <div class="outer">
+                           <div class="modal fade " id="addvehicle" tabindex="-1" role="dialog"
+                               aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                               <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                   <div class="modal-content">
+                                       <div class="modal-header">
+                                           <h5 class="modal-title" id="exampleModalLongTitle">Add New Vehicle
+                                           </h5>
+                                           <button type="button" class="close" data-dismiss="modal"
+                                               aria-label="Close">
+                                               <span aria-hidden="true">&times;</span>
+                                           </button>
+                                       </div>
+                                       <div class="modal-body">
+
+                                           <ul class="nav nav-tabs" id="myTab-1" role="tablist">
+                                               <li class="nav-item">
+                                                   <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                       href="#vehinfo" role="tab" aria-controls="home"
+                                                       aria-selected="true">Vehicle Information</a>
+                                               </li>
+                                               <li class="nav-item">
+                                                   <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                       href="#obj" role="tab" aria-controls="profile"
+                                                       aria-selected="false">Object</a>
+                                               </li>
+                                               <li class="nav-item">
+                                                   <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                       href="#fuel" role="tab" aria-controls="contact"
+                                                       aria-selected="false">Fuel Consumption</a>
+                                               </li>
+                                           </ul>
+                                           <div class="tab-content" id="myTabContent-2">
+                                               <div class="tab-pane fade show active" id="vehinfo" role="tabpanel"
+                                                   aria-labelledby="home-tab">
+                                                   <form>
+                                                       <div class=" row align-items-center">
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="fname">Vehicle Label</Label>
+                                                               <input type="text" class="form-control" id="fname"
+                                                                   placeholder="vehicle label">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="lname">License Plate Number</label>
+                                                               <input type="text" class="form-control" id="lname"
+                                                                   placeholder="License Plate Number">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="uname">Engine Number</label>
+                                                               <input type="text" class="form-control" id="uname"
+                                                                   placeholder="Engine Number">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="cname">Chassis Number</label>
+                                                               <input type="text" class="form-control" id="cname"
+                                                                   placeholder="Chassis Number">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label class="d-block">Vehicle Status</label>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio6"
+                                                                       name="customRadio1"
+                                                                       class="custom-control-input" checked="">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio6"> Active </label>
+                                                               </div>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio7"
+                                                                       name="customRadio1"
+                                                                       class="custom-control-input">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio7"> Inactive </label>
+                                                               </div>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="dob">Request Form</label><br>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio8"
+                                                                       name="customRadio2"
+                                                                       class="custom-control-input" checked="">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio8"> With Request
+                                                                   </label>
+                                                               </div>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio9"
+                                                                       name="customRadio2"
+                                                                       class="custom-control-input">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio9"> Without
+                                                                       Request</label>
+                                                               </div>
+
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Client</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect1">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option>Add New</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Cluster</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect2">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Trailer</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect3">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Model</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option>Add model</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Year of Manufacture</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option>2023</option>
+                                                                   <option>2022</option>
+                                                                   <option>2021</option>
+                                                                   <option>2020</option>
+                                                                   <option>2019</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>IMEI</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="fname">Sim Number</label>
+                                                               <input type="text" class="form-control" id="fname"
+                                                                   placeholder="Sim Number">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="lname">Installation Date:
+                                                               </label>
+                                                               <input type="date" class="form-control" id="lname"
+                                                                   value="">
+                                                           </div>
+                                                           <div class="form-group col-sm-12">
+                                                               <label>Remarks</label>
+                                                               <textarea class="form-control" name="address"
+                                                                   rows="5" style="line-height: 22px;">
+                                                                 </textarea>
+                                                           </div>
 
 
-                        <div style="margin-left: 362px;" class="col-md-6">
-                           <div class="user-list-files d-flex float-right">
-                              <a href="profile-edit.html" class="btn onem btn-primary" role="button">Add New Vehicle</a>
+                                                           <br>
+                                                           <div class="form-group col-12">
+                                                               <label>Vehicle Features</label>
+                                                               <p>
+                                                               <div class="form-check form-check-inline">
+                                                                   <input class="form-check-input" type="checkbox"
+                                                                       id="inlineCheckbox1" value="option1">
+                                                                   <label class="form-check-label"
+                                                                       for="inlineCheckbox1">RFID Card</label>
+                                                               </div>
+                                                               <div class="form-check form-check-inline">
+                                                                   <input class="form-check-input" type="checkbox"
+                                                                       id="inlineCheckbox2" value="option2">
+                                                                   <label class="form-check-label"
+                                                                       for="inlineCheckbox2">Canbus</label>
+                                                               </div>
+                                                               <div class="form-check form-check-inline">
+                                                                   <input class="form-check-input" type="checkbox"
+                                                                       id="inlineCheckbox3" value="option3">
+                                                                   <label class="form-check-label"
+                                                                       for="inlineCheckbox3"> SOS</label>
+                                                               </div>
+                                                               </p>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Driver</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option>Auto Matic</option>
+
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Maker Name</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Toyota</option>
+                                                                   <option>Nissan</option>
+                                                                   <option>Acura</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Vehicle Color</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Silver</option>
+                                                                   <option>Red</option>
+                                                                   <option>Blue</option>
+                                                                   <option>Black</option>
+                                                                   <option>white</option>
+                                                                   <option>Grey</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Technician</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option>Import Technician</option>
+                                                                   <option>Fahad Javid</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Brand</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                                   <option></option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="fname">Operator</label>
+                                                               <input type="text" class="form-control" id="fname"
+                                                                   placeholder="Operator">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="fname">Expiry Date:</label>
+                                                               <input type="date" class="form-control" id="fname">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Vehicle Type</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option>Car</option>
+                                                                   <option>Bike</option>
+                                                                   <option>Bus</option>
+                                                                   <option>Truck</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Preference</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Select Option</option>
+                                                                   <option>Low</option>
+                                                                   <option>Medium</option>
+                                                                   <option>High</option>
+                                                               </select>
+                                                           </div>
+                                                       </div>
+                                                       <div class=" row align-items-center">
+                                                           <div
+                                                               class="iq-card-header d-flex justify-content-between">
+                                                               <div class="iq-header-title">
+                                                                   <h4 class="card-title"
+                                                                       style="margin-left: 15px;">Counters</h4>
+                                                               </div>
+                                                           </div>
+                                                       </div>
+                                                       <div class=" row align-items-center">
+                                                           <div class="form-group col-sm-4">
+                                                               <label>Odometer</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option></option>
+                                                                   <option>GPS</option>
+                                                                   <option>Device</option>
+                                                                   <option>off</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-2">
+                                                               <label></label>
+                                                               <input type="number" class="form-control"
+                                                                   id="fuelsummerrater" value="">
+                                                           </div>
+                                                       </div>
+                                                       <div class=" row align-items-center">
+                                                           <div class="form-group col-sm-4">
+                                                               <label>Engine Hours</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option></option>
+                                                                   <option>Off</option>
+                                                                   <option>ACC</option>
+                                                                   <option>Sensor</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-2">
+                                                               <label></label>
+                                                               <input type="number" class="form-control"
+                                                                   id="fuelsummerrater" value="">
+                                                           </div>
+
+                                                       </div>
+
+                                                   </form>
+                                               </div>
+                                               <div class="tab-pane fade" id="obj" role="tabpanel"
+                                                   aria-labelledby="profile-tab">
+                                                   <form>
+                                                       <div class=" row align-items-center">
+                                                           <div class="form-group col-sm-6 col-lg-6">
+                                                               <label>Icon on map</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Default</option>
+                                                                   <option>Icon</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group  col-lg-6 col-sm-6">
+                                                               <label>Stopped Icon Color</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Black</option>
+                                                                   <option>Yellow</option>
+                                                                   <option>Red</option>
+                                                                   <option>Green</option>
+                                                                   <option>Blue</option>
+                                                                   <option>Orange</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Engine Idle Icon Color</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option></option>
+                                                                   <option selected="">Black</option>
+                                                                   <option>Yellow</option>
+                                                                   <option>Red</option>
+                                                                   <option>Green</option>
+                                                                   <option>Blue</option>
+                                                                   <option>Orange</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="nrtime">NR Time</label>
+                                                               <input type="time" class="form-control" id="nrtime"
+                                                                   value="22:00" placeholder="NR Time">
+                                                           </div>
+
+
+
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="tail-color" class="form-label">Tail
+                                                                   Color</label>
+                                                               <input type="color" id="tailcolor" name="t_color"
+                                                                   class="jscolor {valueElement:'tailcolor', styleElement:'tailcolor', hash:true, mode:'HSV'} form-control"
+                                                                   value="" required>
+                                                           </div>
+
+
+                                                           <br>
+                                                           <div class="form-group col-sm-6">
+                                                               <label class="d-block">Choose Gateway
+                                                                   Type</label>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio10"
+                                                                       name="customRadio3"
+                                                                       class="custom-control-input" checked="">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio10"> SMS HTTP Gateway
+                                                                   </label>
+                                                               </div>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio11"
+                                                                       name="customRadio3"
+                                                                       class="custom-control-input">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio11"> Android SMS Gateway
+                                                                   </label>
+                                                               </div>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>SMS HTTP Gateway</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Mshastra</option>
+                                                                   <option>M shastra Long phone</option>
+                                                                   <option>SMS country</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Email Server</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Mail Gun</option>
+                                                                   <option>Mail Gun</option>
+                                                                   <option>Send Grid</option>
+                                                               </select>
+                                                           </div>
+
+
+
+                                                           <div class="form-group col-sm-6">
+                                                               <label class="d-block">Choose Gateway
+                                                                   Type</label>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio12"
+                                                                       name="customRadio4"
+                                                                       class="custom-control-input" checked="">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio12"> SMS HTTP Gateway
+                                                                   </label>
+                                                               </div>
+                                                               <div
+                                                                   class="custom-control custom-radio custom-control-inline">
+                                                                   <input type="radio" id="customRadio13"
+                                                                       name="customRadio4"
+                                                                       class="custom-control-input">
+                                                                   <label class="custom-control-label"
+                                                                       for="customRadio13"> Android SMS Gateway
+                                                                   </label>
+                                                               </div>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>SMS HTTP Gateway</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Mshastra</option>
+                                                                   <option>M shastra Long phone</option>
+                                                                   <option>SMS country</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="dpass">Device Password</label>
+                                                               <input type="Password" class="form-control"
+                                                                   id="dpass" value="ggps">
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>No connection marker color</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option></option>
+                                                                   <option selected="">Black</option>
+                                                                   <option>Yellow</option>
+                                                                   <option>Red</option>
+                                                                   <option>Green</option>
+                                                                   <option>Blue</option>
+                                                                   <option>Orange</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Moving Icon Color</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option></option>
+                                                                   <option selected="">Black</option>
+                                                                   <option>Yellow</option>
+                                                                   <option>Red</option>
+                                                                   <option>Green</option>
+                                                                   <option>Blue</option>
+                                                                   <option>Orange</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="icon">Icon</label>
+                                                               <button type="submit"
+                                                                   class="btn btn-primary mr-2">Pick
+                                                                   Icon</button>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label>Save Raw Data</label>
+                                                               <div class="form-check">
+                                                                   <input class="form-check-input position-static"
+                                                                       type="checkbox" id="blankCheckbox"
+                                                                       value="option1" aria-label="...">
+                                                               </div>
+                                                           </div>
+                                                           <div class="form-group col-sm-6">
+                                                               <label for="fname">Tail Width</Label>
+                                                               <input type="text" class="form-control" id="tailwid"
+                                                                   placeholder="Tail Width">
+                                                           </div>
+
+                                                       </div>
+                                                   </form>
+                                               </div>
+                                               <div class="tab-pane fade" id="fuel" role="tabpanel"
+                                                   aria-labelledby="contact-tab">
+                                                   <form class="needs-validation" novalidate>
+                                                       <div class="form-row">
+                                                           <div class="col-md-6 mb-3">
+                                                               <label for="validationCustom01">Source</label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Rates</option>
+                                                                   <option>Fuel Leval</option>
+                                                                   <option>Fuel Consumption</option>
+                                                               </select>
+                                                           </div>
+                                                           <div class="col-md-6 mb-3">
+                                                               <label for="validationCustom02">Measurement </label>
+                                                               <select class="form-control"
+                                                                   id="exampleFormControlSelect4">
+                                                                   <option selected="">Liter/100km</option>
+                                                                   <option>Miles per gallon</option>
+
+                                                               </select>
+                                                           </div>
+                                                           <div class="col-md-6 mb-3">
+                                                               <label for="fuelcostperliter">Cost per liter</label>
+                                                               <input type="text" class="form-control"
+                                                                   id="fuelcostperliter"
+                                                                   placeholder="Cost per liter">
+                                                           </div>
+                                                           <div class="col-md-6 mb-3">
+                                                               <label for="fuelsummerrate">Summer rate
+                                                                   (ltrs)</label>
+                                                               <input type="number" class="form-control"
+                                                                   id="fuelsummerrater" value="">
+                                                           </div>
+                                                           <div class="col-md-6 mb-3">
+                                                               <label for="fuelwinterrate">Winter rate
+                                                                   (ltrs)</label>
+                                                               <input type="number" class="form-control"
+                                                                   id="fuelwinterrater" value="">
+                                                           </div>
+                                                           <div class="col-md-6 mb-3">
+                                                               <label for="winterduration">Winters Duration</label>
+                                                               <input type="date" class="form-control"
+                                                                   id="winterduration" value="">
+                                                           </div>
+                                                       </div>
+                                                   </form>
+                                               </div>
+                                           </div>
+
+                                       </div>
+                                       <div class="modal-footer">
+                                           <button type="button" class="btn btn-secondary"
+                                               data-dismiss="modal">Close</button>
+                                           <button type="button" class="btn btn-primary">Save</button>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                        
+
+
+                        <div style="margin-left: 3px;" class="col-md-4">
+                           <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                              data-bs-target="#sdelete">
+                              Delete
+                           </button>
+
+                           <div id="secondDiv" class="col-sm-12">
+
+                           <div class="modal fade" id="sdelete" data-bs-backdrop="static" data-bs-keyboard="false"
+                              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title" id="staticBackdropLabel">Technician Name</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <form>
+                                          <div class="mb-3">
+                                             <label for="recipient-name" class="col-form-label"> Technician Name
+                                             </label>
+                                             <select class="form-control" id="exampleModal1Select2">
+                                                <option selected="">Select Option</option>
+                                                <option>Import Technician</option>
+                                                <option> Fahad Javid</option>
+                                                <option></option>
+                                             </select>
+                                          </div>
+                                          <div class="mb-3">
+                                             <label for="message-text" class="col-form-label">Description:</label>
+                                             <textarea class="form-control" id="message-text"></textarea>
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                                       <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           </div>
+                        </div> 
+
+                        <div style="margin-left: -330px;" class=" col-md-4">
+                           <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                              data-bs-target="#exampleModal" data-bs-whatever="@dvlo">
+                              Device Lost
+                           </button>
+                           <div class="modal fade" id="exampleModal" tabindex="-1"
+                              aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title" id="exampleModalLabel">Device Lost</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <form>
+                                          <div class="mb-3">
+                                             <label for="recipient-name" class="col-form-label">
+                                                Conviction</label>
+                                             <select class="form-control" id="exampleModalSelect1">
+                                                <option selected="">Select Option</option>
+                                                <option>Sold Device</option>
+                                                <option> Lost/Damage</option>
+                                                <option>Finish Contract</option>
+                                             </select>
+                                          </div>
+                                          <div class="mb-3">
+                                             <label for="recipient-name" class="col-form-label"> Technician Name
+                                             </label>
+                                             <select class="form-control" id="exampleModal1Select2">
+                                                <option selected="">Select Option</option>
+                                                <option>Import Technician</option>
+                                                <option> Fahad Javid</option>
+                                                <option></option>
+                                             </select>
+                                          </div>
+                                          <div class="mb-3">
+                                             <label for="message-text" class="col-form-label">Description:</label>
+                                             <textarea class="form-control" id="message-text"></textarea>
+                                          </div>
+                                       </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                                       <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
 
+
                         <div class="form-group">
                            <label></label>
-                           <select class="form-control" id="">
+                           <select class="form-control" id="" style="">
                               <option selected="">More Actions</option>
                               <option>
                                  <a class="iq-bg-primary" href="javascript:void();">
@@ -717,6 +1400,7 @@
 
 
                      </div>
+
 
                      <div class="iq-card-body">
                         <div class="table-responsive table-sm">
