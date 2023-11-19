@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>FinDash - Responsive Bootstrap 4 Admin Dashboard Template</title>
    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   <title>FinDash - Responsive Bootstrap 4 Admin Dashboard Template</title>
-
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!-- Favicon -->
    <link rel="shortcut icon" href="images/favicon.ico" />
    <!-- Bootstrap CSS -->
@@ -20,11 +19,9 @@
    <link rel="stylesheet" href="css/style.css">
    <!-- Responsive CSS -->
    <link rel="stylesheet" href="css/responsive.css">
-
-
 </head>
 
-<body>
+<body class="sidebar-main-active right-column-fixed">
    <!-- loader Start -->
    <div id="loading">
       <div id="loading-center">
@@ -49,9 +46,10 @@
          </div>
          <div id="sidebar-scrollbar">
             <nav class="iq-sidebar-menu">
+
                <ul id="iq-sidebar-toggle" class="iq-menu">
 
-                  <li >
+                  <li>
                      <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                            class="ripple rippleEffect"></span><i
                            class="las la-home iq-arrow-left"></i><span>Dashboard</span><i
@@ -98,15 +96,15 @@
                   <li class="active">
                      <a href="#system" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                            class="ripple rippleEffect"></span><i class="fas fa-atom iq-arrow-left"
-                           style="font-size: 22px;"></i><span>System
+                           style="font-size: 22px;"></i><span>
                            Management</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                      <ul id="system" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
 
 
-                        <li><a href="#client" class="iq-waves-effect " data-toggle="collapse"
+                        <li><a href=" #client" class="iq-waves-effect " data-toggle="collapse"
                               aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                 class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Client Management<i
-                                 class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                                 class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage Clients
+                              <i class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                            <ul id="client" class="iq-submenu collapse">
                               <li><a href="users.html"><i class="fas fa-user-friends"
                                        style="font-size: 18px;"></i>Manage Clients</a></li>
@@ -115,12 +113,12 @@
 
                            </ul>
                         </li>
-                        <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
+                        <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
                         <li><a href="#userinfo" class="iq-waves-effect " data-toggle="collapse"
                               aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                 class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>User Management<i
-                                 class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
-                           <ul id="userinfo" class="iq-submenu collapse">
+                                 class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>Manage User
+                              <i class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                           <ul id="userinfo" class="iq-submenu collapse ">
 
                               <li><a href="staff.html"><i class="fa fa-user-circle-o" style="font-size: 18px;"></i>Staff
                                     User</a></li>
@@ -130,59 +128,65 @@
                            </ul>
                         </li>
 
-                        <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
+                        <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
                         <li class="active"><a href="#vehicle" class="iq-waves-effect " data-toggle="collapse"
                               aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                 class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Vehicle Management<i
-                                 class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                                 class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Manage Vehicle
+                              <i class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                            <ul id="vehicle" class="iq-submenu collapse show">
-                              <li><a href="profile-edit.html"><i class="fas fa-plus-square"
+                              <li class="active"><a href="profile-edit.html"><i class="fas fa-plus-square"
                                        style="font-size: 18px;"></i>Add New Vehicles</a></li>
-                              <li class="active"><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
+                              <li><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
                                        style="font-size: 18px;"></i>All Vehicles</a></li>
                               <li><a href="user-list.html"><i class="fas fa-history"
                                        style="font-size: 18px;"></i>Vehicle History</a></li>
-                              <li><a href="deleted-vehicle.html"><i class="fa fa-recycle" style="font-size: 18px;"></i>Deleted Vehicles</a>
+                              <li><a href="#"><i class="fa fa-recycle" style="font-size: 18px;"></i>Deleted
+                                    Vehicles</a>
                               </li>
                            </ul>
                         </li>
 
-                       <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
-                       <li>
+                        <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
+                        <li>
                            <a href="#sms" class="iq-waves-effect " data-toggle="collapse" aria-expanded="false"><span
                                  class="ripple rippleEffect"></span><i class="fas fa-sms iq-arrow-left"
-                                 style="font-size: 18px;"></i>SMS Management<i
-                                 class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                                 style="font-size: 18px;"></i>Manage SMS
+                              <i class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                            <ul id="sms" class="iq-submenu collapse">
-                              <li><a href="#"><i class="far fa-envelope-open" style="font-size: 18px;"></i>Manage SMS</a>
+                              <li><a href="#"><i class="far fa-envelope-open" style="font-size: 18px;"></i>Manage
+                                    SMS</a>
                               </li>
                               <li><a href="sms-logs.html"><i class="fab fa-facebook-messenger"
                                        style="font-size: 18px;"></i>SMS Logs</a></li>
                               <li><a href="email-logs.html"><i class="fa fa-envelope-o"
                                        style="font-size: 18px;"></i>Manage Emails</a></li>
-                              <li><a href="#"><i class="fab fa-dyalog" style="font-size: 18px;"></i>Email Logs</a></li>
-                              <li><a href="#"><i class="fab fa-whatsapp" style="font-size: 18px;"></i>Manage Whatsapp</a>
+                              <li><a href="#"><i class="fab fa-dyalog" style="font-size: 18px;"></i>Email
+                                    Logs</a></li>
+                              <li><a href="#"><i class="fab fa-whatsapp" style="font-size: 18px;"></i>Manage
+                                    Whatsapp</a>
                               </li>
                            </ul>
                         </li>
-                        <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
-                        <li><a href="adding-device.html"><i class="ri-stack-line"
-                             style="font-size: 18px;"></i>Device Management</a></li>
+                        <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
+                        <li><a href="#"><i class="ri-stack-line" style="font-size: 18px;"></i>Manage Device
+                           </a></li>
                         <li><a href="driver-management.html"><i class="fab fa-staylinked"
-                              style="font-size: 18px;"></i>Driver Management</a></li>
+                                 style="font-size: 18px;"></i>Manage Driver</a></li>
                         <li><a href="trailer-management.html"><i class="fab fa-creative-commons-sampling"
-                              style="font-size: 18px;"></i>Trailer Management</a></li>
-                        <li><a href="#"><i class="fab fa-cloudsmith"
-                              style="font-size: 18px;"></i>Cluster Management</a></li>
-                        <li><a href="#"><i class="fas fa-layer-group"
-                              style="font-size: 18px;"></i>Group Management</a></li>
+                                 style="font-size: 18px;"></i>Manage Trailer </a></li>
+                        <li><a href="#"><i class="fab fa-cloudsmith" style="font-size: 18px;"></i>Manage Cluster
+                           </a></li>
+                        <li><a href="#"><i class="fas fa-layer-group" style="font-size: 18px;"></i>Manage Group
+                           </a></li>
 
                      </ul>
                   </li>
 
                   <li>
                      <a href="#finance" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
-                           class="ripple rippleEffect"></span><i class="fas fa-dollar-sign iq-arrow-left"></i><span>Finance</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                           class="ripple rippleEffect"></span><i
+                           class="fas fa-dollar-sign iq-arrow-left"></i><span>Finance</span><i
+                           class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                      <ul id="finance" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                         <li><a href="#"><i class="fas fa-dollar-sign"></i>Finance</a></li>
                      </ul>
@@ -190,7 +194,9 @@
 
                   <li>
                      <a href="#setting" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
-                           class="ripple rippleEffect"></span><i class="ion-gear-a iq-arrow-left"></i><span>Settings</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                           class="ripple rippleEffect"></span><i
+                           class="ion-gear-a iq-arrow-left"></i><span>Settings</span><i
+                           class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                      <ul id="setting" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                         <li><a href="#"><i class="fa fa-history"></i>Devices History</a></li>
                         <li><a href="#"><i class="fa fa-history"></i>SIM History</a></li>
@@ -200,6 +206,7 @@
                   </li>
 
                </ul>
+
             </nav>
             <div class="p-3"></div>
          </div>
@@ -397,7 +404,7 @@
                      <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
                         <img src="images/user/1.jpg" class="img-fluid rounded mr-3" alt="user">
                         <div class="caption">
-                           <h6 class="mb-0 line-height">Barry Tech</h6>
+                           <h6 class="mb-0 line-height">Barry Teaqi</h6>
                            <p class="mb-0">Manager</p>
                         </div>
                      </a>
@@ -465,290 +472,240 @@
          </div>
       </div>
       <!-- TOP Nav Bar END -->
+
       <!-- Page Content  -->
       <div id="content-page" class="content-page">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-sm-12">
+               <div class="col-lg-12">
                   <div class="iq-card">
-                     <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
-                           <h4 class="card-title">Deleted Vehicle</h4>
+                     <div class="iq-card-body p-0">
+                        <div class="iq-edit-list">
+                           <ul class="iq-edit-profile d-flex nav nav-pills">
+                              <li class="col-md-2 p-0">
+                                 <a class="nav-link active" data-toggle="pill" href="#newinstallation">
+                                    New Installation
+                                 </a>
+                              </li>
+                              <li class="col-md-2 p-0">
+                                 <a class="nav-link" data-toggle="pill" href="#removal">
+                                    Removal
+                                 </a>
+                              </li>
+                              <li class="col-sm-3 p-0">
+                                 <a class="nav-link" data-toggle="pill" href="#removal-transfer">
+                                    Removal/Transfer
+                                 </a>
+                              </li>
+                              <li class="col-md-2 p-0">
+                                <a class="nav-link" data-toggle="pill" href="#soldout">
+                                   Sold out
+                                </a>
+                             </li>
+                             <li class="col-sm-3 p-0">
+                                <a class="nav-link" data-toggle="pill" href="#ownership-change">
+                                   Ownership Change
+                                </a>
+                             </li>
+                           </ul>
                         </div>
                      </div>
-                     <div class="iq-card-body">
-                        <div class="table-responsive table-sm">
-                           <div class="row justify-content-between">
-                              <div class="col-sm-12 col-md-6">
-                                 <div id="user_list_datatable_info" class="dataTables_filter">
-                                    <form class="mr-3 position-relative">
-                                       <div class="form-group mb-0">
-                                          <input type="search" class="form-control" id="exampleInputSearch"
-                                             placeholder="Search" aria-controls="user-list-table">
-                                       </div>
-                                    </form>
-                                 </div>
-                              </div>
+                  </div>
+               </div>
+               <div class="col-lg-12">
+                  <div class="iq-edit-list-data">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="newinstallation" role="tabpanel">
+                                <div class="iq-card"></div>
+                               
 
-                              <div class="col-sm-12 col-md-6">
-                                 <div class="user-list-files d-flex float-right">
-                                    <a class="iq-bg-primary" href="javascript:void();">
-                                       Print
-                                    </a>
-                                    <a class="iq-bg-primary" href="javascript:void();">
-                                       Excel
-                                    </a>
-                                    <a class="iq-bg-primary" href="javascript:void();">
-                                       Pdf
-                                    </a>
-                                 </div>
-                              </div>
+                                
                               
-                           </div>
-                       
+                                <div class="iq-card-body">
+                                <table id="newinstallation" class="table table-striped table-bordered mt-4" role="grid" aria-describedby="user-list-page-info">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Reg.No</th>
+                                        <th>Customer Name</th>
+                                        <th>Contact Details</th>
+                                        <th>No.Of Vehicles</th>
+                                        <th>Reference By</th>
+                                        <th>Status</th>
+                                        <th>Follow up date</th>
+                                        <th>Assigned To</th>
+                                        <th>Date added</th>
+                                        <th>Created By</th>
 
-                           <!-- Bootstrap table -->
-                           <table id="" class="table table-striped table-bordered mt-4" role="grid"
-                              aria-describedby="user-list-page-info">
-                              <thead>
-                                 <tr style="text-align: center;">
-                                    <th>#</th>
-                                    <th>Vehicle Number</th>
-                                    <th>chassis Number</th>
-                                    <th>Client Name</th>
-                                    
-                                    <th>IMEI</th>
-                                    <th>SIM</th>
-                                    <th>Device</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+
+                                </table> 
+                                </div>
+                                
+                            </div>
+                        
+
+
+                        <div class="tab-pane fade" id="removal" role="tabpanel">
+                           <div class="iq-card">
+                              <div class="iq-card-body">
+
+                              <table id="removal" class="table table-striped table-bordered mt-4"
+
+                                role="grid" aria-describedby="user-list-page-info">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Reg.No</th>
+                                        <th>Customer Name</th>
+                                        <th>Cluster Name</th>
+                                        <th>Vehicle Info</th>
+                                        <th>Contact Details</th>
+                                        <th>Alternative Name</th>
+                                        <th>Alternative Number</th>
+                                        
+                                        <th>Reference By</th>
+                                        <th>Status</th>
+                                        <th>Follow up date</th>
+                                        <th>Assigned To</th>
+                                        <th>Date added</th>
+                                        <th>Created By</th>
+
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                </tbody>
+
+                                </table>
+                                </div>
+
+
                                  
-                                    <th>Subscription Charges</th>
-                                    <th>Service Fee</th>
-                                    <th>Installation Date</th>
-                                    <th>Expiry  Date</th>
-                                    <th>Deleted Date</th>
-                                    <th>Status</th>
-                                    <th>Created By</th>
+                            </div>
 
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                    
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                    
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-success">-</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>31-01-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-                                   
-                                   
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                   
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                 
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-danger">+</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>20-07-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                    
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                    
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-success">-</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>31-01-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-
-
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                   
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                    
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-success">-</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>31-01-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-
-
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                    
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                 
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-success">-</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>31-01-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                    
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                    
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-success">-</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>31-01-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                    
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                 
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-danger">+</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>10-07-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                   <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                    
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
-                                 
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-success">-</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>31-01-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-
-                                 </tr>
-                                 <tr style="text-align: center;">
-                                    <td><label>
-                                          <input type="checkbox" data-index="" />
-                                       </label></td>
-                                    <td>324675423515235 </td>
-                                    <td>Installationsystem</td>
-                                    <td>annasthesia@gmail.com</td>
-                                    
-                                    <td>Lost </td>
-                                    <td>Lost</td>
-                                    <td>Lost</td>
                            
-                                    <td>N/A</td>
-                                    <td><span class="badge iq-bg-success">-</span></td>
-                                    <td>15-02-2022</td>
-                                    <td>31-01-2023</td>
-                                    <td><span class="badge iq-bg-danger">17-07-2023</span></td>
-                                    <td><span class="badge iq-bg-primary">Active</span></td>
-                                    <td>admin</td>
-
-                                 </tr>
-                              </tbody>
-                           </table>
-
-
-
                         </div>
-                        <div class="row justify-content-between mt-3">
-                           <div id="user-list-page-info" class="col-md-6">
-                              <span>Showing 1 to 5 of 5 entries</span>
-                           </div>
-                           <div class="col-md-6">
-                              <nav aria-label="Page navigation example">
-                                 <ul class="pagination justify-content-end mb-0">
-                                    <li class="page-item disabled">
-                                       <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                       <a class="page-link" href="#">Next</a>
-                                    </li>
-                                 </ul>
-                              </nav>
-                           </div>
-                        </div>
+
+                        <div class="tab-pane fade" id="removal-transfer" role="tabpanel">
+                            <div class="iq-card">
+                               <div class="iq-card-body">
+ 
+                               <table id="removal-transfer" class="table table-striped table-bordered mt-4"
+ 
+                                 role="grid" aria-describedby="user-list-page-info">
+                                 <thead>
+                                     <tr>
+                                         <th>#</th>
+                                         <th>Reg.No</th>
+                                         <th>Customer Name</th>
+                                         <th>Contact Details</th>
+                                         <th>No.Of Vehicles</th>
+                                         <th>Reference By</th>
+                                         <th>Status</th>
+                                         <th>Follow up date</th>
+                                         <th>Assigned To</th>
+                                         <th>Date added</th>
+                                         <th>Created By</th>
+ 
+                                     </tr>
+                                 </thead>
+ 
+                                 <tbody>
+                                 </tbody>
+ 
+                                 </table>
+                                 </div>
+ 
+ 
+                                  
+                             </div>
+ 
+                            
+                         </div>
+
+                         <div class="tab-pane fade" id="soldout" role="tabpanel">
+                            <div class="iq-card">
+                               <div class="iq-card-body">
+ 
+                               <table id="soldout" class="table table-striped table-bordered mt-4"
+ 
+                                 role="grid" aria-describedby="user-list-page-info">
+                                 <thead>
+                                     <tr>
+                                         <th>#</th>
+                                         <th>Reg.No</th>
+                                         <th>Customer Name</th>
+                                         <th>Contact Details</th>
+                                         <th>No.Of Vehicles</th>
+                                         <th>Reference By</th>
+                                         <th>Status</th>
+                                         <th>Follow up date</th>
+                                         <th>Assigned To</th>
+                                         <th>Date added</th>
+                                         <th>Created By</th>
+ 
+                                     </tr>
+                                 </thead>
+ 
+                                 <tbody>
+                                 </tbody>
+ 
+                                 </table>
+                                 </div>
+ 
+ 
+                                  
+                             </div>
+ 
+                            
+                         </div>
+
+                         <div class="tab-pane fade" id="ownership-change" role="tabpanel">
+                            <div class="iq-card">
+                               <div class="iq-card-body">
+ 
+                               <table id="ownership-change" class="table table-striped table-bordered mt-4"
+ 
+                                 role="grid" aria-describedby="user-list-page-info">
+                                 <thead>
+                                     <tr>
+                                         <th>#</th>
+                                         <th>Reg.No</th>
+                                         <th>Customer Name</th>
+                                         <th>Cluster Name</th>
+                                         <th>Contact Details</th>
+                                         <th> Vehicle Info</th>
+                                         <th>New Username</th>
+                                         <th>Alternative Number</th>
+                                         <th>Location</th>
+                                         <th>Status</th>
+                                         <th>Follow up date</th>
+                                         <th>Assigned To</th>
+                                         <th>Date added</th>
+                                         <th>Created By</th>
+ 
+                                     </tr>
+                                 </thead>
+ 
+                                 <tbody>
+                                 </tbody>
+ 
+                                 </table>
+                                 </div>
+ 
+ 
+                                  
+                             </div>
+ 
+                            
+                         </div> 
+
+
+                        
                      </div>
                   </div>
                </div>
@@ -756,7 +713,7 @@
          </div>
       </div>
    </div>
-   <!-- Wrapper END -->
+   Wrapper END
    <!-- Footer -->
    <footer class="iq-footer">
       <div class="container-fluid">
@@ -821,35 +778,6 @@
    <script src="js/chart-custom.js"></script>
    <!-- Custom JavaScript -->
    <script src="js/custom.js"></script>
-   <script>$(document).ready(function () {
-         // Get the table and column checkboxes
-         var table = $('#user-list-table');
-         var columnCheckboxes = $('.column-checkbox');
-
-         // Handle checkbox changes
-         columnCheckboxes.on('change', function () {
-            // Find all the checked checkboxes
-            var checkedCheckboxes = columnCheckboxes.filter(':checked');
-
-            // Get the indices of the checked checkboxes
-            var checkedIndices = checkedCheckboxes.map(function () {
-               return $(this).data('index');
-            }).get();
-
-            // Show all table columns
-            table.find('th, td').show();
-
-            // Hide the selected columns
-            $.each(checkedIndices, function (index, columnIndex) {
-               table.find('th:nth-child(' + (columnIndex + 1) + '), td:nth-child(' + (columnIndex + 1) + ')').hide();
-            });
-         });
-      });</script>
-   
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-      </script>
 </body>
 
 </html>
