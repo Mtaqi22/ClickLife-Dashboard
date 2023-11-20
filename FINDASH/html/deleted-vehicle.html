@@ -51,17 +51,12 @@
             <nav class="iq-sidebar-menu">
                <ul id="iq-sidebar-toggle" class="iq-menu">
 
-                  <li >
-                     <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
-                           class="ripple rippleEffect"></span><i
-                           class="las la-home iq-arrow-left"></i><span>Dashboard</span><i
-                           class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                     <ul id="dashboard" class="iq-submenu collapse " data-parent="#iq-sidebar-toggle">
-                        <li><a href="index.html"><i class="las la-laptop-code"></i>Account Dashboard</a>
-                        </li>
-
-                     </ul>
+                  <li>
+                     <a href="index.html"><i
+                        class="las la-home iq-arrow-left"></i><span>Dashboard</span></a>
+                       
                   </li>
+                  <label class="chk">Home</label>
                   <li>
 
                      <a href="#livetrack" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
@@ -69,12 +64,11 @@
                            class="fas fa-map-marker-alt iq-arrow-left"></i><span>Live Tracking</span><i
                            class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                      <ul id="livetrack" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                        <li><a href="#"><i class="fas fa-map-marker"></i>Map Tracking</a>
+                        <li><a href="map-tracking.html"><i class="fas fa-map-marker"></i>Map Tracking</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-signal"></i>Events</a>
-                        </li>
+                       
                         <li><a href="#"><i class="las la-tag"></i>Alerts</a></li>
-                        <li><a href="#"><i class="las la-sync"></i>Geo Boundries</a></li>
+                        <li><a href="geofencing.html"><i class="las la-sync"></i>Geo Boundries</a></li>
                         <li><a href="#"><i class="fas fa-book"></i>Vehicle History</a></li>
                         <li><a href="#"><i class="fab fa-codepen"></i>Device Testing</a></li>
                         <li><a href="#"><i class="fas fa-camera"></i>Camera & Media</a></li>
@@ -84,6 +78,8 @@
 
                      </ul>
                   </li>
+                  <label class="chk" style=" margin-left: -3px;">Tracking</label>
+
                   <li>
                      <a href="#reportinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                            class="ripple rippleEffect"></span><i class="far fa-file-alt iq-arrow-left"></i><span>All
@@ -92,35 +88,35 @@
                         <li><a href="reports.html"><i class="fas fa-file-contract"></i>Vehicle Reports</a></li>
                      </ul>
                   </li>
-
+                  <label class="chk" style=" margin-left: -3px;">Reports</label>
 
 
                   <li class="active">
                      <a href="#system" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                            class="ripple rippleEffect"></span><i class="fas fa-atom iq-arrow-left"
-                           style="font-size: 22px;"></i><span>System
+                           style="font-size: 22px;"></i><span>
                            Management</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                     <ul id="system" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
+                     <ul id="system" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
 
 
                         <li><a href="#client" class="iq-waves-effect " data-toggle="collapse"
                               aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                 class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Client Management<i
+                                 class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage Client<i
                                  class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                            <ul id="client" class="iq-submenu collapse">
-                              <li><a href="users.html"><i class="fas fa-user-friends"
-                                       style="font-size: 18px;"></i>Manage Clients</a></li>
                               <li><a href="party_user.html"><i class="las la-user-tie"
-                                       style="font-size: 18px;"></i>Manage Party Clients</a></li>
+                                 style="font-size: 18px;"></i>Manage Party Clients</a></li>
+                              <li><a href="users.html"><i class="fas fa-user-friends"
+                                       style="font-size: 18px;"></i>Manage Client User</a></li>
 
                            </ul>
                         </li>
                         <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
                         <li><a href="#userinfo" class="iq-waves-effect " data-toggle="collapse"
                               aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                 class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>User Management<i
+                                 class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>Manage User<i
                                  class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
-                           <ul id="userinfo" class="iq-submenu collapse">
+                           <ul id="userinfo" class="iq-submenu collapse ">
 
                               <li><a href="staff.html"><i class="fa fa-user-circle-o" style="font-size: 18px;"></i>Staff
                                     User</a></li>
@@ -133,16 +129,14 @@
                         <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
                         <li class="active"><a href="#vehicle" class="iq-waves-effect " data-toggle="collapse"
                               aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                 class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Vehicle Management<i
+                                 class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Manage Vehicle<i
                                  class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                            <ul id="vehicle" class="iq-submenu collapse show">
-                              <li><a href="profile-edit.html"><i class="fas fa-plus-square"
-                                       style="font-size: 18px;"></i>Add New Vehicles</a></li>
-                              <li class="active"><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
+                             
+                              <li><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
                                        style="font-size: 18px;"></i>All Vehicles</a></li>
-                              <li><a href="user-list.html"><i class="fas fa-history"
-                                       style="font-size: 18px;"></i>Vehicle History</a></li>
-                              <li><a href="deleted-vehicle.html"><i class="fa fa-recycle" style="font-size: 18px;"></i>Deleted Vehicles</a>
+                             
+                              <li class="active"><a href="deleted-vehicle.html"><i class="fa fa-recycle" style="font-size: 18px;"></i>Deleted Vehicles</a>
                               </li>
                            </ul>
                         </li>
@@ -151,7 +145,7 @@
                        <li>
                            <a href="#sms" class="iq-waves-effect " data-toggle="collapse" aria-expanded="false"><span
                                  class="ripple rippleEffect"></span><i class="fas fa-sms iq-arrow-left"
-                                 style="font-size: 18px;"></i>SMS Management<i
+                                 style="font-size: 18px;"></i>Manage SMS<i
                                  class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                            <ul id="sms" class="iq-submenu collapse">
                               <li><a href="#"><i class="far fa-envelope-open" style="font-size: 18px;"></i>Manage SMS</a>
@@ -167,19 +161,20 @@
                         </li>
                         <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
                         <li><a href="adding-device.html"><i class="ri-stack-line"
-                             style="font-size: 18px;"></i>Device Management</a></li>
+                             style="font-size: 18px;"></i>Manage Device</a>
+                        </li>
                         <li><a href="driver-management.html"><i class="fab fa-staylinked"
-                              style="font-size: 18px;"></i>Driver Management</a></li>
+                              style="font-size: 18px;"></i>Manage Driver</a></li>
                         <li><a href="trailer-management.html"><i class="fab fa-creative-commons-sampling"
-                              style="font-size: 18px;"></i>Trailer Management</a></li>
+                              style="font-size: 18px;"></i>Manage Trailer</a></li>
                         <li><a href="#"><i class="fab fa-cloudsmith"
-                              style="font-size: 18px;"></i>Cluster Management</a></li>
+                              style="font-size: 18px;"></i>Manage Cluster</a></li>
                         <li><a href="#"><i class="fas fa-layer-group"
-                              style="font-size: 18px;"></i>Group Management</a></li>
+                              style="font-size: 18px;"></i>Manage Group</a></li>
 
                      </ul>
                   </li>
-
+                  <label class="chk" style=" margin-left: -3px;">System</label>
                   <li>
                      <a href="#finance" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                            class="ripple rippleEffect"></span><i class="fas fa-dollar-sign iq-arrow-left"></i><span>Finance</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
@@ -187,6 +182,7 @@
                         <li><a href="#"><i class="fas fa-dollar-sign"></i>Finance</a></li>
                      </ul>
                   </li>
+                  <label class="chk" style=" margin-left: -3px;">Finance</label>
 
                   <li>
                      <a href="#setting" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
@@ -198,6 +194,7 @@
                         <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
                      </ul>
                   </li>
+                  <label class="chk" style=" margin-left: -3px;">Setting</label>
 
                </ul>
             </nav>

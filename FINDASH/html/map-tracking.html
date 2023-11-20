@@ -45,168 +45,156 @@
             </div>
             <div id="sidebar-scrollbar">
                 <nav class="iq-sidebar-menu">
-                    <ul id="iq-sidebar-toggle" class="iq-menu">
-
-                        <li>
-                            <a href="index.html"><i
-                                  class="las la-home iq-arrow-left"></i><span>Dashboard</span></a>
-                                  <label class="chk">Home</label>
-                         </li>
-                        
-                        <li class="active">
-                            <a href="#livetrack" class="iq-waves-effect" data-toggle="collapse"
-                                aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                    class="fas fa-map-marker-alt iq-arrow-left"></i><span>Live Tracking</span><i
-                                    class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="livetrack" class="iq-submenu collapse " data-parent="#iq-sidebar-toggle">
-                                <li class="active"><a href="#"><i class="fas fa-map-marker"></i>Map Tracking</a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-signal"></i>Events</a>
-                                </li>
-                                <li><a href="#"><i class="las la-tag"></i>Alerts</a></li>
-                                <li><a href="geofencing.html"><i class="las la-sync"></i>Geo Boundries</a></li>
-                                <li><a href="#"><i class="fas fa-book"></i>Vehicle History</a></li>
-                                <li><a href="#"><i class="fab fa-codepen"></i>Device Testing</a></li>
-                                <li><a href="#"><i class="fas fa-camera"></i>Camera & Media</a></li>
-                            </ul>
-                        </li>
-                        <label class="chk" style="margin-left: -3px;">Tracking</label>
-                        <li>
-                            <a href="#reportinfo" class="iq-waves-effect" data-toggle="collapse"
-                                aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                    class="far fa-file-alt iq-arrow-left"></i><span>All
-                                    Report</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="reportinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                                <li><a href="reports.html"><i class="fas fa-file-contract"></i>Vehicle Reports</a></li>
-                            </ul>
-                        </li>
-                        <label class="chk" style="margin-left: -3px;">Reports</label>
-
-                        <li>
-                            <a href="#system" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
-                                    class="ripple rippleEffect"></span><i class="fas fa-atom iq-arrow-left"
-                                    style="font-size: 22px;"></i><span>
-                                    Management</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="system" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                                <li><a href="#client" class="iq-waves-effect " data-toggle="collapse"
-                                        aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                            class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage
-                                        Client
-                                        <i class="ri-arrow-right-s-line iq-arrow-right"
-                                            style="font-size: 18px;"></i></a>
-                                    <ul id="client" class="iq-submenu collapse">
-                                        <li><a href="users.html"><i class="fas fa-user-friends"
-                                                    style="font-size: 18px;"></i>Manage Clients</a></li>
-                                        <li><a href="party_user.html"><i class="las la-user-tie"
-                                                    style="font-size: 18px;"></i>Manage Party Clients</a></li>
-
-                                    </ul>
-                                </li>
-                                <hr
-                                    style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
-                                <li><a href="#userinfo" class="iq-waves-effect " data-toggle="collapse"
-                                        aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                            class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>Manage
-                                        User
-                                        <i class="ri-arrow-right-s-line iq-arrow-right"
-                                            style="font-size: 18px;"></i></a>
-                                    <ul id="userinfo" class="iq-submenu collapse">
-
-                                        <li><a href="staff.html"><i class="fa fa-user-circle-o"
-                                                    style="font-size: 18px;"></i>Staff
-                                                User</a></li>
-                                        <li><a href="technician.html"><i class="fas fa-user-astronaut"
-                                                    style="font-size: 18px;"></i>Technician User</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <hr
-                                    style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
-                                <li><a href="#vehicle" class="iq-waves-effect " data-toggle="collapse"
-                                        aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                            class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Manage Vehicle
-                                        <i class="ri-arrow-right-s-line iq-arrow-right"
-                                            style="font-size: 18px;"></i></a>
-                                    <ul id="vehicle" class="iq-submenu collapse">
-                                        <li><a href="profile-edit.html"><i class="fas fa-plus-square"
-                                                    style="font-size: 18px;"></i>Add New Vehicles</a></li>
-                                        <li><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
-                                                    style="font-size: 18px;"></i>All Vehicles</a></li>
-                                        <li><a href="user-list.html"><i class="fas fa-history"
-                                                    style="font-size: 18px;"></i>Vehicle History</a></li>
-                                        <li><a href="#"><i class="fa fa-recycle" style="font-size: 18px;"></i>Deleted
-                                                Vehicles</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <hr
-                                    style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
-                                <li>
-                                    <a href="#sms" class="iq-waves-effect " data-toggle="collapse"
-                                        aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                            class="fas fa-sms iq-arrow-left" style="font-size: 18px;"></i>Manage SMS
-                                        <i class="ri-arrow-right-s-line iq-arrow-right"
-                                            style="font-size: 18px;"></i></a>
-                                    <ul id="sms" class="iq-submenu collapse">
-                                        <li><a href="#"><i class="far fa-envelope-open"
-                                                    style="font-size: 18px;"></i>Manage SMS</a>
-                                        </li>
-                                        <li><a href="sms-logs.html"><i class="fab fa-facebook-messenger"
-                                                    style="font-size: 18px;"></i>SMS Logs</a></li>
-                                        <li><a href="email-logs.html"><i class="fa fa-envelope-o"
-                                                    style="font-size: 18px;"></i>Manage Emails</a></li>
-                                        <li><a href="#"><i class="fab fa-dyalog" style="font-size: 18px;"></i>Email
-                                                Logs</a></li>
-                                        <li><a href="#"><i class="fab fa-whatsapp" style="font-size: 18px;"></i>Manage
-                                                Whatsapp</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <hr
-                                    style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;">
-                                <li><a href="#adding-device.html"><i class="ri-stack-line" style="font-size: 18px;"></i>Manage Device
-                                    </a></li>
-                                <li><a href="driver-management.html"><i class="fab fa-staylinked"
-                                            style="font-size: 18px;"></i>Manage Driver</a></li>
-                                <li><a href="trailer-management.html"><i class="fab fa-creative-commons-sampling"
-                                            style="font-size: 18px;"></i>Manage Trailer</a></li>
-                                <li><a href="#"><i class="fab fa-cloudsmith" style="font-size: 18px;"></i>Manage Cluster
-                                    </a></li>
-                                <li><a href="#"><i class="fas fa-layer-group" style="font-size: 18px;"></i>Manage Group
-                                    </a></li>
-
-                            </ul>
-                        </li>
-                        <label class="chk" style="margin-left: -3px;">System</label>
-                        <li>
-                            <a href="#finance" class="iq-waves-effect" data-toggle="collapse"
-                                aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                    class="fas fa-dollar-sign iq-arrow-left"></i><span>Finance</span><i
-                                    class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="finance" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                                <li><a href="#"><i class="fas fa-dollar-sign"></i>Finance</a></li>
-                            </ul>
-                        </li>
-                        <label class="chk" style="margin-left: -3px;">Finance</label>
-                        <li>
-                            <a href="#setting" class="iq-waves-effect" data-toggle="collapse"
-                                aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                    class="ion-gear-a iq-arrow-left"></i><span>Settings</span><i
-                                    class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="setting" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                                <li><a href="#"><i class="fa fa-history"></i>Devices History</a></li>
-                                <li><a href="#"><i class="fa fa-history"></i>SIM History</a></li>
-                                <li><a href="#"><i class="fas fa-sign-in-alt"></i>Login History</a></li>
-                                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
-                            </ul>
-                        </li>
-                        <label class="chk" style="margin-left: -3px;">Settings</label>
-                    </ul>
+                   <ul id="iq-sidebar-toggle" class="iq-menu">
+    
+                      <li>
+                         <a href="index.html"><i
+                            class="las la-home iq-arrow-left"></i><span>Dashboard</span></a>
+                           
+                      </li>
+                      <label class="chk">Home</label>
+                      <li class="active">
+    
+                         <a href="#livetrack" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                               class="ripple rippleEffect"></span><i
+                               class="fas fa-map-marker-alt iq-arrow-left"></i><span>Live Tracking</span><i
+                               class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                         <ul id="livetrack" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li class="active"><a href="map-tracking.html"><i class="fas fa-map-marker"></i>Map Tracking</a>
+                            </li>
+                           
+                            <li><a href="#"><i class="las la-tag"></i>Alerts</a></li>
+                            <li><a href="geofencing.html"><i class="las la-sync"></i>Geo Boundries</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i>Vehicle History</a></li>
+                            <li><a href="#"><i class="fab fa-codepen"></i>Device Testing</a></li>
+                            <li><a href="#"><i class="fas fa-camera"></i>Camera & Media</a></li>
+    
+    
+    
+    
+                         </ul>
+                      </li>
+                      <label class="chk" style=" margin-left: -3px;">Tracking</label>
+    
+                      <li>
+                         <a href="#reportinfo" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                               class="ripple rippleEffect"></span><i class="far fa-file-alt iq-arrow-left"></i><span>All
+                               Report</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                         <ul id="reportinfo" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li><a href="reports.html"><i class="fas fa-file-contract"></i>Vehicle Reports</a></li>
+                         </ul>
+                      </li>
+                      <label class="chk" style=" margin-left: -3px;">Reports</label>
+    
+    
+                      <li>
+                         <a href="#system" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                               class="ripple rippleEffect"></span><i class="fas fa-atom iq-arrow-left"
+                               style="font-size: 22px;"></i><span>
+                               Management</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                         <ul id="system" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+    
+    
+                            <li><a href="#client" class="iq-waves-effect " data-toggle="collapse"
+                                  aria-expanded="false"><span class="ripple rippleEffect"></span><i
+                                     class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage Client<i
+                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                               <ul id="client" class="iq-submenu collapse">
+                                <li><a href="party_user.html"><i class="las la-user-tie"
+                                    style="font-size: 18px;"></i>Manage Party Clients</a></li>
+                                 <li><a href="users.html"><i class="fas fa-user-friends"
+                                          style="font-size: 18px;"></i>Manage Client User</a></li>
+                               </ul>
+                            </li>
+                            <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
+                            <li><a href="#userinfo" class="iq-waves-effect " data-toggle="collapse"
+                                  aria-expanded="false"><span class="ripple rippleEffect"></span><i
+                                     class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>Manage User<i
+                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                               <ul id="userinfo" class="iq-submenu collapse">
+    
+                                  <li><a href="staff.html"><i class="fa fa-user-circle-o" style="font-size: 18px;"></i>Staff
+                                        User</a></li>
+                                  <li><a href="technician.html"><i class="fas fa-user-astronaut"
+                                           style="font-size: 18px;"></i>Technician User</a>
+                                  </li>
+                               </ul>
+                            </li>
+    
+                            <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
+                            <li><a href="#vehicle" class="iq-waves-effect " data-toggle="collapse"
+                                  aria-expanded="false"><span class="ripple rippleEffect"></span><i
+                                     class="fas fa-car iq-arrow-left" style="font-size: 18px;"></i>Manage Vehicle<i
+                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                               <ul id="vehicle" class="iq-submenu collapse">
+                                 
+                                  <li><a href="all-vehicle.html"><i class="fas fa-clipboard-list"
+                                           style="font-size: 18px;"></i>All Vehicles</a></li>
+                                 
+                                  <li><a href="deleted-vehicle.html"><i class="fa fa-recycle" style="font-size: 18px;"></i>Deleted Vehicles</a>
+                                  </li>
+                               </ul>
+                            </li>
+    
+                           <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
+                           <li>
+                               <a href="#sms" class="iq-waves-effect " data-toggle="collapse" aria-expanded="false"><span
+                                     class="ripple rippleEffect"></span><i class="fas fa-sms iq-arrow-left"
+                                     style="font-size: 18px;"></i>Manage SMS<i
+                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
+                               <ul id="sms" class="iq-submenu collapse">
+                                  <li><a href="#"><i class="far fa-envelope-open" style="font-size: 18px;"></i>Manage SMS</a>
+                                  </li>
+                                  <li><a href="sms-logs.html"><i class="fab fa-facebook-messenger"
+                                           style="font-size: 18px;"></i>SMS Logs</a></li>
+                                  <li><a href="email-logs.html"><i class="fa fa-envelope-o"
+                                           style="font-size: 18px;"></i>Manage Emails</a></li>
+                                  <li><a href="#"><i class="fab fa-dyalog" style="font-size: 18px;"></i>Email Logs</a></li>
+                                  <li><a href="#"><i class="fab fa-whatsapp" style="font-size: 18px;"></i>Manage Whatsapp</a>
+                                  </li>
+                               </ul>
+                            </li>
+                            <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
+                            <li><a href="adding-device.html"><i class="ri-stack-line"
+                                 style="font-size: 18px;"></i>Manage Device</a>
+                            </li>
+                            <li><a href="driver-management.html"><i class="fab fa-staylinked"
+                                  style="font-size: 18px;"></i>Manage Driver</a></li>
+                            <li><a href="trailer-management.html"><i class="fab fa-creative-commons-sampling"
+                                  style="font-size: 18px;"></i>Manage Trailer</a></li>
+                            <li><a href="#"><i class="fab fa-cloudsmith"
+                                  style="font-size: 18px;"></i>Manage Cluster</a></li>
+                            <li><a href="#"><i class="fas fa-layer-group"
+                                  style="font-size: 18px;"></i>Manage Group</a></li>
+    
+                         </ul>
+                      </li>
+                      <label class="chk" style=" margin-left: -3px;">System</label>
+                      <li>
+                         <a href="#finance" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                               class="ripple rippleEffect"></span><i class="fas fa-dollar-sign iq-arrow-left"></i><span>Finance</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                         <ul id="finance" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li><a href="#"><i class="fas fa-dollar-sign"></i>Finance</a></li>
+                         </ul>
+                      </li>
+                      <label class="chk" style=" margin-left: -3px;">Finance</label>
+    
+                      <li>
+                         <a href="#setting" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
+                               class="ripple rippleEffect"></span><i class="ion-gear-a iq-arrow-left"></i><span>Settings</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                         <ul id="setting" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li><a href="#"><i class="fa fa-history"></i>Devices History</a></li>
+                            <li><a href="#"><i class="fa fa-history"></i>SIM History</a></li>
+                            <li><a href="#"><i class="fas fa-sign-in-alt"></i>Login History</a></li>
+                            <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                         </ul>
+                      </li>
+                      <label class="chk" style=" margin-left: -3px;">Setting</label>
+    
+                   </ul>
                 </nav>
                 <div class="p-3"></div>
-            </div>
+             </div>
         </div>
         <!-- TOP Nav Bar -->
 
@@ -323,6 +311,10 @@
                         <li class="nav-item">
                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                                 aria-controls="profile" aria-selected="false">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#alert" role="tab"
+                                aria-controls="contact" aria-selected="false">Alerts</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
@@ -954,7 +946,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: gray; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
 
                                         </tr>
@@ -963,7 +955,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color:#2bd91e; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -971,7 +963,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: red; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -979,7 +971,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: gray; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -987,7 +979,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: #2bd91e; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -995,7 +987,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: red; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -1003,7 +995,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: gray; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -1011,7 +1003,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: #2bd91e; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -1019,7 +1011,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="1" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: red; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -1027,7 +1019,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="1" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: gray; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                         <tr>
@@ -1035,7 +1027,7 @@
                                                     <input type="checkbox" class="checkbox" data-index="1" />
                                                 </label></td>
                                             <td>Sunny</td>
-                                            <td>13-11-2023 14:57:20</td>
+                                            <td>13-11-2023 14:57:20 <i style="color: #2bd91e; margin-left: 20px;" class="fas fa-wifi"></i></td>
 
                                         </tr>
                                     </tbody>
@@ -1048,7 +1040,7 @@
 
                             <div style="display: flex;">
                                 <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"
-                                    aria-controls="user-list-table" style="width: 200px;">
+                                    aria-controls="user-list-table" style="width: 210px;">
                                 <button style="width: 40px; margin-left: 2px;" data-toggle="modal"
                                     data-target="#example" class="btn onem btn-primary"><i class='fas fa-calendar-alt'
                                         style='font-size:18px'></i></button>
@@ -1315,13 +1307,231 @@
 
                             </div>
                         </div>
+                      
+                        <div class="tab-pane fade show " id="alert" role="tabpanel" aria-labelledby="home-tab">
+
+
+                            <div style="display: flex;">
+                                <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"
+                                    aria-controls="user-list-table" style="width: 205px;">
+
+                                <button style="width: 40px; margin-left: 2px;" data-toggle="modal"
+                                    data-target="#exampleModalCenter" class="btn onem btn-primary"><i
+                                        class='fa fa-refresh' style='font-size:18px'></i></button>
+                                <button style="width: 40px; margin-left: 2px;" data-toggle="modal"
+                                    data-target="#alfilter" class="btn onem btn-primary"><i class="fas fa-filter"></i></button>
+
+                            </div>
+                            <div class="outer">
+                               
+
+                                <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
+                                    role="grid" aria-describedby="user-list-page-info" style="width: 290px;">
+                                    <thead>
+                                        <tr>
+                                            <th>Vehicle Name</th>
+                                            <th>Alert</th>
+                                            <th>Signal</th>                                  
+                                            <th>Time</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody style="font-size: 15px;">
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: blue;"><i
+                                                    class="fa fa-send"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: red;"><i class="fa fa-send"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fa fa-send"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: blue;"><i class="fa fa-send"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fa fa-send"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: red;"><i class="fa fa-send"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: blue;"><i
+                                                    class="fa fa-send"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: red;"><i class="fa fa-send"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fa fa-send"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: blue;"><i class="fa fa-send"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: #2bd91e;"><i
+                                                    class="fa fa-send"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: red;"><i class="fa fa-send"></i>
+                                            </td>
+                                            <td>11/11/23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23465 Ford</td>
+                                            <td>Signal</td>
+                                            <td style="text-align: center; color: blue;"><i
+                                                    class="fa fa-send"></i></td>
+                                            <td>11/11/23</td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
+                    <div class="modal fade" id="alfilter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered wid" role="document">
+                       <div class="modal-content">
+                          <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLongTitle">Filters</h5>
+                             <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                             </button>
+                          </div>
+                          <div class="modal-body">
+                             <div class="form-group" style="margin: 15px;">
 
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                   <option selected="" disabled="">Alarm</option>
+                                   <option>OverSpeed</option>
+                                   <option>UnderSpeed</option>
+                                   <option>Towing</option>
+                                   <option>Offline</option>
+                                   <option>Online</option>
 
+                                </select>
+                             </div>
+                             <div class="form-group" style="margin: 15px;">
+
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                   <option selected="" disabled="">Party Name</option>
+                                   <option>Party 1</option>
+                                   <option>Party 2</option>
+
+                                </select>
+                             </div>
+                             <div class="form-group" style="margin: 15px;">
+
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                   <option selected="" disabled="">Cluster</option>
+                                   <option>Cluster 1</option>
+                                   <option>Cluster 2</option>
+
+                                </select>
+                             </div>
+                             
+                             <div class="form-group" style="margin: 15px;">
+
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                   <option selected="" disabled="">Vehicle</option>
+                                   <option>54544 Yaris</option>
+                                   <option>35454 Honda</option>
+                                </select>
+                             </div>
+                             <div class="form-group" style="margin: 15px;">
+
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                   <option selected="" disabled="">VIP</option>
+                                   <option>Movement</option>
+                                   <option>Ignition</option>
+                                   <option>General</option>
+                                   <option>Border</option>
+                                </select>
+                             </div>
+                             <div class="col-sm-12">
+                                <label for="fname">IMEI Number</Label>
+                                <input type="text" class="form-control" id="fname"
+                                    placeholder="IMEI Number">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="fname">SIM Number</Label>
+                                <input type="text" class="form-control" id="fname"
+                                    placeholder="SIM Number">
+                            </div>
+                             <div class="col-sm-12">
+                                <label for="fname">Custom Alert</Label>
+                                <input type="text" class="form-control" id="fname"
+                                    placeholder="Custom Alert">
+                            </div>
+                             <div class="col-sm-12" style="margin-top: 10px;">
+                                <input type="checkbox">
+                                <label>Code Red</label>
+                                <input style="margin-left: 10px;" type="checkbox">
+                                <label>Hide Mute</label>
+                                <input style="margin-left: 10px;" type="checkbox">
+                                <label>Cleared</label>
+                                </div>
+                          </div>
+                          <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary"
+                                data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary">Apply
+                                Filters</button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
 
                 </div>
-
-
 
             </div>
             <div class="countt">

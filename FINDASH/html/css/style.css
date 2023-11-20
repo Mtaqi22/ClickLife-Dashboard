@@ -1273,12 +1273,13 @@ body.two-sidebar.sidebar-main .iq-sidebar { width: 0px; }
   display: flex;
 }
 .adcolor{
+ 
   color: white;
   font-size: 5px;
     height: 40px;
     width: 150px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
     margin-right: 10px;
     font-size: 26px;
     text-decoration: none;
@@ -1287,7 +1288,7 @@ body.two-sidebar.sidebar-main .iq-sidebar { width: 0px; }
 }
 .txtsize{
   font-size: 15px;
-  margin:0;
+  margin-left:10px;
 }
 .adcolor1{
 background: #1e7145;
@@ -1321,6 +1322,11 @@ background: #1e7145;
           margin-bottom: 5px;
         }
         .siza{
+          width: 320px;
+          height: 150px;
+          margin:20px;
+        }
+        .sizag{
           width: 320px;
           height: 150px;
           margin:20px;
