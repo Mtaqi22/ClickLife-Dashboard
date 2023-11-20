@@ -14,7 +14,16 @@ NOTE: This file contains the styling for responsive Template.
 	.email-form .select2-container { width: 100% !important; }
 	.iq-search-bar .searchbox { width: 350px; }
 }
+
+.iq-sidebar:hover{
+	.chk{
+		display: none;
+	
+	}
+}
+
 @media(min-width:1300px) {
+	
 	body.sidebar-main .iq-sidebar { width: 80px; }
 	/* body.sidebar-main .iq-sidebar .iq-sidebar-menu .iq-menu li a span, body.sidebar-main .iq-sidebar-logo a span, body.sidebar-main .iq-sidebar-menu .iq-menu li a .badge { opacity: 0; display: none; transition: all 0.45s ease 0s; } */
 	.sidebar-main .iq-sidebar .iq-submenu li a { font-size: 0; }

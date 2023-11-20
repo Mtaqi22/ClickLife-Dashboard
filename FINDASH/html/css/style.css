@@ -242,6 +242,9 @@ a:hover { text-decoration: none; }
 @keyframes rippleDrop {
   100% { transform: scale(2); opacity: 0; }
 }
+.chk{
+  margin-left: 5px;
+}
 
 /*---------------------------------------------------------------------
                                 Sidebar

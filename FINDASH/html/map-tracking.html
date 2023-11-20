@@ -48,22 +48,17 @@
                     <ul id="iq-sidebar-toggle" class="iq-menu">
 
                         <li>
-                            <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse"
-                                aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                    class="las la-home iq-arrow-left"></i><span>Dashboard</span><i
-                                    class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="dashboard" class="iq-submenu collapse " data-parent="#iq-sidebar-toggle">
-                                <li><a href="index.html"><i class="las la-laptop-code"></i>Account Dashboard</a>
-                                </li>
-
-                            </ul>
-                        </li>
+                            <a href="index.html"><i
+                                  class="las la-home iq-arrow-left"></i><span>Dashboard</span></a>
+                                  <label class="chk">Home</label>
+                         </li>
+                        
                         <li class="active">
                             <a href="#livetrack" class="iq-waves-effect" data-toggle="collapse"
                                 aria-expanded="false"><span class="ripple rippleEffect"></span><i
                                     class="fas fa-map-marker-alt iq-arrow-left"></i><span>Live Tracking</span><i
                                     class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="livetrack" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
+                            <ul id="livetrack" class="iq-submenu collapse " data-parent="#iq-sidebar-toggle">
                                 <li class="active"><a href="#"><i class="fas fa-map-marker"></i>Map Tracking</a>
                                 </li>
                                 <li><a href="#"><i class="fa fa-signal"></i>Events</a>
@@ -75,6 +70,7 @@
                                 <li><a href="#"><i class="fas fa-camera"></i>Camera & Media</a></li>
                             </ul>
                         </li>
+                        <label class="chk" style="margin-left: -3px;">Tracking</label>
                         <li>
                             <a href="#reportinfo" class="iq-waves-effect" data-toggle="collapse"
                                 aria-expanded="false"><span class="ripple rippleEffect"></span><i
@@ -84,6 +80,8 @@
                                 <li><a href="reports.html"><i class="fas fa-file-contract"></i>Vehicle Reports</a></li>
                             </ul>
                         </li>
+                        <label class="chk" style="margin-left: -3px;">Reports</label>
+
                         <li>
                             <a href="#system" class="iq-waves-effect" data-toggle="collapse" aria-expanded="false"><span
                                     class="ripple rippleEffect"></span><i class="fas fa-atom iq-arrow-left"
@@ -181,7 +179,7 @@
 
                             </ul>
                         </li>
-
+                        <label class="chk" style="margin-left: -3px;">System</label>
                         <li>
                             <a href="#finance" class="iq-waves-effect" data-toggle="collapse"
                                 aria-expanded="false"><span class="ripple rippleEffect"></span><i
@@ -191,7 +189,7 @@
                                 <li><a href="#"><i class="fas fa-dollar-sign"></i>Finance</a></li>
                             </ul>
                         </li>
-
+                        <label class="chk" style="margin-left: -3px;">Finance</label>
                         <li>
                             <a href="#setting" class="iq-waves-effect" data-toggle="collapse"
                                 aria-expanded="false"><span class="ripple rippleEffect"></span><i
@@ -204,7 +202,7 @@
                                 <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
                             </ul>
                         </li>
-
+                        <label class="chk" style="margin-left: -3px;">Settings</label>
                     </ul>
                 </nav>
                 <div class="p-3"></div>
@@ -1206,10 +1204,15 @@
                                         <select class="form-control" id="exampleFormControlSelect1"
                                             style="margin-top: -10px;">
                                             <option selected="" disabled="">Select time</option>
-                                            <option>One Day</option>
-                                            <option>One Week</option>
-                                            <option>One Month</option>
-                                            <option>One Year</option>
+                                            
+                                            <option>Last Hour</option>
+                                            <option>Last 2 Hours</option>
+                                            <option>Yesterday</option>
+                                            <option>Today</option>
+                                            <option>Last Week</option>
+                                            <option>Last Month</option>
+                                            <option>Current Month</option>
+                                         
                                            
                                         </select>
                                     </div>
