@@ -99,11 +99,11 @@
                                 <li><a href="#client" class="iq-waves-effect " data-toggle="collapse"
                                         aria-expanded="false"><span class="ripple rippleEffect"></span><i
                                             class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage
-                                        Client<i class="ri-arrow-right-s-line iq-arrow-right"
+                                        Clients<i class="ri-arrow-right-s-line iq-arrow-right"
                                             style="font-size: 18px;"></i></a>
                                     <ul id="client" class="iq-submenu collapse">
                                         <li><a href="party_user.html"><i class="las la-user-tie"
-                                                    style="font-size: 18px;"></i>Manage Party Clients</a></li>
+                                                    style="font-size: 18px;"></i>Manage Clients Profile</a></li>
                                         <li><a href="users.html"><i class="fas fa-user-friends"
                                                     style="font-size: 18px;"></i>Manage Client User</a></li>
 
@@ -114,7 +114,7 @@
                                 <li><a href="#userinfo" class="iq-waves-effect " data-toggle="collapse"
                                         aria-expanded="false"><span class="ripple rippleEffect"></span><i
                                             class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>Manage
-                                        User<i class="ri-arrow-right-s-line iq-arrow-right"
+                                        Users<i class="ri-arrow-right-s-line iq-arrow-right"
                                             style="font-size: 18px;"></i></a>
                                     <ul id="userinfo" class="iq-submenu collapse">
 
@@ -150,19 +150,16 @@
                                 <li>
                                     <a href="#sms" class="iq-waves-effect " data-toggle="collapse"
                                         aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                            class="fas fa-sms iq-arrow-left" style="font-size: 18px;"></i>Manage SMS<i
-                                            class="ri-arrow-right-s-line iq-arrow-right"
+                                            class="fas fa-sms iq-arrow-left" style="font-size: 18px;"></i>Manage
+                                        Notifications<i class="ri-arrow-right-s-line iq-arrow-right"
                                             style="font-size: 18px;"></i></a>
                                     <ul id="sms" class="iq-submenu collapse">
-                                        <li><a href="#"><i class="far fa-envelope-open"
-                                                    style="font-size: 18px;"></i>Manage SMS</a>
-                                        </li>
+
                                         <li><a href="sms-logs.html"><i class="fab fa-facebook-messenger"
-                                                    style="font-size: 18px;"></i>SMS Logs</a></li>
+                                                    style="font-size: 18px;"></i>Manage SMS</a></li>
                                         <li><a href="email-logs.html"><i class="fa fa-envelope-o"
                                                     style="font-size: 18px;"></i>Manage Emails</a></li>
-                                        <li><a href="#"><i class="fab fa-dyalog" style="font-size: 18px;"></i>Email
-                                                Logs</a></li>
+
                                         <li><a href="#"><i class="fab fa-whatsapp" style="font-size: 18px;"></i>Manage
                                                 Whatsapp</a>
                                         </li>
@@ -617,72 +614,25 @@
                                 </div>
 
 
-
-
                                 <div class="form-group col-sm-12">
-                                    <label>Group</label>
-                                    <div style="display: flex;">
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option selected="">Select Group</option>
-                                            <option>Group 1</option>
-                                            <option>Group 2</option>
-
-                                        </select>
-                                        <button style="width: 40px; margin-left: 2px;" data-toggle="modal"
-                                            data-target="#addgroup" class="btn onem btn-primary"><b>+</b></button>
-                                            
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-12" >
-                                    <label>Select Vehicle</label>
+                                    <label>More Actions</label>
                                     <div>
-                                            <button style="background-color: green; border-color: green; width: 100%; margin-left: 2px;" data-toggle="modal"
-                                            data-target="#addvehi" class="btn onem btn-primary"><b>Add Vehicle</b></button>
-                                     </div>
-                                </div>
-
-                                <div class="modal fade " id="addgroup" tabindex="-1" role="dialog"
-                                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable wid" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Groups
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-
-
-                                                <form>
-                                                    <div class=" row align-items-center">
-                                                        <div class="form-group col-sm-12">
-                                                            <label for="fname">Group Name</Label>
-                                                            <input type="text" class="form-control" id="fname"
-                                                                placeholder="Name">
-                                                        </div>
-
-                                                    </div>
-                                                </form>
-
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save</button>
-                                            </div>
-                                        </div>
+                                        <button
+                                            style="background-color: green; border-color: green; width: 100%; margin-left: 2px;"
+                                            data-toggle="modal" data-target="#addvehi"
+                                            class="btn onem btn-primary"><b>Actions</b></button>
                                     </div>
                                 </div>
+
+                              
 
                                 <div class="modal fade " id="addvehi" tabindex="-1" role="dialog"
                                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div style="width: 700px;" class="modal-dialog modal-dialog-scrollable"
+                                        role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Groups
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Actions
                                                 </h5>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
@@ -690,93 +640,479 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-
-                                                <div class="form-group col-sm-12">
-                                                    <label class="d-block">Vehicle
-                                                        Access:</label>
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input type="radio" id="customRadio5" name="customR"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio5"> All</label>
-                                                    </div>
-                
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input type="radio" id="customRadio8" name="customR"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio8">
-                                                            Cluster</label>
-                                                    </div>
-                
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input type="radio" id="customRadio9" name="customR"
-                                                            class="custom-control-input accordion panel1">
-                                                        <label class="custom-control-label" for="customRadio9">
-                                                            Portfolio</label>
-                                                    </div>
-                                                </div>
-                
-                                                <div class="form-group col-sm-12">
-                                                    <button class="accordion" id="ToClick">Vehicles</button>
-                                                    <div class="panel1">
-                
-                                                        <form>
-                                                            <div class="content">
-                                                                <div class="container conn">
-                                                                    <div>
-                                                                        <input type="search" class="form-control kam"
-                                                                            id="exampleInputSearch" placeholder="Search"
-                                                                            aria-controls="user-list-table">
-                                                                        <select id="leftCombo" multiple="true" class="sizag">
-                                                                            <option>543543
-                                                                                Yaris white
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Audi Red
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Honda Silver
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Toyota white
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Mercedes
-                                                                                white
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Yaris white
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Audi Red
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Honda Silver
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Toyota white
-                                                                            </option>
-                                                                            <option>543543
-                                                                                Mercedes
-                                                                                white
-                                                                            </option>
-                                                                        </select>
+                                                <div class="col-lg-12">
+                                                    <ul class="nav nav-tabs" id="myTab-1" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" id="home-tab" data-toggle="tab"
+                                                                href="#adgrp" role="tab" aria-controls="home"
+                                                                aria-selected="true">Add Group</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="profile-tab" data-toggle="tab"
+                                                                href="#adveh" role="tab" aria-controls="profile"
+                                                                aria-selected="false">Add Vehicle</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#noti" role="tab" aria-controls="contact"
+                                                                aria-selected="false">Notifications</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#timee" role="tab" aria-controls="contact"
+                                                                aria-selected="false">Time</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="contact-tab" data-toggle="tab"
+                                                                href="#objt" role="tab" aria-controls="contact"
+                                                                aria-selected="false">Object Control</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="myTabContent-2">
+                                                        <div class="tab-pane fade show active" id="adgrp"
+                                                            role="tabpanel" aria-labelledby="home-tab">
+                                                            <form>
+                                                                <div class=" row align-items-center">
+                                                                    <div class="form-group col-sm-12">
+                                                                        <label for="fname">Group Name</Label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="fname" placeholder="Name">
                                                                     </div>
-                
-                                                                    <div>
-                                                                        <input type="search" class="form-control kam"
-                                                                            id="exampleInputSearch" placeholder="Search"
-                                                                            aria-controls="user-list-table">
-                                                                        <select id="rightCombo" multiple="true" class="sizag">
-                                                                        </select>
+
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <div class="tab-pane fade" id="adveh" role="tabpanel"
+                                                            aria-labelledby="profile-tab">
+                                                            <div class="form-group col-sm-12">
+                                                                <label class="d-block">Vehicle
+                                                                    Access:</label>
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadio5" name="customR"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="customRadio5">
+                                                                        All</label>
+                                                                </div>
+
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadio8" name="customR"
+                                                                        class="custom-control-input">
+                                                                    <label class="custom-control-label"
+                                                                        for="customRadio8">
+                                                                        Cluster</label>
+                                                                </div>
+
+                                                                <div
+                                                                    class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadio9" name="customR"
+                                                                        class="custom-control-input accordion panel1">
+                                                                    <label class="custom-control-label"
+                                                                        for="customRadio9">
+                                                                        Portfolio</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group col-sm-12">
+                                                                <button class="accordion" id="ToClick">Vehicles</button>
+                                                                <div class="panel1">
+
+                                                                    <form>
+                                                                        <div class="content">
+                                                                            <div class="container conn">
+                                                                                <div>
+                                                                                    <input type="search"
+                                                                                        class="form-control kam"
+                                                                                        id="exampleInputSearch"
+                                                                                        placeholder="Search"
+                                                                                        aria-controls="user-list-table">
+                                                                                    <select style="width: 250px;"
+                                                                                        id="leftCombo" multiple="true"
+                                                                                        class="sizag">
+                                                                                        <option>543543
+                                                                                            Yaris white
+                                                                                        </option>
+                                                                                        <option>543543
+                                                                                            Audi Red
+                                                                                        </option>
+                                                                                        <option>543543
+                                                                                            Honda Silver
+                                                                                        </option>
+                                                                                        <option>543543
+                                                                                            Toyota white
+                                                                                        </option>
+                                                                                        <option>543543
+                                                                                            Mercedes
+                                                                                            white
+                                                                                        </option>
+                                                                                       
+                                                                                    </select>
+                                                                                </div>
+
+                                                                                <div>
+                                                                                    <input type="search"
+                                                                                        class="form-control kam"
+                                                                                        id="exampleInputSearch"
+                                                                                        placeholder="Search"
+                                                                                        aria-controls="user-list-table">
+                                                                                    <select style="width: 250px;"
+                                                                                        id="rightCombo" multiple="true"
+                                                                                        class="sizag">
+                                                                                    </select>
+                                                                                </div>
+                                                                                
+                                                                            </div>
+                                                                            <button id="copyAllButton" type="button" class="btn btn-primary">Select All</button>
+                                                                            <button id="removeAllButton" type="button" class="btn btn-danger">Remove All</button>
+                                                                        </div>
+
+
+
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="noti" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+
+                                                            <div class="col-md-12 mb-3">
+                                                                <label>Alert Type:</label>
+                                                            <div class="form-check" style="display: flex;">
+                                                                <div class="custom-control custom-radio" >
+                                                                   <input type="radio" id="customRadio21" name="customRadio" class="custom-control-input">
+                                                                   <label class="custom-control-label" for="customRadio21"> Inside</label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio" style="margin-left: 10px;">
+                                                                   <input type="radio" id="customRadio22" name="customRadio" class="custom-control-input">
+                                                                   <label class="custom-control-label" for="customRadio22"> Outside</label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio" style="margin-left: 10px;">
+                                                                    <input type="radio" id="customRadio23" name="customRadio" class="custom-control-input">
+                                                                    <label class="custom-control-label" for="customRadio23"> Both</label>
+                                                                 </div>
+                                                                
+                                                            </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom04">Email
+                                                                        Template</label>
+                                                                    <select class="form-control" id="validationCustom04"
+                                                                        required>
+                                                                        <option selected disabled value="">
+                                                                            Choose Template</option>
+                                                                        <option>General Alert Engine</option>
+                                                                        <option>Geofence Outside</option>
+                                                                        <option>On Recovery Engine</option>
+                                                                        <option>OverSpeed English</option>
+                                                                        <option>OverSpeed Arabic</option>
+
+                                                                    </select>
+                                                                    <div class="invalid-feedback">
+                                                                        Please select a valid state.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom03">Email (Comma
+                                                                        Seprated)</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="validationCustom03" required>
+
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom04">SMS Template</label>
+                                                                    <select class="form-control" id="validationCustom04"
+                                                                        required>
+                                                                        <option selected disabled value="">
+                                                                            Choose Template</option>
+                                                                        <option>Battery Unplug Eng</option>
+                                                                        <option>Overspeed Eng</option>
+                                                                        <option>Towing Detect Eng</option>
+                                                                        <option>General Alert Eng</option>
+                                                                        <option>OverSpeed Urdu</option>
+                                                                        <option>OverSpeed Arabic</option>
+
+                                                                    </select>
+                                                                    <div class="invalid-feedback">
+                                                                        Please select a valid state.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom03">Phone</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="validationCustom03" required>
+
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom04">WhatsApp
+                                                                        Template</label>
+                                                                    <select class="form-control" id="validationCustom04"
+                                                                        required>
+                                                                        <option selected disabled value="">
+                                                                            Choose Template</option>
+                                                                        <option>Battery Unplug Eng</option>
+                                                                        <option>Overspeed Eng</option>
+                                                                        <option>Towing Detect Eng</option>
+                                                                        <option>General Alert Eng</option>
+                                                                        <option>OverSpeed Urdu</option>
+                                                                        <option>OverSpeed Arabic</option>
+
+                                                                    </select>
+                                                                    <div class="invalid-feedback">
+                                                                        Please select a valid state.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label for="validationCustom03">WhatsApp</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="validationCustom03" required>
+
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>SMS Alert Method</label><br>
+
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 3px;">Auto SMS</label>
+                                                                    <input style="width: 100%;" class="form-control"
+                                                                        type="text" placeholder="Freq. Time (m)">
+
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Email Alert Method</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 3px;">Auto Email</label>
+                                                                    <input style="width: 100%;" class="form-control"
+                                                                        type="text" placeholder="Freq. Time (m)">
+
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>WhatsApp Alert Method</label><br>
+
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 3px;">Auto WhatsApp</label>
+                                                                    <input style="width: 100%;" class="form-control"
+                                                                        type="text" placeholder="Freq. Time (m)">
+
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Call Alert Method</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 3px;">Auto Call</label>
+                                                                    <input style="width: 100%;" class="form-control"
+                                                                        type="text" placeholder="Freq. Time (m)">
+
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="tab-pane fade" id="timee" role="tabpanel"
+                                                            aria-labelledby="contact-tab">
+                                                            <div class="col-md-12 mb-3">
+                                                                <label for="validationCustom03">Duration from last
+                                                                    Event (m)</label>
+                                                                <input type="text" class="form-control" placeholder="0"
+                                                                    required>
+
+                                                            </div>
+                                                            <div class="col-md-12 mb-3">
+                                                                <label for="validationCustom03">Week Days</label><br>
+                                                                <input type="checkbox"><label
+                                                                    style="margin-left: 5px;">All Days Of Week</label>
+
+                                                            </div>
+                                                            
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Custom Day:</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 5px;">Sunday</label>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Time</label><br>
+                                                                    <div style="display: flex;">
+                                                                        <input style="width: 40%;" type="time"
+                                                                            class="form-control"><label
+                                                                            style="margin-left: 5px; margin-right: 5px;">_</label>
+                                                                        <input style=" width: 40%;" type="time"
+                                                                            class="form-control">
                                                                     </div>
                                                                 </div>
                                                             </div>
-                
-                
-                                                            
-                                                        </form>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Custom Day:</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 5px;">Monday</label>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Time</label><br>
+                                                                    <div style="display: flex;">
+                                                                        <input style="width: 40%;" type="time"
+                                                                            class="form-control"><label
+                                                                            style="margin-left: 5px; margin-right: 5px;">_</label>
+                                                                        <input style=" width: 40%;" type="time"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Custom Day:</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 5px;">Tuesday</label>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Time</label><br>
+                                                                    <div style="display: flex;">
+                                                                        <input style="width: 40%;" type="time"
+                                                                            class="form-control"><label
+                                                                            style="margin-left: 5px; margin-right: 5px;">_</label>
+                                                                        <input style=" width: 40%;" type="time"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Custom Day:</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 5px;">Wednesday</label>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Time</label><br>
+                                                                    <div style="display: flex;">
+                                                                        <input style="width: 40%;" type="time"
+                                                                            class="form-control"><label
+                                                                            style="margin-left: 5px; margin-right: 5px;">_</label>
+                                                                        <input style=" width: 40%;" type="time"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Custom Day:</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 5px;">Thursday</label>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Time</label><br>
+                                                                    <div style="display: flex;">
+                                                                        <input style="width: 40%;" type="time"
+                                                                            class="form-control"><label
+                                                                            style="margin-left: 5px; margin-right: 5px;">_</label>
+                                                                        <input style=" width: 40%;" type="time"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Custom Day:</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 5px;">Friday</label>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Time</label><br>
+                                                                    <div style="display: flex;">
+                                                                        <input style="width: 40%;" type="time"
+                                                                            class="form-control"><label
+                                                                            style="margin-left: 5px; margin-right: 5px;">_</label>
+                                                                        <input style=" width: 40%;" type="time"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="display: flex;">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Custom Day:</label><br>
+                                                                    <input type="checkbox"><label
+                                                                        style="margin-left: 5px;">Saturday</label>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label>Time</label><br>
+                                                                    <div style="display: flex;">
+                                                                        <input style="width: 40%;" type="time"
+                                                                            class="form-control"><label
+                                                                            style="margin-left: 5px; margin-right: 5px;">_</label>
+                                                                        <input style=" width: 40%;" type="time"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="objt" role="tabpanel"
+                                                        aria-labelledby="contact-tab">
+                                                           <input type="checkbox"><label style="margin-left: 5px;">Send Command</label>
+                                                           <div style="display: flex;">
+                                                           <div class="col-md-6 mb-3">
+                                                            <label for="validationCustom04">Command Method</label>
+                                                            <select class="form-control" id="validationCustom04"
+                                                                required>
+                                                                <option selected disabled value="">
+                                                                    Choose Method</option>
+                                                                <option>SMS</option>
+                                                                <option>GPRS</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Please select a valid state.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationCustom04">Command Type</label>
+                                                            <select class="form-control" id="validationCustom04"
+                                                                required>
+                                                                <option selected disabled value="">
+                                                                    Choose Type</option>
+                                                                <option>ASCII</option>
+                                                                <option>HEX</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Please select a valid state.
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                    <div style="display: flex;">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationCustom04">Command</label>
+                                                            <select class="form-control" id="validationCustom04"
+                                                                required>
+                                                                <option selected disabled value="">
+                                                                    Choose Command</option>
+                                                                <option>Switch On</option>
+                                                                <option>Switch Off</option>
+                                                                <option>Status</option>
+                                                                <option>Password On</option>
+                                                                <option>Password Set</option>
+                                                            </select>
+                                                            <div class="invalid-feedback">
+                                                                Please select a valid state.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="validationCustom03">Command</label>
+                                                            <input type="text" class="form-control" 
+                                                                required>
+
+                                                        </div>
+                                                    </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
+
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
@@ -788,1174 +1124,1204 @@
                                 </div>
 
 
-                             
+
                                 <div id="cancel-button" class="form-group col-sm-12" style="display: flex;">
                                     <button style="width: 48%;" type="button" class="btn btn-secondary"
                                         data-dismiss="modal">Cancel</button>
                                     <button style="margin-left: 10px; width: 48%;" type="button"
                                         class="btn btn-primary">Save</button>
                                 </div>
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade " id="route" role="tabpanel" aria-labelledby="home-tab">
-
-
-                                <div style="display: flex;">
-                                    <input type="search" class="form-control" id="exampleInputSearch"
-                                        placeholder="Search" aria-controls="user-list-table" style="width: 335px;">
-
-
-                                    <button style="width: 40px; margin-left: 5px;" data-toggle="modal"
-                                        data-target="#exampleModalCenter" class="btn onem btn-primary"><i
-                                            class='fa fa-refresh' style='font-size:18px'></i></button>
-
-                                </div>
-                                <div class="outer">
-
-                                    <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
-                                        role="grid" aria-describedby="user-list-page-info" style="width: 380px;">
-                                        <thead>
-                                            <tr>
-                                                <th> <input type="checkbox" id="selectAll1"
-                                                        onchange="selectAllCheckboxes1()" /></th>
-                                                <th>Route Name</th>
-                                                <th>Action</th>
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox1" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade " id="poi" role="tabpanel" aria-labelledby="home-tab">
-
-
-                                <div style="display: flex;">
-                                    <input type="search" class="form-control" id="exampleInputSearch"
-                                        placeholder="Search" aria-controls="user-list-table" style="width: 335px;">
-
-
-                                    <button style="width: 40px; margin-left: 5px;" data-toggle="modal"
-                                        data-target="#exampleModalCenter" class="btn onem btn-primary"><i
-                                            class='fa fa-refresh' style='font-size:18px'></i></button>
-
-                                </div>
-                                <div class="outer">
-
-                                    <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
-                                        role="grid" aria-describedby="user-list-page-info" style="width: 380px;">
-                                        <thead>
-                                            <tr>
-                                                <th> <input type="checkbox" id="selectAll2"
-                                                        onchange="selectAllCheckboxes2()" /></th>
-                                                <th>POI</th>
-                                                <th>Action</th>
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox2" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade " id="address" role="tabpanel" aria-labelledby="home-tab">
-
-
-                                <div style="display: flex;">
-                                    <input type="search" class="form-control" id="exampleInputSearch"
-                                        placeholder="Search" aria-controls="user-list-table" style="width: 335px;">
-
-
-                                    <button style="width: 40px; margin-left: 5px;" data-toggle="modal"
-                                        data-target="#exampleModalCenter" class="btn onem btn-primary"><i
-                                            class='fa fa-refresh' style='font-size:18px'></i></button>
-
-                                </div>
-                                <div class="outer">
-
-                                    <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
-                                        role="grid" aria-describedby="user-list-page-info" style="width: 380px;">
-                                        <thead>
-                                            <tr>
-                                                <th> <input type="checkbox" id="selectAll3"
-                                                        onchange="selectAllCheckboxes3()" /></th>
-                                                <th>Addresses</th>
-                                                <th>Action</th>
-
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td><label>
-                                                        <input type="checkbox" class="checkbox3" data-index="1" />
-                                                    </label></td>
-                                                <td>Sunny</td>
-                                                <td>
-                                                    <div class="flex align-items-center list-user-action">
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Edit"
-                                                            href="#"><i class="ri-pencil-line"></i></a>
-                                                        <a class="iq-bg-primary" data-toggle="tooltip"
-                                                            data-placement="top" title="" data-original-title="Delete"
-                                                            href="#"><i class="ri-delete-bin-line"></i></a>
-                                                    </div>
-                                                </td>
-
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
                             </div>
 
                         </div>
+                        <div class="tab-pane fade " id="route" role="tabpanel" aria-labelledby="home-tab">
 
 
+                            <div style="display: flex;">
+                                <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"
+                                    aria-controls="user-list-table" style="width: 335px;">
+
+
+                                <button style="width: 40px; margin-left: 5px;" data-toggle="modal"
+                                    data-target="#exampleModalCenter" class="btn onem btn-primary"><i
+                                        class='fa fa-refresh' style='font-size:18px'></i></button>
+
+                            </div>
+                            <div class="outer">
+
+                                <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
+                                    role="grid" aria-describedby="user-list-page-info" style="width: 380px;">
+                                    <thead>
+                                        <tr>
+                                            <th> <input type="checkbox" id="selectAll1"
+                                                    onchange="selectAllCheckboxes1()" /></th>
+                                            <th>Route Name</th>
+                                            <th>Action</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox1" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="poi" role="tabpanel" aria-labelledby="home-tab">
+
+
+                            <div style="display: flex;">
+                                <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"
+                                    aria-controls="user-list-table" style="width: 335px;">
+
+
+                                <button style="width: 40px; margin-left: 5px;" data-toggle="modal"
+                                    data-target="#exampleModalCenter" class="btn onem btn-primary"><i
+                                        class='fa fa-refresh' style='font-size:18px'></i></button>
+
+                            </div>
+                            <div class="outer">
+
+                                <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
+                                    role="grid" aria-describedby="user-list-page-info" style="width: 380px;">
+                                    <thead>
+                                        <tr>
+                                            <th> <input type="checkbox" id="selectAll2"
+                                                    onchange="selectAllCheckboxes2()" /></th>
+                                            <th>POI</th>
+                                            <th>Action</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox2" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="address" role="tabpanel" aria-labelledby="home-tab">
+
+
+                            <div style="display: flex;">
+                                <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"
+                                    aria-controls="user-list-table" style="width: 335px;">
+
+
+                                <button style="width: 40px; margin-left: 5px;" data-toggle="modal"
+                                    data-target="#exampleModalCenter" class="btn onem btn-primary"><i
+                                        class='fa fa-refresh' style='font-size:18px'></i></button>
+
+                            </div>
+                            <div class="outer">
+
+                                <table id="user-list-table" class="table table-striped table-bordered mt-4 table-sm"
+                                    role="grid" aria-describedby="user-list-page-info" style="width: 380px;">
+                                    <thead>
+                                        <tr>
+                                            <th> <input type="checkbox" id="selectAll3"
+                                                    onchange="selectAllCheckboxes3()" /></th>
+                                            <th>Addresses</th>
+                                            <th>Action</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td><label>
+                                                    <input type="checkbox" class="checkbox3" data-index="1" />
+                                                </label></td>
+                                            <td>Sunny</td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Edit" href="#"><i
+                                                            class="ri-pencil-line"></i></a>
+                                                    <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top"
+                                                        title="" data-original-title="Delete" href="#"><i
+                                                            class="ri-delete-bin-line"></i></a>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
                     </div>
 
 
 
                 </div>
-                <div class="countt">
-                    <div>
 
-                        <select id="count-select">
-                            <option value="10">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                            <option value="50">50</option>
-                            <option value="60">60</option>
-                            <option value="70">70</option>
-                            <option value="80">80</option>
-                            <option value="90">90</option>
-                            <option value="100">100</option>
-                        </select>
-                    </div>
-                    <div class="counter-container" style="margin-left:7px; font-size: 20px; margin-top: -5px;">
 
-                        <label id="counter">0</label>
-                    </div>
+
+            </div>
+            <div class="countt">
+                <div>
+
+                    <select id="count-select">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>
+                        <option value="80">80</option>
+                        <option value="90">90</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <div class="counter-container" style="margin-left:7px; font-size: 20px; margin-top: -5px;">
+
+                    <label id="counter">0</label>
                 </div>
             </div>
         </div>
-        <!-- Wrapper END -->
-        <!-- Footer -->
-        <!-- Footer END -->
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Appear JavaScript -->
-        <script src="js/jquery.appear.js"></script>
-        <!-- Countdown JavaScript -->
-        <script src="js/countdown.min.js"></script>
-        <!-- Counterup JavaScript -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/jquery.counterup.min.js"></script>
-        <!-- Wow JavaScript -->
-        <script src="js/wow.min.js"></script>
-        <!-- Apexcharts JavaScript -->
-        <script src="js/apexcharts.js"></script>
-        <!-- Slick JavaScript -->
-        <script src="js/slick.min.js"></script>
-        <!-- Select2 JavaScript -->
-        <script src="js/select2.min.js"></script>
-        <!-- Owl Carousel JavaScript -->
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- Magnific Popup JavaScript -->
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- Smooth Scrollbar JavaScript -->
-        <script src="js/smooth-scrollbar.js"></script>
-        <!-- lottie JavaScript -->
-        <script src="js/lottie.js"></script>
-        <!-- am core JavaScript -->
-        <script src="js/core.js"></script>
-        <!-- am charts JavaScript -->
-        <script src="js/charts.js"></script>
-        <!-- am animated JavaScript -->
-        <script src="js/animated.js"></script>
-        <!-- am kelly JavaScript -->
-        <script src="js/kelly.js"></script>
-        <!-- am maps JavaScript -->
-        <script src="js/maps.js"></script>
-        <!-- am worldLow JavaScript -->
-        <script src="js/worldLow.js"></script>
-        <!-- Style Customizer -->
-        <script src="js/style-customizer.js"></script>
-        <!-- Chart Custom JavaScript -->
-        <script src="js/chart-custom.js"></script>
-        <!-- Custom JavaScript -->
-        <script src="js/custom.js"></script>
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu1xPEn4EnB5WSdwtcXvxU5bMSl1xlrhY&libraries=places,drawing&callback=initMap"
-            async defer></script>
+    </div>
+    <!-- Wrapper END -->
+    <!-- Footer -->
+    <!-- Footer END -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Appear JavaScript -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Countdown JavaScript -->
+    <script src="js/countdown.min.js"></script>
+    <!-- Counterup JavaScript -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Wow JavaScript -->
+    <script src="js/wow.min.js"></script>
+    <!-- Apexcharts JavaScript -->
+    <script src="js/apexcharts.js"></script>
+    <!-- Slick JavaScript -->
+    <script src="js/slick.min.js"></script>
+    <!-- Select2 JavaScript -->
+    <script src="js/select2.min.js"></script>
+    <!-- Owl Carousel JavaScript -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JavaScript -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Smooth Scrollbar JavaScript -->
+    <script src="js/smooth-scrollbar.js"></script>
+    <!-- lottie JavaScript -->
+    <script src="js/lottie.js"></script>
+    <!-- am core JavaScript -->
+    <script src="js/core.js"></script>
+    <!-- am charts JavaScript -->
+    <script src="js/charts.js"></script>
+    <!-- am animated JavaScript -->
+    <script src="js/animated.js"></script>
+    <!-- am kelly JavaScript -->
+    <script src="js/kelly.js"></script>
+    <!-- am maps JavaScript -->
+    <script src="js/maps.js"></script>
+    <!-- am worldLow JavaScript -->
+    <script src="js/worldLow.js"></script>
+    <!-- Style Customizer -->
+    <script src="js/style-customizer.js"></script>
+    <!-- Chart Custom JavaScript -->
+    <script src="js/chart-custom.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu1xPEn4EnB5WSdwtcXvxU5bMSl1xlrhY&libraries=places,drawing&callback=initMap"
+        async defer></script>
 
-        <script>
-            let map;
-            let streetViewPanorama;
-            let trafficLayer;
-            let drawingManager;
-            let shapes = []; // Array to store drawn shapes
+    <script>
+        let map;
+        let streetViewPanorama;
+        let trafficLayer;
+        let drawingManager;
+        let shapes = []; // Array to store drawn shapes
 
-            function initMap() {
-                // Initialize the map
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: { lat: 26.0667, lng: 50.5577 }, // Centered around Bahrain
-                    zoom: 10
-                });
+        function initMap() {
+            // Initialize the map
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 26.0667, lng: 50.5577 }, // Centered around Bahrain
+                zoom: 10
+            });
 
-                // Initialize the traffic layer
-                trafficLayer = new google.maps.TrafficLayer();
+            // Initialize the traffic layer
+            trafficLayer = new google.maps.TrafficLayer();
 
-                // Initialize the drawing manager
-                drawingManager = new google.maps.drawing.DrawingManager({
-                    drawingControl: true,
-                    drawingControlOptions: {
-                        position: google.maps.ControlPosition.TOP_CENTER,
-                        drawingModes: ['polygon', 'circle']
-                    },
-                    polygonOptions: {
-                        editable: true,
-                        draggable: true,
-                        fillColor: '#ff0000' // Default fill color
-                    },
-                    circleOptions: {
-                        editable: true,
-                        draggable: true,
-                        fillColor: '#ff0000' // Default fill color
-                    }
-                });
-
-                // Set up the combo box for map views
-                const viewSelector = document.getElementById('view-selector');
-                viewSelector.addEventListener('change', function () {
-                    const selectedView = this.value;
-
-                    // Display the selected view
-                    if (selectedView === 'map') {
-                        map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
-                        hideStreetViewAndTraffic();
-                    } else if (selectedView === 'satellite') {
-                        map.setMapTypeId(google.maps.MapTypeId.HYBRID);
-                        hideStreetViewAndTraffic();
-                    } else if (selectedView === 'street-view') {
-                        displayStreetView();
-                        hideTraffic();
-                    } else if (selectedView === 'traffic-view') {
-                        displayTraffic();
-                        hideStreetView();
-                    } else if (selectedView === 'terrain-view') {
-                        map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
-                        hideStreetViewAndTraffic();
-                    } else if (selectedView === 'air-quality-view') {
-                        displayAirQualityMap(); // Placeholder function, replace with actual implementation
-                        hideStreetViewAndTraffic();
-                    }
-                });
-
-                // Set up the combo box for drawing modes
-                const drawingSelector = document.getElementById('drawing-selector');
-                drawingSelector.addEventListener('change', function () {
-                    const selectedDrawingMode = this.value;
-                    if (selectedDrawingMode === 'polygon') {
-                        drawingManager.setDrawingMode(google.maps.drawing.OverlayType.POLYGON);
-                    } else if (selectedDrawingMode === 'circle') {
-                        drawingManager.setDrawingMode(google.maps.drawing.OverlayType.CIRCLE);
-                    }
-                });
-
-                // Event listener for overlay completion
-                google.maps.event.addListener(drawingManager, 'overlaycomplete', function (event) {
-                    const selectedColor = document.getElementById('color-picker').value;
-
-                    if (event.type === 'polygon') {
-                        event.overlay.setOptions({
-                            fillColor: selectedColor,
-                        });
-                        console.log('Polygon completed:', event.overlay.getPath().getArray());
-                    } else if (event.type === 'circle') {
-                        event.overlay.setOptions({
-                            fillColor: selectedColor,
-                        });
-                        console.log('Circle completed: Center -', event.overlay.getCenter(), 'Radius -', event.overlay.getRadius());
-                    }
-
-                    shapes.push(event.overlay); // Add the drawn shape to the array
-                    drawingManager.setDrawingMode(null);
-                });
-
-                // Set drawing manager on the map
-                drawingManager.setMap(map);
-
-                // Set up the cancel button
-                const cancelButton = document.getElementById('cancel-button');
-                cancelButton.addEventListener('click', function () {
-                    cancelDrawing();
-                });
-            }
-
-            function hideStreetViewAndTraffic() {
-                if (streetViewPanorama) {
-                    streetViewPanorama.setVisible(false);
+            // Initialize the drawing manager
+            drawingManager = new google.maps.drawing.DrawingManager({
+                drawingControl: true,
+                drawingControlOptions: {
+                    position: google.maps.ControlPosition.TOP_CENTER,
+                    drawingModes: ['polygon', 'circle']
+                },
+                polygonOptions: {
+                    editable: true,
+                    draggable: true,
+                    fillColor: '#ff0000' // Default fill color
+                },
+                circleOptions: {
+                    editable: true,
+                    draggable: true,
+                    fillColor: '#ff0000' // Default fill color
                 }
-                trafficLayer.setMap(null);
-            }
+            });
 
-            function hideStreetView() {
-                if (streetViewPanorama) {
-                    streetViewPanorama.setVisible(false);
+            // Set up the combo box for map views
+            const viewSelector = document.getElementById('view-selector');
+            viewSelector.addEventListener('change', function () {
+                const selectedView = this.value;
+
+                // Display the selected view
+                if (selectedView === 'map') {
+                    map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+                    hideStreetViewAndTraffic();
+                } else if (selectedView === 'satellite') {
+                    map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+                    hideStreetViewAndTraffic();
+                } else if (selectedView === 'street-view') {
+                    displayStreetView();
+                    hideTraffic();
+                } else if (selectedView === 'traffic-view') {
+                    displayTraffic();
+                    hideStreetView();
+                } else if (selectedView === 'terrain-view') {
+                    map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
+                    hideStreetViewAndTraffic();
+                } else if (selectedView === 'air-quality-view') {
+                    displayAirQualityMap(); // Placeholder function, replace with actual implementation
+                    hideStreetViewAndTraffic();
                 }
-            }
+            });
 
-            function hideTraffic() {
-                trafficLayer.setMap(null);
-            }
+            // Set up the combo box for drawing modes
+            const drawingSelector = document.getElementById('drawing-selector');
+            drawingSelector.addEventListener('change', function () {
+                const selectedDrawingMode = this.value;
+                if (selectedDrawingMode === 'polygon') {
+                    drawingManager.setDrawingMode(google.maps.drawing.OverlayType.POLYGON);
+                } else if (selectedDrawingMode === 'circle') {
+                    drawingManager.setDrawingMode(google.maps.drawing.OverlayType.CIRCLE);
+                }
+            });
 
-            function displayStreetView() {
-                if (!streetViewPanorama) {
-                    streetViewPanorama = new google.maps.StreetViewPanorama(
-                        document.getElementById('map'),
-                        {
-                            position: map.getCenter(),
-                            pov: { heading: 0, pitch: 0 },
-                            zoom: 1
-                        }
-                    );
-                    map.setStreetView(streetViewPanorama);
+            // Event listener for overlay completion
+            google.maps.event.addListener(drawingManager, 'overlaycomplete', function (event) {
+                const selectedColor = document.getElementById('color-picker').value;
+
+                if (event.type === 'polygon') {
+                    event.overlay.setOptions({
+                        fillColor: selectedColor,
+                    });
+                    console.log('Polygon completed:', event.overlay.getPath().getArray());
+                } else if (event.type === 'circle') {
+                    event.overlay.setOptions({
+                        fillColor: selectedColor,
+                    });
+                    console.log('Circle completed: Center -', event.overlay.getCenter(), 'Radius -', event.overlay.getRadius());
+                }
+
+                shapes.push(event.overlay); // Add the drawn shape to the array
+                drawingManager.setDrawingMode(null);
+            });
+
+            // Set drawing manager on the map
+            drawingManager.setMap(map);
+
+            // Set up the cancel button
+            const cancelButton = document.getElementById('cancel-button');
+            cancelButton.addEventListener('click', function () {
+                cancelDrawing();
+            });
+        }
+
+        function hideStreetViewAndTraffic() {
+            if (streetViewPanorama) {
+                streetViewPanorama.setVisible(false);
+            }
+            trafficLayer.setMap(null);
+        }
+
+        function hideStreetView() {
+            if (streetViewPanorama) {
+                streetViewPanorama.setVisible(false);
+            }
+        }
+
+        function hideTraffic() {
+            trafficLayer.setMap(null);
+        }
+
+        function displayStreetView() {
+            if (!streetViewPanorama) {
+                streetViewPanorama = new google.maps.StreetViewPanorama(
+                    document.getElementById('map'),
+                    {
+                        position: map.getCenter(),
+                        pov: { heading: 0, pitch: 0 },
+                        zoom: 1
+                    }
+                );
+                map.setStreetView(streetViewPanorama);
+            } else {
+                streetViewPanorama.setPosition(map.getCenter());
+                streetViewPanorama.setPov({ heading: 0, pitch: 0 });
+                streetViewPanorama.setVisible(true);
+            }
+        }
+
+        function displayTraffic() {
+            trafficLayer.setMap(map);
+        }
+
+        function displayAirQualityMap() {
+            // Placeholder function - Replace with actual implementation using an air quality service
+            console.log('Displaying Air Quality Map');
+        }
+
+        function cancelDrawing() {
+            // Remove all drawn shapes from the map
+            for (let i = 0; i < shapes.length; i++) {
+                shapes[i].setMap(null);
+            }
+            shapes = []; // Clear the array
+        }
+    </script>
+
+    <script>
+        const countSelect = document.getElementById('count-select');
+        const counter = document.getElementById('counter');
+        let countdownInterval = null;
+
+        function startCountdown(selectedValue) {
+            clearInterval(countdownInterval);
+            let currentCount = selectedValue;
+            counter.textContent = currentCount;
+            countdownInterval = setInterval(() => {
+                currentCount--;
+                if (currentCount >= 0) {
+                    counter.textContent = currentCount;
                 } else {
-                    streetViewPanorama.setPosition(map.getCenter());
-                    streetViewPanorama.setPov({ heading: 0, pitch: 0 });
-                    streetViewPanorama.setVisible(true);
-                }
-            }
-
-            function displayTraffic() {
-                trafficLayer.setMap(map);
-            }
-
-            function displayAirQualityMap() {
-                // Placeholder function - Replace with actual implementation using an air quality service
-                console.log('Displaying Air Quality Map');
-            }
-
-            function cancelDrawing() {
-                // Remove all drawn shapes from the map
-                for (let i = 0; i < shapes.length; i++) {
-                    shapes[i].setMap(null);
-                }
-                shapes = []; // Clear the array
-            }
-        </script>
-
-        <script>
-            const countSelect = document.getElementById('count-select');
-            const counter = document.getElementById('counter');
-            let countdownInterval = null;
-
-            function startCountdown(selectedValue) {
-                clearInterval(countdownInterval);
-                let currentCount = selectedValue;
-                counter.textContent = currentCount;
-                countdownInterval = setInterval(() => {
-                    currentCount--;
-                    if (currentCount >= 0) {
-                        counter.textContent = currentCount;
-                    } else {
-                        clearInterval(countdownInterval);
-                        // Restart countdown with the selected value
-                        startCountdown(selectedValue);
-                    }
-                }, 1000);
-            }
-
-            countSelect.addEventListener('change', () => {
-                const selectedValue = parseInt(countSelect.value, 10);
-                if (countdownInterval) {
                     clearInterval(countdownInterval);
+                    // Restart countdown with the selected value
                     startCountdown(selectedValue);
-                } else {
-                    startCountdown(selectedValue);
                 }
+            }, 1000);
+        }
+
+        countSelect.addEventListener('change', () => {
+            const selectedValue = parseInt(countSelect.value, 10);
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+                startCountdown(selectedValue);
+            } else {
+                startCountdown(selectedValue);
+            }
+        });
+
+        // Start the countdown with the default value of 10
+        startCountdown(10);
+    </script>
+    <script>
+        function toggleWidth() {
+            var div = document.getElementById('animatedDiv');
+            var currentWidth = div.style.maxWidth;
+
+
+            // Toggle between 0 and a specific width (e.g., 200px)
+            div.style.maxWidth = currentWidth === '0px' ? '600px' : '0';
+            div.style.left = currentWidth === '0px' ? '50px' : '0';
+        }
+    </script>
+
+    <script>
+        function toggleDiv() {
+            var container = document.getElementById('rghtsde');
+
+            // Toggle the visibility using transform and opacity
+            if (container.style.transform === 'translateX(0%)' || container.style.transform === '') {
+                container.style.transform = 'translateX(100%)';
+                container.style.opacity = '0';
+            } else {
+                container.style.transform = 'translateX(0%)';
+                container.style.opacity = '1';
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to the buttons
+            var triggerButton = document.getElementById('ap');
+            var disappearingButton = document.getElementById('dp');
+
+            // Add a click event listener to the trigger button
+            triggerButton.addEventListener('click', function () {
+                // Animate the disappearing button
+                disappearingButton.style.opacity = '0';
+
+                // You can add more animation effects or use a library like GSAP for complex animations
             });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get a reference to the button
+            var movingButton = document.getElementById('movingButton');
 
-            // Start the countdown with the default value of 10
-            startCountdown(10);
-        </script>
-        <script>
-            function toggleWidth() {
-                var div = document.getElementById('animatedDiv');
-                var currentWidth = div.style.maxWidth;
-
-
-                // Toggle between 0 and a specific width (e.g., 200px)
-                div.style.maxWidth = currentWidth === '0px' ? '600px' : '0';
-                div.style.left = currentWidth === '0px' ? '50px' : '0';
-            }
-        </script>
-
-        <script>
-            function toggleDiv() {
-                var container = document.getElementById('rghtsde');
-
-                // Toggle the visibility using transform and opacity
-                if (container.style.transform === 'translateX(0%)' || container.style.transform === '') {
-                    container.style.transform = 'translateX(100%)';
-                    container.style.opacity = '0';
-                } else {
-                    container.style.transform = 'translateX(0%)';
-                    container.style.opacity = '1';
-                }
-            }
-        </script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Get references to the buttons
-                var triggerButton = document.getElementById('ap');
-                var disappearingButton = document.getElementById('dp');
-
-                // Add a click event listener to the trigger button
-                triggerButton.addEventListener('click', function () {
-                    // Animate the disappearing button
-                    disappearingButton.style.opacity = '0';
-
-                    // You can add more animation effects or use a library like GSAP for complex animations
-                });
-            });
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Get a reference to the button
-                var movingButton = document.getElementById('movingButton');
-
-                // Add a click event listener to the button
-                movingButton.addEventListener('click', function () {
-                    // Toggle the "moved" class on each click
-                    movingButton.classList.toggle('moved2');
-
-
-                    // Change the button text based on the class
-                    if (movingButton.classList.contains('moved2')) {
-
-                        movingButton.innerHTML = '🡲';
-                    } else {
-                        movingButton.innerHTML = '🡰';
-                    }
-                });
-            });
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Get a reference to the button
-                var movingButton = document.getElementById('movingButton1');
-
-                // Add a click event listener to the button
-                movingButton.addEventListener('click', function () {
-                    // Toggle the "moved" class on each click
-                    movingButton.classList.toggle('moved1');
-
-
-                    // Change the button text based on the class
-                    if (movingButton.classList.contains('moved1')) {
-
-                        movingButton.innerHTML = '🡰';
-                    } else {
-                        movingButton.innerHTML = '🡲';
-                    }
-                });
-            });
-        </script>
-        <script>
-            function selectAllCheckboxes() {
-                const selectAllCheckbox = document.getElementById('selectAll');
-                const checkboxes = document.getElementsByClassName('checkbox');
-
-                for (let i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].checked = selectAllCheckbox.checked;
-                }
-            }
-        </script>
-        <script>
-            function selectAllCheckboxes1() {
-                const selectAllCheckbox = document.getElementById('selectAll1');
-                const checkboxes = document.getElementsByClassName('checkbox1');
-
-                for (let i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].checked = selectAllCheckbox.checked;
-                }
-            }
-        </script>
-        <script>
-            function selectAllCheckboxes2() {
-                const selectAllCheckbox = document.getElementById('selectAll2');
-                const checkboxes = document.getElementsByClassName('checkbox2');
-
-                for (let i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].checked = selectAllCheckbox.checked;
-                }
-            }
-        </script>
-        <script>
-            function selectAllCheckboxes3() {
-                const selectAllCheckbox = document.getElementById('selectAll3');
-                const checkboxes = document.getElementsByClassName('checkbox3');
-
-                for (let i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].checked = selectAllCheckbox.checked;
-                }
-            }
-        </script>
-        <script>
             // Add a click event listener to the button
-            document.getElementById("scrollButton").addEventListener("click", function () {
-                // Scroll to the second div
-                document.getElementById("secondDiv").scrollIntoView({ behavior: "smooth" });
-            });
-        </script>
-        <script>
-            const leftCombo = document.getElementById("leftCombo");
-            const rightCombo = document.getElementById("rightCombo");
-            const addedItems = new Set(); // To keep track of added items
+            movingButton.addEventListener('click', function () {
+                // Toggle the "moved" class on each click
+                movingButton.classList.toggle('moved2');
 
-            // Function to remove items from the right combo box
-            function removeItem() {
-                const selectedOptions = Array.from(rightCombo.selectedOptions);
-                for (const option of selectedOptions) {
-                    rightCombo.removeChild(option);
-                    addedItems.delete(option.textContent); // Remove the item from the set
-                }
-            }
 
-            leftCombo.addEventListener("click", function () {
-                const selectedOptions = Array.from(leftCombo.selectedOptions);
-                for (const option of selectedOptions) {
-                    if (!addedItems.has(option.textContent)) {
-                        const newOption = option.cloneNode(true);
-                        rightCombo.appendChild(newOption);
-                        addedItems.add(option.textContent); // Add the item to the set to track it
-                    }
+                // Change the button text based on the class
+                if (movingButton.classList.contains('moved2')) {
+
+                    movingButton.innerHTML = '🡲';
+                } else {
+                    movingButton.innerHTML = '🡰';
                 }
             });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get a reference to the button
+            var movingButton = document.getElementById('movingButton1');
 
-            // Attach a click event listener to the right combo box to remove items
-            rightCombo.addEventListener("click", function () {
-                removeItem();
+            // Add a click event listener to the button
+            movingButton.addEventListener('click', function () {
+                // Toggle the "moved" class on each click
+                movingButton.classList.toggle('moved1');
+
+
+                // Change the button text based on the class
+                if (movingButton.classList.contains('moved1')) {
+
+                    movingButton.innerHTML = '🡰';
+                } else {
+                    movingButton.innerHTML = '🡲';
+                }
             });
-        </script>
-        <script>
-            const radioButton = document.getElementById("customRadio9");
-            const divToClick = document.getElementById("ToClick");
+        });
+    </script>
+    <script>
+        function selectAllCheckboxes() {
+            const selectAllCheckbox = document.getElementById('selectAll');
+            const checkboxes = document.getElementsByClassName('checkbox');
 
-            // Add a click event listener to the radio button
-            radioButton.addEventListener("click", function () {
-                // Programmatically trigger a click event on the div
-                divToClick.click();
-            });
-
-            // Add a click event listener to the div to perform some action
-            divToClick.addEventListener("click", function () {
-
-            });
-        </script>
-
-
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
+            for (let i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
             }
-        </script>
+        }
+    </script>
+    <script>
+        function selectAllCheckboxes1() {
+            const selectAllCheckbox = document.getElementById('selectAll1');
+            const checkboxes = document.getElementsByClassName('checkbox1');
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
+            }
+        }
+    </script>
+    <script>
+        function selectAllCheckboxes2() {
+            const selectAllCheckbox = document.getElementById('selectAll2');
+            const checkboxes = document.getElementsByClassName('checkbox2');
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
+            }
+        }
+    </script>
+    <script>
+        function selectAllCheckboxes3() {
+            const selectAllCheckbox = document.getElementById('selectAll3');
+            const checkboxes = document.getElementsByClassName('checkbox3');
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].checked = selectAllCheckbox.checked;
+            }
+        }
+    </script>
+    <script>
+        // Add a click event listener to the button
+        document.getElementById("scrollButton").addEventListener("click", function () {
+            // Scroll to the second div
+            document.getElementById("secondDiv").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+  <script>
+    const leftCombo = document.getElementById("leftCombo");
+    const rightCombo = document.getElementById("rightCombo");
+    const copyAllButton = document.getElementById("copyAllButton");
+    const removeAllButton = document.getElementById("removeAllButton");
+    const addedItems = new Set(); // To keep track of added items
+
+    // Function to remove items from the right combo box
+    function removeItem() {
+        const selectedOptions = Array.from(rightCombo.selectedOptions);
+        for (const option of selectedOptions) {
+            rightCombo.removeChild(option);
+            addedItems.delete(option.textContent); // Remove the item from the set
+        }
+    }
+
+    // Function to remove all items from the right combo box
+    function removeAllItems() {
+        rightCombo.innerHTML = "";
+        addedItems.clear(); // Clear the set
+    }
+
+    // Function to copy all items from left to right combo box
+    function copyAllItems() {
+        const leftOptions = Array.from(leftCombo.options);
+        for (const option of leftOptions) {
+            if (!addedItems.has(option.textContent)) {
+                const newOption = option.cloneNode(true);
+                rightCombo.appendChild(newOption);
+                addedItems.add(option.textContent); // Add the item to the set to track it
+            }
+        }
+    }
+
+    leftCombo.addEventListener("click", function () {
+        const selectedOptions = Array.from(leftCombo.selectedOptions);
+        for (const option of selectedOptions) {
+            if (!addedItems.has(option.textContent)) {
+                const newOption = option.cloneNode(true);
+                rightCombo.appendChild(newOption);
+                addedItems.add(option.textContent); // Add the item to the set to track it
+            }
+        }
+    });
+
+    // Attach a click event listener to the right combo box to remove items
+    rightCombo.addEventListener("click", function () {
+        removeItem();
+    });
+
+    // Attach a click event listener to the button to copy all items
+    copyAllButton.addEventListener("click", function () {
+        copyAllItems();
+    });
+
+    // Attach a click event listener to the button to remove all items
+    removeAllButton.addEventListener("click", function () {
+        removeAllItems();
+    });
+</script>
+    <script>
+        const radioButton = document.getElementById("customRadio9");
+        const divToClick = document.getElementById("ToClick");
+
+        // Add a click event listener to the radio button
+        radioButton.addEventListener("click", function () {
+            // Programmatically trigger a click event on the div
+            divToClick.click();
+        });
+
+        // Add a click event listener to the div to perform some action
+        divToClick.addEventListener("click", function () {
+
+        });
+    </script>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 
 </body>
 

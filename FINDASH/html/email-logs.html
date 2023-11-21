@@ -95,11 +95,11 @@
    
                            <li><a href="#client" class="iq-waves-effect " data-toggle="collapse"
                                  aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                    class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage Client<i
+                                    class="fas fa-users iq-arrow-left" style="font-size: 18px;"></i>Manage Clients<i
                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                               <ul id="client" class="iq-submenu collapse">
                                  <li><a href="party_user.html"><i class="las la-user-tie"
-                                    style="font-size: 18px;"></i>Manage Party Clients</a></li>
+                                    style="font-size: 18px;"></i>Manage Clients Profile</a></li>
                                  <li><a href="users.html"><i class="fas fa-user-friends"
                                           style="font-size: 18px;"></i>Manage Client User</a></li>
    
@@ -108,7 +108,7 @@
                            <hr style="margin: -7px; border-top: 2px solid white; max-width: 210px; margin-left: 7px;"> 
                            <li><a href="#userinfo" class="iq-waves-effect " data-toggle="collapse"
                                  aria-expanded="false"><span class="ripple rippleEffect"></span><i
-                                    class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>Manage User<i
+                                    class="fas fa-user-tie iq-arrow-left" style="font-size: 18px;"></i>Manage Users<i
                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                               <ul id="userinfo" class="iq-submenu collapse ">
    
@@ -139,16 +139,15 @@
                           <li class="active">
                               <a href="#sms" class="iq-waves-effect " data-toggle="collapse" aria-expanded="false"><span
                                     class="ripple rippleEffect"></span><i class="fas fa-sms iq-arrow-left"
-                                    style="font-size: 18px;"></i>Manage SMS<i
+                                    style="font-size: 18px;"></i>Manage Notifications<i
                                     class="ri-arrow-right-s-line iq-arrow-right" style="font-size: 18px;"></i></a>
                               <ul id="sms" class="iq-submenu collapse show">
-                                 <li><a href="#"><i class="far fa-envelope-open" style="font-size: 18px;"></i>Manage SMS</a>
-                                 </li>
+                                
                                  <li><a href="sms-logs.html"><i class="fab fa-facebook-messenger"
-                                          style="font-size: 18px;"></i>SMS Logs</a></li>
+                                          style="font-size: 18px;"></i>Manage SMS </a></li>
                                  <li class="active"><a href="email-logs.html"><i class="fa fa-envelope-o"
                                           style="font-size: 18px;"></i>Manage Emails</a></li>
-                                 <li><a href="#"><i class="fab fa-dyalog" style="font-size: 18px;"></i>Email Logs</a></li>
+                                
                                  <li><a href="#"><i class="fab fa-whatsapp" style="font-size: 18px;"></i>Manage Whatsapp</a>
                                  </li>
                               </ul>
@@ -449,9 +448,104 @@
             <div class="col-sm-12">
                   <div class="iq-card">
                      <div class="iq-card-header d-flex justify-content-between">
-                        <div class="iq-header-title">
+                        <div class="iq-header-title col-lg-10">
                            <h4 class="card-title">Email Logs</h4>
                         </div>
+                        <button style="width: 80px; margin-left: 2px;" data-toggle="modal" data-target="#addsms"
+                           class="btn onem btn-primary"><b>+ Add</b></button>
+
+                        <div class="modal fade " id="addsms" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div style="width: 700px;" class="modal-dialog modal-dialog-scrollable " role="document">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLongTitle">Add Email Template
+                                 </h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04">Template</label>
+                                    <select class="form-control" id="validationCustom04" required>
+                                       <option selected disabled value="">
+                                          Choose Template</option>
+                                       <option>OTP</option>
+                                       <option>User Registration</option>
+                                       <option>OverSpeeding</option>
+                                       <option>Battery Unplug Engine</option>
+                                       <option>General Alert</option>
+                                       <option>Fence in Engine</option>
+                                       <option>Fence out Engine</option>
+                                       <option>On Recovery</option>
+                                       <option>Horn</option>
+                                       <option>Share Location</option>
+                                       <option>Push Notifications</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                       Please select a valid state.
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12 mb-3">
+                                    <label for="validationCustom03">Template Name</label>
+                                    <input type="text" class="form-control" id="validationCustom03" required>
+
+                                 </div>
+                                 <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04">Template Type</label>
+                                    <select class="form-control" id="validationCustom04" required>
+                                       <option selected disabled value="">
+                                          Choose Type</option>
+                                       <option>OTP</option>
+                                       <option>Registration</option>
+                                       <option>NR</option>
+                                       <option>Event</option>
+                                       <option>Complaint</option>
+                                       <option>Matured Task</option>
+                                       <option>Push Notifications</option>
+                                       <option>Share Location</option>
+
+                                    </select>
+                                    <div class="invalid-feedback">
+                                       Please select a valid state.
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12 mb-3">
+                                    <label for="validationCustom04">Language</label>
+                                    <select class="form-control" id="validationCustom04" required>
+                                       <option selected disabled value="">
+                                          Choose Language</option>
+                                       <option>English</option>
+                                       <option>Urdu</option>
+                                       <option>Arabic</option>
+
+                                    </select>
+                                    <div class="invalid-feedback">
+                                       Please select a valid state.
+                                    </div>
+                                 </div>
+                                 <div class="col-md-12 mb-3">
+                                    <label for="validationCustom03">Subject</label>
+                                    <input type="text" class="form-control" id="validationCustom03" required>
+
+                                 </div>
+                                 <div class="form-group col-sm-12">
+                                    <label>Body</label>
+                                    <textarea class="form-control" name="address" rows="5"
+                                       style="line-height: 22px;">
+                                           </textarea>
+                                 </div>
+
+
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      </div>
                      <div class="iq-card-body">
                         <div class="table-responsive">
